@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Home",
+    "description": "This is a home description."
+  },
+  "footer": "© 2024 All rights reserved"
+}

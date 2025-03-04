@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "contact": "İletişim"
+  },
+  "home": {
+    "title": "Ana Sayfa",
+    "description": "Bu bir ana sayfa açıklamasıdır."
+  },
+  "footer": "© 2024 Tüm hakları saklıdır"
+}
