@@ -5,6 +5,11 @@
     "products": "Products",
     "contact": "Contact"
   },
+  "promo":{
+    "title": "Durable and Reliable Cardboard Cups",
+    "description": "Our cardboard cups are designed to serve your drinks in the best way.",
+    "button": "More Info"
+  },
   "home": {
     "title": "Home",
     "description": "This is a home description."

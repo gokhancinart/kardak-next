@@ -5,6 +5,11 @@
     "products": "Ürünler",
     "contact": "İletişim"
   },
+  "promo":{
+    "title": "Dayanıklı ve Güvenilir Karton Bardaklar",
+    "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
+    "button": "Detaylı Bilgi"
+  },
   "home": {
     "title": "Ana Sayfa",
     "description": "Bu bir ana sayfa açıklamasıdır."

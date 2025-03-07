@@ -2,6 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { products } from '../../../data/products';
+import Image from 'next/image';
 
 export default function ProductsPage() {
   const { t, i18n } = useTranslation('common');
@@ -17,6 +18,7 @@ export default function ProductsPage() {
             href={`/products/${product.slug[currentLocale]}`}
             className="p-6 border rounded-lg hover:shadow-lg transition-shadow"
           >
+            <Image src={product.imageSrc} alt={product.name[currentLocale]} width={300} height={300} />
             <h2 className="text-2xl font-semibold">{product.name[currentLocale]}</h2>
             <p className="mt-2 text-gray-600">{product.description[currentLocale]}</p>
           </Link>

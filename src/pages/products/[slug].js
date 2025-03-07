@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { products } from '../../../data/products';
+import Image from 'next/image';
 
 export default function ProductDetail() {
   const { t, i18n } = useTranslation('common');
@@ -19,6 +20,7 @@ export default function ProductDetail() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <Image src={product.imageSrc} alt={product.name[currentLocale]} width={300} height={300} />
       <h1 className="text-4xl font-bold mb-6">{product.name[currentLocale]}</h1>
       <p className="text-lg mb-4">{product.description[currentLocale]}</p>
       <button

@@ -1,0 +1,77 @@
+import Image from 'next/image'
+
+
+const products = [
+  {
+    id: 1,
+    name: 'Yıldız Desen Karton Bardak',
+    href: '#',
+    imageSrc: '/assets/images/cups/yildiz-enhanced-3.png',
+    imageAlt: "Yıldız Desen Karton Bardak",
+    code: '#001',
+    color: 'Black',
+  },
+  {
+    id: 2,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: '/assets/images/cups/yildiz-enhanced-1.png',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 3,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: '/assets/images/cups/fincan-desen-karton-bardak-3.png',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 4,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: '/assets/images/cups/is-guvenligi-karton-bardak.png',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  }
+]
+
+export default function ProductList() {
+  return (
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          {products.map((product) => (
+            <div key={product.id} className="group relative">
+              <Image
+                alt={product.imageAlt}
+                src={product.imageSrc}
+                width={300}
+                height={300}
+                className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+              />
+              <div className="mt-4 flex justify-between">
+                <div>
+                  <h3 className="text-sm text-gray-700">
+                    <a href={product.href}>
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {product.name}
+                    </a>
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                </div>
+                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}

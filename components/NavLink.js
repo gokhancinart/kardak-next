@@ -12,8 +12,8 @@ export default function NavLink({ href, children }) {
       className={clsx(
         'border-b-2 transition-colors duration-200',
         {
-          'text-blue-950 border-primary pointer-events-none': isActive,
-          'text-gray-900 hover:text-secondary border-transparent hover:border-secondary': !isActive
+          'text-white md:text-blue-950 border-primary pointer-events-none': isActive,
+          'text-white md:text-gray-900 hover:text-secondary border-transparent hover:border-secondary': !isActive
         }
       )}
       aria-current={isActive ? "page" : undefined}
