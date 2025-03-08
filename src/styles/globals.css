@@ -5,3 +5,21 @@
   padding-inline: 2rem;
   max-width:1280px;
 }
+
+:root {
+  --kardak: #1c3c6d;
+  --soft-blue: #e0e9fa;
+}
+
+/* custom background class */
+.bg-kardak {
+  background-color: var(--kardak);
+}
+.bg-soft-blue {
+  background-color: var(--soft-blue);
+}
+
+/* custom text color class */
+.text-kardak {
+  color: var(--kardak);
+}

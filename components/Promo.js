@@ -4,13 +4,13 @@ import { LiaWhatsapp } from "react-icons/lia";
 
 export default function Promo({title, description, btn, btnLink}) {
   return (
-    <div className="relative overflow-hidden bg-blue-950">
+    <div className="relative overflow-hidden bg-kardak">
       <div className="absolute z-0 inset-0 bg-black opacity-50">
         {/* Noktalar için arka plan */}
         <div className="absolute inset-0" style={{
           background: `
-            radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px) 0 0,
-            radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px) 6px 6px
+            radial-gradient(circle, rgba(44, 94, 169, 0.2) 1px, transparent 1px) 0 0,
+            radial-gradient(circle, rgba(44, 94, 169, 0.2) 1px, transparent 1px) 6px 6px
           `,
           backgroundSize: '10px 10px' // Noktaların boyutunu ve aralığını
         }} />

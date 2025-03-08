@@ -2,6 +2,7 @@ import ProductList from 'components/ProductList';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Promo from 'components/Promo';
+import HomeAbout from 'components/HomeAbout';
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -15,8 +16,7 @@ export default function Home() {
         btnLink="btnLink"
       />
       <div className="flex-grow container mx-auto p-4">
-        <h1 className="text-4xl font-bold mb-4">{t('home.title')}</h1>
-        <p className="text-lg">{t('home.description')}</p>
+        <HomeAbout />
         <ProductList />
       </div>
     </>

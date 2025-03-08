@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
-    "products": "Ürünler",
+    "products": "Ürünlerimiz",
     "contact": "İletişim"
   },
   "promo":{
@@ -10,9 +10,25 @@
     "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
     "button": "Detaylı Bilgi"
   },
-  "home": {
-    "title": "Ana Sayfa",
-    "description": "Bu bir ana sayfa açıklamasıdır."
+  "homeAbout": {
+    "title": "Karton bardak üretiminiz için ihtiyacınız olan her şey!",
+    "description": "Yüksek kaliteli kağıt satışından profesyonel bardak baskısına ve bitmiş bardak üretimine kadar tüm süreçlerde yanınızdayız. Tasarımlarınızı hayata geçirmek için her adımı biz üstleniyoruz, işletmenize en iyi sonuçları sunuyoruz.",
+    "phase1": {
+      "title": "Kağıt Tedariği",
+      "description": "Yüksek kaliteli kağıt ihtiyaçlarınız için doğru adres! Üretim süreçlerinizi destekleyecek dayanıklı, çevre dostu ve çeşitli gramaj seçenekleriyle her ihtiyaca uygun kağıt tedarik ediyoruz"
+    },
+    "phase2": {
+      "title": "Baskı Hizmetleri",
+      "description": "Profesyonel baskı hizmetlerimizle tasarımlarınızı en iyi şekilde yansıtıyoruz. Yüksek kaliteli baskı teknikleriyle bardaklarınızı markanıza özel hale getiriyoruz."
+    },
+    "phase3": {
+      "title": "Bardak Üretimi",
+      "description": "Bitmiş bardak üretim sürecimizde kalite ve hijyen standartlarına uygun olarak bardaklarınızı üretiyoruz. İhtiyacınıza uygun bardak boyutları ve tasarımlarıyla en iyi sonuçları sunuyoruz."
+    },
+    "phase4": {
+      "title": "Hızlı ve Güvenilir Teslimat",
+      "description": "Üretimden teslimata kadar her aşamada hız ve güven önceliğimiz. Siparişlerinizi zamanında ve eksiksiz şekilde size ulaştırarak iş süreçlerinizi hızlandırıyoruz."
+    }
   },
   "footer": "© 2024 Tüm hakları saklıdır"
 }

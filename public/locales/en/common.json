@@ -10,9 +10,25 @@
     "description": "Our cardboard cups are designed to serve your drinks in the best way.",
     "button": "More Info"
   },
-  "home": {
-    "title": "Home",
-    "description": "This is a home description."
+  "homeAbout": {
+    "title": "Everything you need for your cardboard cup production!",
+    "description": "We are with you in all processes from high-quality paper sales to professional cup printing and finished cup production. We take every step to bring your designs to life, and offer the best results for your business.",
+    "phase1": {
+      "title": "Paper Supply",
+      "description": "The right address for your high-quality paper needs! We supply paper that meets all your production needs, with durable, eco-friendly, and various grammage options."
+    },
+    "phase2": {
+      "title": "Printing Services",
+      "description": "We reflect your designs in the best way with our professional printing services. We make your cups special to your brand with high-quality printing techniques."
+    },
+    "phase3": {
+      "title": "Cup Production",
+      "description": "We produce your cups in accordance with quality and hygiene standards in our finished cup production process. We offer the best results with cup sizes and designs that meet your needs."
+    },
+    "phase4": {
+      "title": "Fast and Reliable Delivery",
+      "description": "Speed and reliability are our priorities at every stage from production to delivery. By delivering your orders to you on time and complete, we speed up your business processes."
+    }
   },
   "footer": "© 2024 All rights reserved"
 }
