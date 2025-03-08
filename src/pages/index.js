@@ -25,7 +25,7 @@ export default function Home() {
         {/* Canonical URL (Dinamik ve Dil Desteğiyle) */}
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}${router.asPath}`.replace(/([^:]\/)\/+/g, "$1")}
+          href={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`}
         />
 
         {/* Favicon (Absolute Path ile) */}
@@ -35,7 +35,7 @@ export default function Home() {
         />
 
         {/* Open Graph Etiketleri */}
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}${router.asPath}`} />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={t('home.seo.title')} />
         <meta property="og:description" content={t('home.seo.description')} />
