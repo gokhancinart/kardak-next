@@ -12,6 +12,7 @@ export default function Home() {
 
   console.log('Env Check:', {
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
+    siteUrl2: SITE_URL2,
     locale: router.locale,
     path: router.asPath
   })
