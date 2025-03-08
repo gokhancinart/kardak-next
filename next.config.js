@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   // Alias ayarı ekleyin
   webpack: (config) => {
     config.resolve.alias['@'] = __dirname + '/src';
