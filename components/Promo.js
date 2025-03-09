@@ -1,10 +1,11 @@
 import Link from "next/link"
 import { LiaWhatsapp } from "react-icons/lia";
+import Image from "next/image";
 
 
 export default function Promo({title, description, btn, btnLink}) {
   return (
-    <div className="relative overflow-hidden bg-kardak">
+    <div className="relative overflow-hidden bg-kardak h-[720]">
       <div className="absolute z-0 inset-0 bg-black opacity-50">
         {/* Noktalar için arka plan */}
         <div className="absolute inset-0" style={{
@@ -15,8 +16,8 @@ export default function Promo({title, description, btn, btnLink}) {
           backgroundSize: '10px 10px' // Noktaların boyutunu ve aralığını
         }} />
       </div>
-      <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40 z-10 relative">
-        <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+      <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40 z-10 relative h-[100%]">
+        <div className="relative mx-auto flex flex-col max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
             <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl">
               {title}
@@ -36,55 +37,69 @@ export default function Promo({title, description, btn, btnLink}) {
                   <div className="flex items-center space-x-6 lg:space-x-8">
                     <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                        <img
-                          alt=""
-                          src="/assets/images/cups/coffee-yazi-baskili-karton-bardak.png"
+                        <Image
+                          width={176}
+                          height={256}
+                          alt="coffee-yazili-karton-bardak"
+                          src="/assets/images/cups/coffee-yazili-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          alt=""
-                          src="/assets/images/cups/yildiz-enhanced-3.png"
-                          className="size-full object-cover"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          alt=""
-                          src="/assets/images/cups/fincan-desen-karton-bardak-3.png"
-                          className="size-full object-cover"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          alt=""
-                          src="/assets/images/cups/coffee-icon-2.png"
-                          className="size-full object-cover"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          alt=""
-                          src="/assets/images/cups/is-guvenligi-karton-bardak.png"
+                        <Image
+                          width={176}
+                          height={256}
+                          alt="yildiz-desen-karton-bardak"
+                          src="/assets/images/cups/yildiz-desen-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
                     </div>
                     <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          alt=""
-                          src="/assets/images/cups/fincan-desen-karton-bardak-2.png"
+                        <Image
+                          width={176}
+                          height={256}  
+                          alt="simitci-dunyasi-karton-bardak"
+                          src="/assets/images/cups/simitci-dunyasi-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          alt=""
-                          src="/assets/images/cups/yildiz-enhanced-1.png"
+                        <Image
+                          width={176}
+                          height={256} 
+                          alt="turuncu-siyah-karton-bardak"
+                          src="/assets/images/cups/turuncu-siyah.webp"
+                          className="size-full object-cover"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          width={176}
+                          height={256} 
+                          alt="sehir-hatlari-karton-bardak"
+                          src="/assets/images/cups/sehir-hatlari-karton-bardak.webp"
+                          className="size-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          width={176}
+                          height={256} 
+                          alt="lavazza-karton-bardak"
+                          src="/assets/images/cups/lavazza-karton-bardak.webp"
+                          className="size-full object-cover"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          width={176}
+                          height={256} 
+                          alt="kraft-karton-bardak"
+                          src="/assets/images/cups/kraft-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
