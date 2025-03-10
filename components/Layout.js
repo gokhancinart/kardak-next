@@ -6,12 +6,15 @@ import Image from 'next/image';
 import Logo from '../public/assets/images/logo.svg';
 import LogoNegative from '../public/assets/images/logo-negative.svg';
 
+import { Analytics } from "@vercel/analytics/react"
+
 import { Nunito } from 'next/font/google';
 
 const nunito = Nunito({
   subsets: ['latin'],
   display: 'swap',
 })
+
 
 export default function Layout({ children }) {
 
@@ -148,7 +151,7 @@ export default function Layout({ children }) {
           <p className="text-gray-300 text-sm">{t('footer.reserved')}</p>
         </div>
       </footer>
-
+      <Analytics/>
     </div>
   );
 }
