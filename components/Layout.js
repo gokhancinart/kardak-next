@@ -88,7 +88,7 @@ export default function Layout({ children }) {
 
       <main>{children}</main>
 
-      <footer className="bg-gray-900 py-12">
+      <footer className="bg-kardak-dark py-12">
         <div className="container max-w-7xl mx-auto flex flex-col lg:flex-row lg:justify-between">
           {/* Logo and Description */}
           <div className="lg:w-1/3 mb-8 lg:mb-0">

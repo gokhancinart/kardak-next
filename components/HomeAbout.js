@@ -18,7 +18,7 @@ function HomeAbout() {
             </p>
             {/* <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-[#1c3c6d] to-transparent"></span> */}
             </div>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-md leading-6 text-gray-600">
               {t('home.home_about.description')}
             </p>
         </div>
