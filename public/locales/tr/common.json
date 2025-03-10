@@ -12,8 +12,9 @@
     },
     "promo": {
       "title": "Dayanıklı ve Güvenilir Karton Bardaklar",
-      "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
-      "button": "Detaylı Bilgi"
+      "description": "Yüksek kaliteli kağıt satışından profesyonel bardak baskısına ve bitmiş bardak üretimine kadar tüm süreçlerde yanınızdayız.",
+      "button": "Ürünlerimiz",
+      "whatsapp": "Detaylı Bilgi"
     },
     "home_about": {
       "title": "Karton bardak üretiminiz için ihtiyacınız olan her şey!",
@@ -35,6 +36,14 @@
         "description": "Üretimden teslimata kadar her aşamada hız ve güven önceliğimiz. Siparişlerinizi zamanında ve eksiksiz şekilde size ulaştırarak iş süreçlerinizi hızlandırıyoruz."
       }
     }
+  },
+  "products" : {
+    "seo" : {
+      "title": "Ürünlerimiz - Karton Bardak Üretimi",
+      "description": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
+    },
+    "title_papercup": "Karton Bardaklarımız",
+    "description_papercup": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
   },
   "footer": "© 2024 Tüm hakları saklıdır"
 }

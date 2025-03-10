@@ -10,7 +10,7 @@ export default function ProductsPage() {
   return (
     <div className="container">
       <h1 className="text-4xl font-bold mb-8">{t('navbar.products')}</h1>
-      <ProductList products={products} locale={currentLocale} />
+      <ProductList title={t('products.title_papercup')} products={products} locale={currentLocale} />
     </div>
   );
 }

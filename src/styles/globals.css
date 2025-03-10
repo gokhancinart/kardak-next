@@ -8,12 +8,18 @@
 
 :root {
   --kardak: #1c3c6d;
+  --kardak-hover: #1a345f;
   --soft-blue: #e0e9fa;
 }
 
 /* custom background class */
 .bg-kardak {
   background-color: var(--kardak);
+}
+.bg-kardak-hover {
+  &:hover {
+    background-color: var(--kardak-hover);
+  }
 }
 .bg-soft-blue {
   background-color: var(--soft-blue);
@@ -22,4 +28,9 @@
 /* custom text color class */
 .text-kardak {
   color: var(--kardak);
+}
+.text-kardak-hover {
+  &:hover {
+    color: var(--kardak-hover);
+  }
 }

@@ -3,6 +3,8 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { products } from '../../../data/products';
 import Image from 'next/image';
+import { IoIosArrowBack } from "react-icons/io";
+import Link from 'next/link';
 
 export default function ProductDetail() {
   const { t, i18n } = useTranslation('common');
@@ -20,15 +22,35 @@ export default function ProductDetail() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Image src={product.imageSrc} alt={product.name[currentLocale]} width={300} height={300} />
-      <h1 className="text-4xl font-bold mb-6">{product.name[currentLocale]}</h1>
-      <p className="text-lg mb-4">{product.description[currentLocale]}</p>
-      <button
-        onClick={() => router.back()}
-        className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600"
-      >
-        {t('back')}
-      </button>
+      <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
+        {/* Sol kısım: Ürün fotoğrafı */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <Image 
+            src={product.imageSrc} 
+            alt={product.name[currentLocale]} 
+            width={400} 
+            height={400} 
+            className="rounded-lg shadow-md w-full"
+          />
+        </div>
+        {/* Sağ kısım: Ürün başlığı, açıklaması ve geri butonu */}
+        <div className="w-full md:w-1/2">
+          <h1 className="text-4xl font-bold mb-4 text-kardak">
+            {product.name[currentLocale]}
+          </h1>
+          <p className="text-lg mb-6">
+            {product.description[currentLocale]}
+          </p>
+          <Link href="/products">
+            <button
+              className="bg-kardak bg-kardak-hover text-white px-6 py-2 rounded transition-colors cursor-pointer"
+            >
+              <IoIosArrowBack className="inline-block mr-2" />
+              {t('navbar.products')}
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
@@ -40,7 +62,6 @@ export async function getStaticProps({ locale }) {
     },
   };
 }
-
 
 export async function getStaticPaths() {
   const paths = products.flatMap(product => [

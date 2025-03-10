@@ -6,6 +6,8 @@ import Promo from 'components/Promo';
 import HomeAbout from 'components/HomeAbout';
 import Head from 'next/head';
 
+import { products } from 'data/products';
+
 export default function Home() {
   const router = useRouter();
   const { t } = useTranslation('common');
@@ -49,12 +51,18 @@ export default function Home() {
       <Promo
         title={t('home.promo.title')}
         description={t('home.promo.description')}
-        btn={t('home.promo.button')}
-        btnLink="home.promo.btnLink"
+        button={t('home.promo.button')}
+        buttonLink="/products"
+        whatsapp={t('home.promo.whatsapp')}
+        whatsappUrl={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
       />
       <div className="flex-grow container mx-auto p-4">
         <HomeAbout />
-        <ProductList />
+        <ProductList 
+          title={t('products.title_papercup')} 
+          products={products} 
+          locale={router.locale} 
+        />
       </div>
     </>
   );

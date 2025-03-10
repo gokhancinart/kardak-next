@@ -1,9 +1,11 @@
-import Link from "next/link"
-import { LiaWhatsapp } from "react-icons/lia";
+import Link from "next/link";
 import Image from "next/image";
 
+import { LiaWhatsapp } from "react-icons/lia";
+import { HiOutlineCursorClick } from "react-icons/hi";
 
-export default function Promo({title, description, btn, btnLink}) {
+
+export default function Promo({ title, description, button, buttonLink, whatsapp, whatsappUrl }) {
   return (
     <div className="relative overflow-hidden bg-kardak h-[720]">
       <div className="absolute z-0 inset-0 bg-black opacity-50">
@@ -59,7 +61,7 @@ export default function Promo({title, description, btn, btnLink}) {
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <Image
                           width={176}
-                          height={256}  
+                          height={256}
                           alt="simitci-dunyasi-karton-bardak"
                           src="/assets/images/cups/simitci-dunyasi-karton-bardak.webp"
                           className="size-full object-cover"
@@ -68,16 +70,16 @@ export default function Promo({title, description, btn, btnLink}) {
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <Image
                           width={176}
-                          height={256} 
-                          alt="turuncu-siyah-karton-bardak"
-                          src="/assets/images/cups/turuncu-siyah.webp"
+                          height={256}
+                          alt="kirmizi-siyah-karton-bardak"
+                          src="/assets/images/cups/togo-kirmizi-siyah-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <Image
                           width={176}
-                          height={256} 
+                          height={256}
                           alt="sehir-hatlari-karton-bardak"
                           src="/assets/images/cups/sehir-hatlari-karton-bardak.webp"
                           className="size-full object-cover"
@@ -88,7 +90,7 @@ export default function Promo({title, description, btn, btnLink}) {
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <Image
                           width={176}
-                          height={256} 
+                          height={256}
                           alt="lavazza-karton-bardak"
                           src="/assets/images/cups/lavazza-karton-bardak.webp"
                           className="size-full object-cover"
@@ -97,7 +99,7 @@ export default function Promo({title, description, btn, btnLink}) {
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <Image
                           width={176}
-                          height={256} 
+                          height={256}
                           alt="kraft-karton-bardak"
                           src="/assets/images/cups/kraft-karton-bardak.webp"
                           className="size-full object-cover"
@@ -108,15 +110,22 @@ export default function Promo({title, description, btn, btnLink}) {
                 </div>
               </div>
 
-              <Link
-                href={btnLink}
-                className="relative inline-flex rounded-md border border-transparent bg-green-500 shadow-md px-8 py-3 text-center font-bold text-white hover:bg-green-600 hover:text-blue"
-              >
-                <LiaWhatsapp className="h-6 w-6 text-white mr-2" />
-                {btn}
-                {/* <HiOutlineCursorClick className="h-5 w-5 text-blue-500 ml-2 absolute right-3 top-4" /> */}
-                
-              </Link>
+              <div className="mt-10 flex">
+                <Link
+                  href={whatsappUrl}
+                  className="relative inline-flex rounded-md border border-transparent bg-green-500 shadow-md px-8 py-3 text-center font-bold text-white hover:bg-green-600 hover:text-blue"
+                >
+                  <LiaWhatsapp className="h-6 w-6 text-white mr-2" />
+                  {whatsapp}
+                </Link>
+                <Link
+                  href={buttonLink}
+                  className="relative inline-flex rounded-md border border-transparent bg-white shadow-md px-8 py-3 ml-4 text-center font-bold text-kardak hover:bg-gray-200 hover:text-blue"
+                >
+                  <HiOutlineCursorClick className="h-5 w-5 text-kardak mr-2" />
+                  {button}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
