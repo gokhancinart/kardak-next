@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Ana Sayfalar -->
+  <url>
+    <loc>https://www.kardakcup.com/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/"/>
+  </url>
+
+  <!-- Hakkımızda -->
+  <url>
+    <loc>https://www.kardakcup.com/about/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/about/"/>
+  </url>
+
+  <!-- İletişim -->
+  <url>
+    <loc>https://www.kardakcup.com/contact/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/contact/"/>
+  </url>
+
+  <!-- Ürünler Ana Sayfa -->
+  <url>
+    <loc>https://www.kardakcup.com/products/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/"/>
+  </url>
+
+  <!-- Ürün Detay Sayfaları -->
+  <!-- 1. Yıldız Desen -->
+  <url>
+    <loc>https://www.kardakcup.com/products/yildiz-desen-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/yildiz-desen-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/star-pattern-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/star-pattern-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/yildiz-desen-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/star-pattern-paper-cup/"/>
+  </url>
+
+  <!-- 2. Togo Kırmızı-Siyah -->
+  <url>
+    <loc>https://www.kardakcup.com/products/togo-kirmizi-siyah-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/togo-kirmizi-siyah-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/togo-red-black-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/togo-red-black-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/togo-kirmizi-siyah-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/togo-red-black-paper-cup/"/>
+  </url>
+
+  <!-- 3. Coffee Baskılı -->
+  <url>
+    <loc>https://www.kardakcup.com/products/coffee-baskili-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/coffee-baskili-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/coffee-printed-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/coffee-printed-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/coffee-baskili-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/coffee-printed-paper-cup/"/>
+  </url>
+
+  <!-- 4. Simitçi Dünyası -->
+  <url>
+    <loc>https://www.kardakcup.com/products/simitci-dunyasi-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/simitci-dunyasi-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/simitci-dunyasi-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/simitci-dunyasi-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/simitci-dunyasi-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/simitci-dunyasi-paper-cup/"/>
+  </url>
+
+  <!-- 5. Şehir Hatları -->
+  <url>
+    <loc>https://www.kardakcup.com/products/sehir-hatlari-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/sehir-hatlari-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/sehir-hatlari-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/sehir-hatlari-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/sehir-hatlari-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/sehir-hatlari-paper-cup/"/>
+  </url>
+
+  <!-- 6. Lavazza -->
+  <url>
+    <loc>https://www.kardakcup.com/products/lavazza-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/lavazza-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/lavazza-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/lavazza-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/lavazza-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/lavazza-paper-cup/"/>
+  </url>
+
+  <!-- 7. Kraft -->
+  <url>
+    <loc>https://www.kardakcup.com/products/kraft-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/kraft-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/kraft-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/kraft-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/kraft-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/kraft-paper-cup/"/>
+  </url>
+
+  <!-- 8. Altıgen Desen -->
+  <url>
+    <loc>https://www.kardakcup.com/products/altigen-desen-karton-bardak/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/altigen-desen-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/hexagon-pattern-paper-cup/"/>
+  </url>
+  <url>
+    <loc>https://www.kardakcup.com/en/products/hexagon-pattern-paper-cup/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/products/altigen-desen-karton-bardak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/hexagon-pattern-paper-cup/"/>
+  </url>
+
+</urlset>
