@@ -25,7 +25,7 @@ export default function ProductDetail() {
     if (!product) {
       router.replace('/404', undefined, { shallow: true });
     }
-  }, [product]);
+  }, [product, router]);
 
   if (!product) {
     return <div className="text-center py-8">Loading...</div>; // Veya null

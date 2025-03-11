@@ -1,10 +1,12 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Footer from './Footer';
 
 import Logo from '../public/assets/images/logo.svg';
+import LogoNegative from '../public/assets/images/logo-negative.svg';
 import NavLink from './NavLink';
 import { Nunito } from 'next/font/google';
 
@@ -18,11 +20,24 @@ export default function Layout({ children }) {
 
   const { t } = useTranslation('common');
 
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Route değişince menüyü kapat
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsMenuOpen(false);
+    };
+
+    router.events.on('routeChangeStart', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange);
+    };
+  }, [router]);
 
   return (
     <div className={`min-h-screen flex flex-col ${nunito.className}`} style={{ paddingTop: '108px' }}>
@@ -61,16 +76,18 @@ export default function Layout({ children }) {
 
         {/* Mobil Menü - Push Menü */}
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-black opacity-15 z-40" onClick={toggleMenu}></div>
+          <div className="fixed inset-0 bg-kardak opacity-15 z-40" onClick={toggleMenu}></div>
         )}
-        <div className={`fixed top-0 left-0 h-full w-64 bg-black text-white shadow-lg z-50 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
+        <div className={`fixed top-0 left-0 h-full w-64 bg-kardak text-white shadow-lg z-50 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
           <button onClick={toggleMenu} className="absolute top-4 right-4 bg-black_transparent rounded-full p-2">
             <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
           <div className="flex flex-col p-6">
-            <h4 className="text-xl font-bold text-white">KARDAK</h4>
+            <Link href="/" className="-ml-7">
+              <Image src={LogoNegative} alt="Kardak Logo" width={220} height={82} />
+            </Link>
           </div>
           <div className="flex flex-col space-y-4 p-6 text-white">
             <NavLink href="/">{t('navbar.home')}</NavLink>

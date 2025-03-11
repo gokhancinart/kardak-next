@@ -25,7 +25,8 @@ export const products = [
       "height": "79mm",
       "baseDiameter": "49mm",
     },
-    featured: true
+    featured: true,
+    type: "base"
   },
   {
     id: 2,
@@ -47,7 +48,14 @@ export const products = [
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
     },
-    featured: true
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: true,
+    type: "base"
   },
   {
     id: 3,
@@ -69,7 +77,14 @@ export const products = [
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
     },
-    featured: true
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: true,
+    type: "special"
   },
   {
     id: 4,
@@ -91,7 +106,14 @@ export const products = [
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
     },
-    featured: false
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: false,
+    type: "special"
   },
   {
     id: 5,
@@ -113,7 +135,14 @@ export const products = [
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
     },
-    featured: false
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: false,
+    type: "special"
   },
   {
     id: 6,
@@ -135,7 +164,14 @@ export const products = [
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
     },
-    featured: false
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: false,
+    type: "special"
   },
   {
     id: 7,
@@ -157,8 +193,15 @@ export const products = [
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
     },
-    featured: false
-  }, 
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: false,
+    type: "base"
+  },
   {
     id: 8,
     slug: {
@@ -179,7 +222,14 @@ export const products = [
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
     },
-    featured: true
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: true,
+    type: "base"
   }
 
 ]

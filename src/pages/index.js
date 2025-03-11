@@ -51,10 +51,18 @@ export default function Home() {
         whatsappUrl={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
       />
       <div className="flex-grow container mx-auto p-4">
+        
         <HomeAbout />
+
         <ProductList 
           title={t('products.title_papercup')} 
-          products={products} 
+          products={products.filter(product => product.type === "base")} 
+          locale={router.locale} 
+        />
+
+        <ProductList 
+          title={t('products.title_custom_papercup')} 
+          products={products.filter(product => product.type === "special")} 
           locale={router.locale} 
         />
       </div>
