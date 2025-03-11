@@ -18,7 +18,14 @@ export const products = [
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
+    },
+    technicalDetails: {
+      "capacity": "7oz (180ml)",
+      "rimDiameter": "70mm",
+      "height": "79mm",
+      "baseDiameter": "49mm",
+    },
+    featured: true
   },
   {
     id: 2,
@@ -39,7 +46,8 @@ export const products = [
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
+    },
+    featured: true
   },
   {
     id: 3,
@@ -60,7 +68,8 @@ export const products = [
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
+    },
+    featured: true
   },
   {
     id: 4,
@@ -81,7 +90,8 @@ export const products = [
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
+    },
+    featured: false
   },
   {
     id: 5,
@@ -102,7 +112,8 @@ export const products = [
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
+    },
+    featured: false
   },
   {
     id: 6,
@@ -123,7 +134,8 @@ export const products = [
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
+    },
+    featured: false
   },
   {
     id: 7,
@@ -139,13 +151,15 @@ export const products = [
     imageSrc: '/assets/images/cups/kraft-karton-bardak.webp',
     description: {
       tr: "7oz (180ml) tek kullanımlık karton bardaklarımız, sıcak ve soğuk içecekler için mükemmel bir seçimdir. Dayanıklı yapısı ve özel kaplaması sayesinde sızdırmaz ve güvenli kullanım sunar. Kahve, çay ve diğer içecekler için hijyenik ve pratik bir çözümdür.",
-      en: "Our 7oz (180ml) disposable Paper Cups are the perfect choice for hot and cold drinks. Thanks to its durable" 
+      en: "Our 7oz (180ml) disposable Paper Cups are the perfect choice for hot and cold drinks. Thanks to its durable"
     },
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
-  },{
+    },
+    featured: false
+  }, 
+  {
     id: 8,
     slug: {
       raw: "altigen-desen-karton-bardak",
@@ -164,7 +178,8 @@ export const products = [
     size: {
       tr: "7oz (180ml)",
       en: "7oz (180ml)"
-    }
+    },
+    featured: true
   }
-  
+
 ]

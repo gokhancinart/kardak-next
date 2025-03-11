@@ -3,8 +3,6 @@ import Layout from '../../components/Layout';
 import Script from 'next/script';
 import '../styles/globals.css';
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
@@ -23,7 +21,6 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
       <Component {...pageProps} />
-      <SpeedInsights/>
     </Layout>
   );
 }

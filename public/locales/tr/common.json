@@ -42,6 +42,13 @@
       "title": "Kardak Ürünlerimiz - Yüksek Kaliteli Karton Bardak Üreticisi",
       "description": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
     },
+    "technical_specs": "Teknik Özellikler",
+    "technicalDetails": {
+      "capacity": "Kapasite",
+      "rimDiameter": "Ağız Çapı", 
+      "height": "Yükseklik",
+      "baseDiameter": "Taban Çapı"
+    },
     "title_papercup": "Karton Bardaklarımız",
     "description_papercup": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
   },
@@ -61,5 +68,31 @@
     "title": "İletişim",
     "description": "Kardak olarak karton bardak üretiminde yüksek kalite ve güvenilir hizmet sunuyoruz. Daha fazla bilgi için bize ulaşın."
   },
-  "footer": "© 2024 Tüm hakları saklıdır"
+  "footer": {
+    "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
+    "reserved" : "Kardak © 2025. Tüm hakları saklıdır.",
+    "menu_title": {
+      "menu": "Menu",
+      "our_service": "Hizmetlerimiz",
+      "our_products": "Ürünlerimiz",
+      "contact": "İletişim"
+    },
+    "our_service":{
+      "paper_sales": "Kağıt Satışı",
+      "printing_and_cutting_services": "Baskı ve Kesim Hizmetleri",
+      "cup_production": "Bardak Üretimi"
+    },
+    "our_products": {
+      "product_one": "Yıldız Desen Karton Bardak",
+      "product_two": "Espresso Desen Karton Bardak",
+      "product_three": "Togo Kırmızı Siyah Karton Bardak",
+      "product_four": "Kraft Karton Bardak"
+    }
+  },
+  "404": {
+    "title": "Sayfa Bulunamadı",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
+    "back_to_home": "Ana Sayfaya Dön"
+  },
+  "whatsapp_message": "Bu ürün hakkında bilgi almak istiyorum"
 }

@@ -1,12 +1,13 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useState } from 'react';
-import NavLink from './NavLink';
 import Image from 'next/image';
-import Logo from '../public/assets/images/logo.svg';
-import LogoNegative from '../public/assets/images/logo-negative.svg';
+import Footer from './Footer';
 
+import Logo from '../public/assets/images/logo.svg';
+import NavLink from './NavLink';
 import { Nunito } from 'next/font/google';
+
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -88,66 +89,7 @@ export default function Layout({ children }) {
 
       <main>{children}</main>
 
-      <footer className="bg-kardak-dark py-12">
-        <div className="container max-w-7xl mx-auto flex flex-col lg:flex-row lg:justify-between">
-          {/* Logo and Description */}
-          <div className="lg:w-1/3 mb-8 lg:mb-0">
-            <Link href="/">
-              <Image src={LogoNegative} alt="Kardak Logo" width={220} height={100} className="-ml-7" />
-            </Link>
-            <p className="text-gray-300 mt-4 mr-4">{t('footer.sub_title')}</p>
-          </div>
-
-          {/* Links Section */}
-          <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {/* Menu */}
-            <div>
-              <h3 className="text-white font-semibold mb-4">Menü</h3>
-              <ul className="space-y-2">
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-              </ul>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h3 className="text-white font-semibold mb-4">Hizmetlerimiz</h3>
-              <ul className="space-y-2">
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-              </ul>
-            </div>
-
-            {/* Products */}
-            <div>
-              <h3 className="text-white font-semibold mb-4">Ürünlerimiz</h3>
-              <ul className="space-y-2">
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-                <li><Link href="#" className="text-gray-400 hover:text-gray-500">-</Link></li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h3 className="text-white font-semibold mb-4">İletişim</h3>
-              <span className="text-gray-400">Adres</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Social Icons and Copyright */}
-        <div className="container max-w-7xl mx-auto mt-8 border-t border-gray-200 pt-8 flex flex-col md:flex-row md:justify-between">
-          <div className="text-gray-300 flex space-x-4 mb-4 md:mb-0">
-            <span>Social Icons</span>
-          </div>
-          <p className="text-gray-300 text-sm">{t('footer.reserved')}</p>
-        </div>
-      </footer>
+      <Footer/>
 
     </div>
   );
