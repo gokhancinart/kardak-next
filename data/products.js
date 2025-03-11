@@ -2,6 +2,7 @@ export const products = [
   {
     id: 1,
     slug: {
+      raw: "yildiz-desen-karton-bardak",
       tr: "yildiz-desen-karton-bardak",
       en: "star-pattern-paper-cup"
     },
@@ -22,6 +23,7 @@ export const products = [
   {
     id: 2,
     slug: {
+      raw: "togo-kirmizi-siyah-karton-bardak",
       tr: "togo-kirmizi-siyah-karton-bardak",
       en: "togo-red-black-paper-cup"
     },
@@ -42,6 +44,7 @@ export const products = [
   {
     id: 3,
     slug: {
+      raw: "coffee-baskili-karton-bardak",
       tr: "coffee-baskili-karton-bardak",
       en: "coffee-printed-paper-cup"
     },
@@ -62,6 +65,7 @@ export const products = [
   {
     id: 4,
     slug: {
+      raw: "simitci-dunyasi-karton-bardak",
       tr: "simitci-dunyasi-karton-bardak",
       en: "simitci-dunyasi-paper-cup"
     },
@@ -82,6 +86,7 @@ export const products = [
   {
     id: 5,
     slug: {
+      raw: "sehir-hatlari-karton-bardak",
       tr: "sehir-hatlari-karton-bardak",
       en: "sehir-hatlari-paper-cup"
     },
@@ -102,6 +107,7 @@ export const products = [
   {
     id: 6,
     slug: {
+      raw: "lavazza-karton-bardak",
       tr: "lavazza-karton-bardak",
       en: "lavazza-paper-cup"
     },
@@ -122,6 +128,7 @@ export const products = [
   {
     id: 7,
     slug: {
+      raw: "kraft-karton-bardak",
       tr: "kraft-karton-bardak",
       en: "kraft-paper-cup"
     },
@@ -141,6 +148,7 @@ export const products = [
   },{
     id: 8,
     slug: {
+      raw: "altigen-desen-karton-bardak",
       tr: "altigen-desen-karton-bardak",
       en: "hexagon-pattern-paper-cup"
     },

@@ -12,12 +12,6 @@ export default function Home() {
   const router = useRouter();
   const { t } = useTranslation('common');
 
-  console.log('Env Check:', {
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-    locale: router.locale,
-    path: router.asPath
-  })
-
   return (
     <>
       <Head>

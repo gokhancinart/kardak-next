@@ -1,49 +1,65 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About",
-    "products": "Products",
+    "about": "About Us",
+    "products": "Our Products",
     "contact": "Contact"
   },
   "home": {
     "seo": {
-      "title": "Kardak - High-Quality Paper Cup Manufacturer",
-      "description": "We offer high-quality paper supply, professional printing services, and finished cup production for your cardboard cup production. Contact us for more information!"
+      "title": "Kardak - High Quality Paper Cup Manufacturer",
+      "description": "We provide high quality paper supply, professional printing services, and finished cup production for your paper cup manufacturing. Contact us for more information!"
     },
     "promo": {
       "title": "Durable and Reliable Paper Cups",
-      "description": "We are with you in all processes from high-quality paper sales to professional cup printing and finished cup production.",
-      "button": "Products",
-      "whatsapp": "More Information"
+      "description": "We support you in every process from high-quality paper sales to professional cup printing and finished cup production.",
+      "button": "Our Products",
+      "whatsapp": "More Details"
     },
     "home_about": {
-      "title": "Everything you need for your paper cup production!",
-      "description": "We are with you in all processes from high-quality paper sales to professional cup printing and finished cup production. We take every step to bring your designs to life, and offer the best results for your business.",
+      "title": "Everything You Need for Your Paper Cup Production!",
+      "description": "We are with you in every process from high-quality paper sales to professional cup printing and finished cup production. We handle every step to bring your designs to life and deliver the best results for your business.",
       "phase1": {
         "title": "Paper Supply",
-        "description": "The right address for your high-quality paper needs! We supply paper that meets all your production needs, with durable, eco-friendly, and various grammage options."
+        "description": "Your one-stop address for high-quality paper needs! We supply durable, eco-friendly paper available in various weights to support your production processes."
       },
       "phase2": {
         "title": "Printing Services",
-        "description": "We reflect your designs in the best way with our professional printing services. We make your cups special to your brand with high-quality printing techniques."
+        "description": "We bring your designs to life with our professional printing services. Using high-quality printing techniques, we customize your cups to reflect your brand."
       },
       "phase3": {
         "title": "Cup Production",
-        "description": "We produce your cups in accordance with quality and hygiene standards in our finished cup production process. We offer the best results with cup sizes and designs that meet your needs."
+        "description": "We produce your cups according to quality and hygiene standards in our finished cup production process. We offer the best results with cup sizes and designs that suit your needs."
       },
       "phase4": {
         "title": "Fast and Reliable Delivery",
-        "description": "Speed and reliability are our priorities at every stage from production to delivery. By delivering your orders to you on time and complete, we speed up your business processes."
+        "description": "From production to delivery, speed and reliability are our top priorities. We expedite your business processes by delivering your orders on time and completely."
       }
     }
   },
-  "products" : {
-    "seo" : {
-      "title": "Our Products - Paper Cup Production",
-      "description": "We offer everything you need for paper cup production. Contact us for high-quality paper supply, professional printing services, and finished cup production."
+  "products": {
+    "seo": {
+      "title": "Kardak Products - High Quality Paper Cup Manufacturer",
+      "description": "We offer everything you need in paper cup production. Contact us for high-quality paper supply, professional printing services, and finished cup production."
     },
-    "title_papercup": "Paper Cups",
-    "description_papercup": "We offer everything you need for paper cup production. Contact us for high-quality paper supply, professional printing services, and finished cup production."
+    "title_papercup": "Our Paper Cups",
+    "description_papercup": "We offer everything you need in paper cup production. Contact us for high-quality paper supply, professional printing services, and finished cup production."
+  },
+  "about": {
+    "seo": {
+      "title": "About Kardak - High Quality Paper Cup Manufacturer",
+      "description": "At Kardak, we provide high quality and reliable services in paper cup production. Contact us for more information."
+    },
+    "title": "About Us",
+    "description": "At Kardak, we provide high quality and reliable services in paper cup production. Contact us for more information."
+  },
+  "contact": {
+    "seo": {
+      "title": "Kardak Contact - High Quality Paper Cup Manufacturer",
+      "description": "At Kardak, we provide high quality and reliable services in paper cup production. Contact us for more information."
+    },
+    "title": "Contact",
+    "description": "At Kardak, we provide high quality and reliable services in paper cup production. Contact us for more information."
   },
   "footer": "© 2024 All rights reserved"
 }

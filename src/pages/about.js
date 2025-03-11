@@ -28,8 +28,8 @@ export default function About() {
         {/* Open Graph Etiketleri */}
         <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}${router.asPath}`} />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={t('home.seo.title')} />
-        <meta property="og:description" content={t('home.seo.description')} />
+        <meta property="og:title" content={t('about.seo.title')} />
+        <meta property="og:description" content={t('about.seo.description')} />
         <meta
           property="og:image"
           content={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/images/logo.png`}
