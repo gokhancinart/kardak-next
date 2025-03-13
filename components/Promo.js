@@ -110,21 +110,25 @@ export default function Promo({ title, description, button, buttonLink, whatsapp
                 </div>
               </div>
 
-              <div className="mt-10 flex">
-                <Link
-                  href={whatsappUrl}
-                  className="relative inline-flex rounded-md border border-transparent bg-green-500 shadow-md px-8 py-3 text-center font-bold text-white hover:bg-green-600 hover:text-blue"
-                >
-                  <LiaWhatsapp className="h-6 w-6 text-white mr-2" />
-                  {whatsapp}
-                </Link>
-                <Link
-                  href={buttonLink}
-                  className="relative inline-flex rounded-md border border-transparent bg-white shadow-md px-8 py-3 ml-4 text-center font-bold text-kardak hover:bg-gray-200 hover:text-blue"
-                >
-                  <HiOutlineCursorClick className="h-5 w-5 text-kardak mr-2" />
-                  {button}
-                </Link>
+              <div className="mt-10 flex flex-col md:flex-row">
+                <div>
+                  <Link
+                    href={whatsappUrl}
+                    className="relative inline-flex rounded-md border border-transparent bg-green-500 shadow-md px-8 py-3 mr-4 mb-2 text-center font-bold text-white hover:bg-green-600 hover:text-blue"
+                  >
+                    <LiaWhatsapp className="h-6 w-6 text-white mr-2" />
+                    {whatsapp}
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href={buttonLink}
+                    className="relative inline-flex rounded-md border border-transparent bg-white shadow-md px-8 py-3 text-center font-bold text-kardak hover:bg-gray-200 hover:text-blue"
+                  >
+                    <HiOutlineCursorClick className="h-5 w-5 text-kardak mr-2" />
+                    {button}
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

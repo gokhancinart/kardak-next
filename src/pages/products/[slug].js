@@ -25,13 +25,20 @@ export default function ProductDetail() {
     if (!product) {
       router.replace('/404', undefined, { shallow: true });
     }
-  }, [product]);
+  }, [product, router]);
 
   if (!product) {
     return <div className="text-center py-8">Loading...</div>; // Veya null
   }
 
-  const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}?text=${encodeURIComponent(`${t('whatsapp_message')}:\n\n*${product.name[currentLocale]}*\n${process.env.NEXT_PUBLIC_SITE_URL}${router.asPath}`)}`;
+  const productPath = `/${currentLocale}/products/${product.slug[currentLocale]}`;
+  const productUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${productPath}`;
+
+  const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}?text=${encodeURIComponent(
+    `${t('whatsapp_message')}:\n\n*${product.name[currentLocale]}*\n${productUrl}`
+  )}`;
+
+  console.log(`${product.name[currentLocale]}`, productUrl)
 
   return (
     <>

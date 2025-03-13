@@ -45,11 +45,13 @@
     "technical_specs": "Teknik Özellikler",
     "technicalDetails": {
       "capacity": "Kapasite",
-      "rimDiameter": "Ağız Çapı", 
+      "rimDiameter": "Ağız Çapı",
       "height": "Yükseklik",
       "baseDiameter": "Taban Çapı"
     },
     "title_papercup": "Karton Bardaklarımız",
+    "title_custom_papercup": "Özel Baskılı Karton Bardaklarımız",
+    "title_print_cut":"Baskı ve Kesim Hizmetlerimiz",
     "description_papercup": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
   },
   "about": {
@@ -76,14 +78,14 @@
   },
   "footer": { 
     "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
-    "reserved" : "Kardak © 2025. Tüm hakları saklıdır.",
+    "reserved": "Kardak © 2025. Tüm hakları saklıdır.",
     "menu_title": {
       "menu": "Menu",
       "our_service": "Hizmetlerimiz",
       "our_products": "Ürünlerimiz",
       "contact": "İletişim"
     },
-    "our_service":{
+    "our_service": {
       "paper_sales": "Kağıt Satışı",
       "printing_and_cutting_services": "Baskı ve Kesim Hizmetleri",
       "cup_production": "Bardak Üretimi"
