@@ -58,7 +58,13 @@
       "description": "Kardak olarak karton bardak üretiminde yüksek kalite ve güvenilir hizmet sunuyoruz. Daha fazla bilgi için bize ulaşın."
     },
     "title": "Hakkımızda",
-    "description": "Kardak olarak karton bardak üretiminde yüksek kalite ve güvenilir hizmet sunuyoruz. Daha fazla bilgi için bize ulaşın."
+    "content": [
+      "Kardak, 4 yıl önce yenilikçi ve müşteri odaklı bir yaklaşımla kurulmuştur. Her geçen gün büyüyen ekibimiz ve modern üretim tesisimizle, sektörde lider konuma ulaşmayı hedefliyoruz.<br/>",
+      "Tüm ebatlarda karton bardak üretimi yaparak, müşterilerimizin farklı ihtiyaçlarına uygun çözümler sunuyoruz. Bunun yanı sıra, karton bardak üretimi için yüksek kaliteli kağıt satış hizmeti de sağlamaktayız.<br/>",
+      "Kağıt ihtiyaçlarınıza özel olarak matbaa ve kesim hizmetleri de sunarak, üretim süreçlerinizi daha hızlı ve verimli hale getiriyoruz.<br/>",
+      "Çevre dostu ve sürdürülebilir üretim anlayışımızla, geleceğe değer katmaya devam ediyoruz.<br/>",
+      "<b>Bize katılın, birlikte büyüyelim!</b>"
+    ]
   },
   "contact": {
     "seo": {
@@ -68,7 +74,7 @@
     "title": "İletişim",
     "description": "Kardak olarak karton bardak üretiminde yüksek kalite ve güvenilir hizmet sunuyoruz. Daha fazla bilgi için bize ulaşın."
   },
-  "footer": {
+  "footer": { 
     "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
     "reserved" : "Kardak © 2025. Tüm hakları saklıdır.",
     "menu_title": {

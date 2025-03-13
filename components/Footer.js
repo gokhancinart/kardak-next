@@ -28,7 +28,7 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="lg:w-1/3 mb-8 lg:mb-0">
             <Link href="/">
-              <Image src={LogoNegative} alt="Kardak Logo" width={220} height={100} className="-ml-7" />
+              <Image src={LogoNegative} alt="Kardak Logo" width={220} className="-ml-7" />
             </Link>
             <p className="text-gray-300 mt-4 mr-4">{t('footer.description')}</p>
           </div>

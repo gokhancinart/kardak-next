@@ -32,7 +32,7 @@ export default function Layout({ children }) {
           {/* Sol Kısım */}
           <div className="flex items-center">
             <Link href="/" className="-ml-7">
-              <Image src={Logo} alt="Kardak Logo" width={220} height={100} />
+              <Image src={Logo} alt="Kardak Logo" width={220} />
             </Link>
           </div>
           {/* Menü */}
