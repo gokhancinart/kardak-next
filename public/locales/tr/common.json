@@ -7,8 +7,8 @@
   },
   "home": {
     "seo": {
-      "title": "Kardak - Yüksek Kaliteli Karton Bardak Üreticisi",
-      "description": "Karton bardak üretiminiz için yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi sunuyoruz. Daha fazla bilgi için bize ulaşın!"
+      "title": "Kardak | Karton Bardak Üretimi, Kağıt Satışı ve Baskı Kesim Hizmetleri",
+      "description": "Kardak olarak karton bardak üretimi, kağıt satış, özel baskı ve kesim hizmetleri sunuyoruz. Dayanıklı, hijyenik ve markanıza özel bardak çözümleri için bizimle iletişime geçin."
     },
     "promo": {
       "title": "Dayanıklı ve Güvenilir Karton Bardaklar",
@@ -39,8 +39,8 @@
   },
   "products": {
     "seo": {
-      "title": "Kardak Ürünlerimiz - Yüksek Kaliteli Karton Bardak Üreticisi",
-      "description": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
+      "title": "Karton Bardak Ürünleri | Özel Baskılı Bardaklar ve Kağıt Tedarik - Kardak",
+      "description": "Tüm ebatlarda karton bardak üretimi, özel baskılı bardak çözümleri ve kaliteli kağıt tedarik hizmetleri sunuyoruz. İhtiyacınıza en uygun bardakları keşfedin."
     },
     "technical_specs": "Teknik Özellikler",
     "technicalDetails": {
@@ -51,13 +51,13 @@
     },
     "title_papercup": "Karton Bardaklarımız",
     "title_custom_papercup": "Özel Baskılı Karton Bardaklarımız",
-    "title_print_cut":"Baskı ve Kesim Hizmetlerimiz",
+    "title_print_cut": "Baskı ve Kesim Hizmetlerimiz",
     "description_papercup": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
   },
   "about": {
     "seo": {
-      "title": "Kardak Hakkımızda - Yüksek Kaliteli Karton Bardak Üreticisi",
-      "description": "Kardak olarak karton bardak üretiminde yüksek kalite ve güvenilir hizmet sunuyoruz. Daha fazla bilgi için bize ulaşın."
+      "title": "Kardak Hakkında | Karton Bardak Üreticisi & Kağıt ve Baskı Tedarikçisi",
+      "description": "Kardak, yüksek kaliteli karton bardak üretimi, kağıt satışı ve baskı kesim hizmetleriyle sektörde güvenilir bir markadır. Detaylı bilgi için bizi tanıyın."
     },
     "title": "Hakkımızda",
     "content": [
@@ -70,23 +70,23 @@
   },
   "contact": {
     "seo": {
-      "title": "Kardak İletişim - Yüksek Kaliteli Karton Bardak Üreticisi",
-      "description": "Kardak olarak karton bardak üretiminde yüksek kalite ve güvenilir hizmet sunuyoruz. Daha fazla bilgi için bize ulaşın."
+      "title": "Kardak İletişim | Karton Bardak Üretimi ve Kağıt Satış Hizmetleri",
+      "description": "Karton bardak üretimi, kağıt satışı ve baskı hizmetleri hakkında detaylı bilgi almak için bizimle iletişime geçin. Uzman ekibimizle hizmetinizdeyiz."
     },
     "title": "İletişim",
     "description": "KARDAK KAĞIT AMBALAJ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
-    "contact-text":{
-      "phone-text":"Telefon",
-      "mail-text":"Mail",
-      "address-text":"Adres",
-      "working-text":"Çalışma Saatleri"
+    "contact-text": {
+      "phone-text": "Telefon",
+      "mail-text": "Mail",
+      "address-text": "Adres",
+      "working-text": "Çalışma Saatleri"
     },
     "contact-detail": {
-      "address":"İkitelli Osb Mah. Dersan A Blok Sk. A Blok No: 1 İç Kapı No: 014 BAŞAKŞEHİR/İSTANBUL",
-      "working":"08:00 - 19:00"
+      "address": "İkitelli Osb Mah. Dersan A Blok Sk. A Blok No: 1 İç Kapı No: 014 BAŞAKŞEHİR/İSTANBUL",
+      "working": "08:00 - 19:00"
     }
   },
-  "footer": { 
+  "footer": {
     "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
     "reserved": "Kardak © 2025. Tüm hakları saklıdır.",
     "menu_title": {

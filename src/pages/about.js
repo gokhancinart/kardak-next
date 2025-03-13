@@ -22,8 +22,8 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>{t('home.seo.title')}</title>
-        <meta name="description" content={t('home.seo.description')} />
+        <title>{t('about.seo.title')}</title>
+        <meta name="description" content={t('about.seo.description')} />
 
         {/* Canonical URL (Dinamik ve Dil Desteğiyle) */}
         <link
