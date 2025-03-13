@@ -77,7 +77,7 @@ export default function Footer() {
             {/* Contact */}
             <div>
               <h3 className="text-white font-semibold mb-4">{t('footer.menu_title.contact')}</h3>
-              <span className="text-gray-400">Adres</span>
+              <span className="text-gray-400">{ t('contact.contact-detail.address') }</span>
             </div>
           </div>
         </div>
