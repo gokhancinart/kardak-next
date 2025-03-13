@@ -97,8 +97,12 @@ export default function Layout({ children }) {
           </div>
           {/* Alt Kısım - İletişim Bilgileri ve Dil Seçimi */}
           <div className="absolute bottom-4 left-4 text-left space-y-2">
-            <p className="text-sm">📞 +90 555 555 5555</p>
-            <p className="text-sm">✉️ info@kardak.com</p>
+            <div>
+              <Link href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`} className="text-sm">📞 {process.env.NEXT_PUBLIC_PHONE_NUMBER}</Link>
+            </div>
+            <div>
+              <Link href={`mailto:info@kardak.com`} className="text-sm">✉️ info@kardak.com</Link>
+            </div>
             {/* Dil Seçici */}
           </div>
         </div>
