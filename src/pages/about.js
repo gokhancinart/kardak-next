@@ -66,43 +66,27 @@ export default function About() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="grid grid-cols-2 gap-4 w-full">
-            <Link href="/products">
-              <Image
-                src="/assets/images/printandcut/karton-bardak-baski-ve-kesim.webp"
-                alt="Karton bardak baskı ve kesim renkli"
-                width={300}
-                height={300}
-                className="rounded-xl object-cover w-full h-48"
+          <div className="grid grid-cols-1 gap-4 w-full rounded-lg overflow-hidden">
+            <video
+              width="100%"
+              loop
+              autoPlay
+              muted
+              playsInline
+            >
+              <source
+                src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/kardak-video-cutted.mp4`}
+                type="video/mp4"
               />
-            </Link>
-            <Link href="/products">
-              <Image
-                src="/assets/images/cups/yildiz-desen-karton-bardak.webp"
-                alt="Yıldız desen karton bardak 7oz"
-                width={300}
-                height={300}
-                className="rounded-xl object-cover object-bottom  w-full h-48"
-              />
-            </Link>
-            <Link href="/products">
-              <Image
-                src="/assets/images/paper-roll/paper-roll.webp"
-                alt="PE kaplamalı kağıt satış"
-                width={300}
-                height={300}
-                className="rounded-xl object-cover w-full h-48"
-              />
-            </Link>
-            <Link href="/products">
-              <Image
-                src="/assets/images/paper-roll/base-paper.webp"
-                alt="About image 4"
-                width={300}
-                height={300}
-                className="rounded-xl object-cover w-full h-48"
-              />
-            </Link>
+              {/* <track
+                src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/kardak-video-captions.vtt`}
+                kind="captions"
+                srcLang="tr"
+                label="Türkçe Altyazılar"
+                default
+              /> */}
+              Tarayıcınız video etiketini desteklemiyor.
+            </video>
           </div>
         </div>
       </div>
