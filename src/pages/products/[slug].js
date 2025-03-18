@@ -21,11 +21,10 @@ export default function ProductDetail() {
   );
 
   useEffect(() => {
-    // Ürün yoksa ve sayfa client-side'da render ediliyorsa
-    if (!product) {
-      router.replace('/404', undefined, { shallow: true });
+    if (!product && router.isReady) { 
+      router.replace(`/${currentLocale}/404`, undefined, { shallow: true });
     }
-  }, [product, router]);
+  }, [product, router, currentLocale]);
 
   if (!product) {
     return <div className="text-center py-8">Loading...</div>; // Veya null

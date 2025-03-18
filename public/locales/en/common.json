@@ -109,8 +109,8 @@
   },
   "404": {
     "title": "Page Not Found",
-    "description": "The page you are looking for might not exist or has been moved.",
-    "back_to_home": "Return to Home"
+    "description": "The page you are looking for does not exist.",
+    "backToHome": "Go back to homepage"
   },
   "whatsapp_message": "I would like to get information about this product"
 }

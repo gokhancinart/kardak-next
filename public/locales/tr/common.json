@@ -109,8 +109,8 @@
   },
   "404": {
     "title": "Sayfa Bulunamadı",
-    "description": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
-    "back_to_home": "Ana Sayfaya Dön"
+    "description": "Aradığınız sayfa mevcut değil.",
+    "backToHome": "Ana sayfaya dön"
   },
   "whatsapp_message": "Bu ürün hakkında bilgi almak istiyorum"
 }
