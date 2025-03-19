@@ -3,7 +3,10 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRef } from 'react';
+
+import { LiaWhatsapp } from 'react-icons/lia';
 
 export default function About() {
   const { t } = useTranslation('common');
@@ -77,6 +80,13 @@ export default function About() {
                 <br />
               </div>
             ))}
+            <Link
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
+              className="relative inline-flex rounded-md border border-transparent bg-green-500 shadow-md px-8 py-3 mr-4 mb-2 text-center font-bold text-white hover:bg-green-600 hover:text-blue"
+            >
+              <LiaWhatsapp className="h-6 w-6 text-white mr-2" />
+              {t('home.promo.whatsapp')}
+            </Link>
           </div>
 
           {/* Right Side - Image */}
