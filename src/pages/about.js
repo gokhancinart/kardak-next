@@ -93,7 +93,7 @@ export default function About() {
                   className="w-full h-full object-cover"
                 >
                   <source
-                    src={`https://file-examples.com/storage/fe11f9541a67d9f2f9b2038/2017/04/file_example_MP4_1280_10MG.mp4`}
+                    src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/world.mp4`}
                     type="video/mp4"
                   />
                 </video>
