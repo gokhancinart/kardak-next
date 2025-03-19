@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import { useRef } from 'react';
 
 
 export default function About() {
@@ -17,6 +16,22 @@ export default function About() {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => {
     setIsClient(true);
+  }, []);
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const playVideo = async () => {
+      if (videoRef.current) {
+        try {
+          await videoRef.current.play();
+        } catch (err) {
+          console.log('iOS oynatma hatası:', err);
+        }
+      }
+    };
+
+    playVideo();
   }, []);
 
   return (
@@ -67,26 +82,24 @@ export default function About() {
 
           {/* Right Side - Image */}
           <div className="grid grid-cols-1 gap-4 w-full rounded-lg overflow-hidden">
-            <video
-              width="100%"
-              loop
-              autoPlay
-              muted
-              playsInline
-            >
-              <source
-                src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/kardak-video-cutted.mp4`}
-                type="video/mp4"
-              />
-              {/* <track
-                src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/kardak-video-captions.vtt`}
-                kind="captions"
-                srcLang="tr"
-                label="Türkçe Altyazılar"
-                default
-              /> */}
-              Tarayıcınız video etiketini desteklemiyor.
-            </video>
+            <div className="relative w-full">
+              <div className="aspect-w-4 aspect-h-3">
+                <video
+                  ref={videoRef}
+                  controls={false}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source
+                    src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/kardak-video-cutted.mp4`}
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </div>
