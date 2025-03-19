@@ -93,7 +93,7 @@ export default function About() {
                   className="w-full h-full object-cover"
                 >
                   <source
-                    src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/world.mp4`}
+                    src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/kardak-video-cutted-converter.mp4`}
                     type="video/mp4"
                   />
                 </video>
