@@ -5,7 +5,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import { useRef } from 'react';
 
-
 export default function About() {
   const { t } = useTranslation('common');
 
@@ -94,7 +93,7 @@ export default function About() {
                   className="w-full h-full object-cover"
                 >
                   <source
-                    src={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/videos/kardak-video-cutted.mp4`}
+                    src={`https://file-examples.com/storage/fe11f9541a67d9f2f9b2038/2017/04/file_example_MP4_1280_10MG.mp4`}
                     type="video/mp4"
                   />
                 </video>
