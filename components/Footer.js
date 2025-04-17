@@ -88,7 +88,7 @@ export default function Footer() {
             <Link href="/">
               <FaFacebookSquare className="text-2xl" />
             </Link>
-            <Link href="/">
+            <Link target='_blank' href="https://www.linkedin.com/company/kardak/">
               <FaLinkedin className="text-2xl" />
               </Link>
             <Link href="/">

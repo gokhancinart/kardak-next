@@ -3,7 +3,9 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "products": "Ürünlerimiz",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "paper-cups-slug": "karton-bardaklarimiz",
+    "custom-paper-cups-slug": "ozel-baskili-karton-bardaklarimiz"
   },
   "home": {
     "seo": {

@@ -41,17 +41,35 @@ export default function ProductsPage() {
       </Head>
 
       <div className="container">
-        <ProductList 
-          title={t('products.title_papercup')} 
-          products={products.filter(product => product.type === "base")} 
-          locale={currentLocale} 
-        />
 
-        <ProductList 
-          title={t('products.title_custom_papercup')} 
-          products={products.filter(product => product.type === "special")} 
-          locale={currentLocale} 
-        />
+      <nav className="product-menu">
+        <ul className="flex gap-4 mb-4 justify-center">
+          <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
+            <a href={`#${t('navbar.paper-cups-slug')}`}>
+              {t('products.title_papercup')}
+            </a>
+          </li>
+          <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
+            <a href={`#${t('navbar.custom-paper-cups-slug')}`}>
+              {t('products.title_custom_papercup')}
+            </a>
+          </li>
+        </ul>
+      </nav>
+        <div id={t('navbar.paper-cups-slug')} className="relative scroll-mt-[110px]">
+          <ProductList 
+            title={t('products.title_papercup')} 
+            products={products.filter(product => product.type === "base")} 
+            locale={currentLocale} 
+          />
+        </div>
+        <div id={t('navbar.custom-paper-cups-slug')} className="relative scroll-mt-[110px]">
+          <ProductList 
+            title={t('products.title_custom_papercup')} 
+            products={products.filter(product => product.type === "special")} 
+            locale={currentLocale} 
+          />
+        </div>
       </div>
     </>
   );

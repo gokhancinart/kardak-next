@@ -37,8 +37,6 @@ export default function ProductDetail() {
     `${t('whatsapp_message')}:\n\n*${product.name[currentLocale]}*\n${productUrl}`
   )}`;
 
-  console.log(`${product.name[currentLocale]}`, productUrl)
-
   return (
     <>
       <Head>

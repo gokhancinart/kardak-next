@@ -3,7 +3,9 @@
     "home": "Home",
     "about": "About Us",
     "products": "Our Products",
-    "contact": "Contact"
+    "contact": "Contact",
+    "paper-cups-slug": "our-paper-cups",
+    "custom-paper-cups-slug": "our-custom-printed-paper-cups"
   },
   "home": {
     "seo": {
