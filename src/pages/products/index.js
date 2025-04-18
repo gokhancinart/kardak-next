@@ -42,20 +42,51 @@ export default function ProductsPage() {
 
       <div className="container">
 
-      <nav className="product-menu">
-        <ul className="flex gap-4 mb-4 justify-center">
-          <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
-            <a href={`#${t('navbar.paper-cups-slug')}`}>
-              {t('products.title_papercup')}
-            </a>
-          </li>
-          <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
-            <a href={`#${t('navbar.custom-paper-cups-slug')}`}>
-              {t('products.title_custom_papercup')}
-            </a>
-          </li>
-        </ul>
-      </nav>
+      {/* Mobilde Select Menü */}
+<div className="block md:hidden mb-4 px-4">
+  <select
+    className="w-full border rounded-lg py-2 px-3 pr-10 bg-white appearance-none"
+    style={{
+      backgroundImage: `url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "right 1.5rem center", // 🔹 Burayı değiştirerek sola çekebilirsin
+      backgroundSize: "1rem",
+    }}
+    onChange={(e) => {
+      const targetId = e.target.value;
+      const element = document.getElementById(targetId);
+      if (element) {
+        const yOffset = -107; // Header yüksekliği kadar yukarı kaydır
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }}
+  >
+    <option value="">{t('products.select_section')}</option>
+    <option value={t('navbar.paper-cups-slug')}>
+      {t('products.title_papercup')}
+    </option>
+    <option value={t('navbar.custom-paper-cups-slug')}>
+      {t('products.title_custom_papercup')}
+    </option>
+  </select>
+</div>
+
+{/* Masaüstünde Buton Menü */}
+<nav className="hidden md:block product-menu">
+  <ul className="flex gap-4 mb-4 justify-center">
+    <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
+      <a href={`#${t('navbar.paper-cups-slug')}`}>
+        {t('products.title_papercup')}
+      </a>
+    </li>
+    <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
+      <a href={`#${t('navbar.custom-paper-cups-slug')}`}>
+        {t('products.title_custom_papercup')}
+      </a>
+    </li>
+  </ul>
+</nav>
         <div id={t('navbar.paper-cups-slug')} className="relative scroll-mt-[110px]">
           <ProductList 
             title={t('products.title_papercup')} 
