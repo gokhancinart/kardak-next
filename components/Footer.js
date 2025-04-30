@@ -85,13 +85,13 @@ export default function Footer() {
         {/* Social Icons and Copyright */}
         <div className="container max-w-7xl mx-auto mt-8 border-t border-gray-200 pt-8 flex flex-col md:flex-row md:justify-between">
           <div className="text-gray-300 flex space-x-4 mb-4 md:mb-0">
-            <Link href="/">
+            <Link target='_blank' href="https://www.facebook.com/kardakcup">
               <FaFacebookSquare className="text-2xl" />
             </Link>
             <Link target='_blank' href="https://www.linkedin.com/company/kardak/">
               <FaLinkedin className="text-2xl" />
               </Link>
-            <Link href="/">
+            <Link target='_blank' href="https://www.instagram.com/kardakcup/">
               <FaInstagram className="text-2xl" />
               </Link>
             <Link href="/">
