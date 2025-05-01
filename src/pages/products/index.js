@@ -11,6 +11,8 @@ export default function ProductsPage() {
 
   const router = useRouter();
 
+  const customOrder4oz = [13, 10, 12, 9];
+
   return (
     <>
       <Head>
@@ -42,63 +44,81 @@ export default function ProductsPage() {
 
       <div className="container">
 
-      {/* Mobilde Select Menü */}
-<div className="block md:hidden mb-4 px-4">
-  <select
-    className="w-full border rounded-lg py-2 px-3 pr-10 bg-white appearance-none"
-    style={{
-      backgroundImage: `url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")`,
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "right 1.5rem center", // 🔹 Burayı değiştirerek sola çekebilirsin
-      backgroundSize: "1rem",
-    }}
-    onChange={(e) => {
-      const targetId = e.target.value;
-      const element = document.getElementById(targetId);
-      if (element) {
-        const yOffset = -107; // Header yüksekliği kadar yukarı kaydır
-        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      }
-    }}
-  >
-    <option value="">{t('products.select_section')}</option>
-    <option value={t('navbar.paper-cups-slug')}>
-      {t('products.title_papercup')}
-    </option>
-    <option value={t('navbar.custom-paper-cups-slug')}>
-      {t('products.title_custom_papercup')}
-    </option>
-  </select>
-</div>
+        {/* Mobilde Select Menü */}
+        <div className="block md:hidden mb-4 px-4">
+          <select
+            className="w-full border rounded-lg py-2 px-3 pr-10 bg-white appearance-none"
+            style={{
+              backgroundImage: `url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right 1.5rem center", // 🔹 Burayı değiştirerek sola çekebilirsin
+              backgroundSize: "1rem",
+            }}
+            onChange={(e) => {
+              const targetId = e.target.value;
+              const element = document.getElementById(targetId);
+              if (element) {
+                const yOffset = -107; // Header yüksekliği kadar yukarı kaydır
+                const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
+            }}
+          >
+            <option value="">{t('products.select_section')}</option>
+            <option value={t('navbar.paper-cups-slug')}>
+              {t('products.title_papercup')}
+            </option>
+            <option value={t('navbar.custom-paper-cups-slug')}>
+              {t('products.title_custom_papercup')}
+            </option>
+            <option value={t('navbar.paper-cups-4oz-slug')}>
+              {t('products.title_papercups_4oz')}
+            </option>
+          </select>
+        </div>
 
-{/* Masaüstünde Buton Menü */}
-<nav className="hidden md:block product-menu">
-  <ul className="flex gap-4 mb-4 justify-center">
-    <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
-      <a href={`#${t('navbar.paper-cups-slug')}`}>
-        {t('products.title_papercup')}
-      </a>
-    </li>
-    <li className="bg-gray-200 hover:bg-gray-300 rounded-lg py-2 px-4">
-      <a href={`#${t('navbar.custom-paper-cups-slug')}`}>
-        {t('products.title_custom_papercup')}
-      </a>
-    </li>
-  </ul>
-</nav>
+        {/* Masaüstünde Buton Menü */}
+        <nav className="hidden md:block product-menu">
+          <ul className="flex gap-4 mb-4 justify-center">
+            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+              <a href={`#${t('navbar.paper-cups-slug')}`}>
+                {t('products.title_papercup')}
+              </a>
+            </li>
+            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+              <a href={`#${t('navbar.custom-paper-cups-slug')}`}>
+                {t('products.title_custom_papercup')}
+              </a>
+            </li>
+            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+              <a href={`#${t('navbar.paper-cups-4oz-slug')}`}>
+                {t('products.title_papercups_4oz')}
+              </a>
+            </li>
+          </ul>
+        </nav>
         <div id={t('navbar.paper-cups-slug')} className="relative scroll-mt-[110px]">
-          <ProductList 
-            title={t('products.title_papercup')} 
-            products={products.filter(product => product.type === "base")} 
-            locale={currentLocale} 
+          <ProductList
+            title={t('products.title_papercup')}
+            products={products.filter(product => product.type === "base" && product.featured === true)}
+            locale={currentLocale}
           />
         </div>
         <div id={t('navbar.custom-paper-cups-slug')} className="relative scroll-mt-[110px]">
-          <ProductList 
-            title={t('products.title_custom_papercup')} 
-            products={products.filter(product => product.type === "special")} 
-            locale={currentLocale} 
+          <ProductList
+            title={t('products.title_custom_papercup')}
+            products={products.filter(product => product.type === "special" && product.featured === true)}
+            locale={currentLocale}
+          />
+        </div>
+        <div id={t('navbar.paper-cups-4oz-slug')} className="relative scroll-mt-[110px]">
+          <ProductList
+            title={t('products.title_papercups_4oz')}
+            products={products
+              .filter(product => product.type === "4oz" && product.featured === true)
+              .sort((a, b) => customOrder4oz.indexOf(a.id) - customOrder4oz.indexOf(b.id))
+            }
+            locale={currentLocale}
           />
         </div>
       </div>

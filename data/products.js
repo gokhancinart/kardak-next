@@ -112,7 +112,7 @@ export const products = [
       "height": "79mm",
       "baseDiameter": "49mm",
     },
-    featured: false,
+    featured: true,
     type: "special"
   },
   {
@@ -141,7 +141,7 @@ export const products = [
       "height": "79mm",
       "baseDiameter": "49mm",
     },
-    featured: false,
+    featured: true,
     type: "special"
   },
   {
@@ -170,7 +170,7 @@ export const products = [
       "height": "79mm",
       "baseDiameter": "49mm",
     },
-    featured: false,
+    featured: true,
     type: "special"
   },
   {
@@ -199,7 +199,7 @@ export const products = [
       "height": "79mm",
       "baseDiameter": "49mm",
     },
-    featured: false,
+    featured: true,
     type: "base"
   },
   {
@@ -230,6 +230,150 @@ export const products = [
     },
     featured: true,
     type: "base"
+  },
+  {
+    id: 9,
+    slug: {
+      raw: "4oz-turuncu-siyah-karton-bardak",
+      tr: "4oz-turuncu-siyah-karton-bardak",
+      en: "4oz-orange-black-paper-cup"
+    },
+    name: {
+      tr: "4oz Turuncu Siyah Karton Bardak",
+      en: "4oz Orange Black Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-turuncu-siyah-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) karton bardaklarımız, sıcak ve soğuk içecekler için estetik ve pratik bir çözümdür. Özgün iki renkli tasarımıyla dikkat çeker.",
+      en: "Our 4oz (120ml) paper cups offer an aesthetic and practical solution for hot and cold drinks with a distinctive two-tone design."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
+  },
+  {
+    id: 10,
+    slug: {
+      raw: "4oz-mevlana-karton-bardak",
+      tr: "4oz-mevlana-karton-bardak",
+      en: "4oz-mevlana-paper-cup"
+    },
+    name: {
+      tr: "4oz Mevlana Karton Bardak",
+      en: "4oz Mevlana Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-mevlana-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) Mevlana temalı karton bardaklarımız, kültürel zarafeti sade bir tasarımla sunar. Sıcak içecekler için idealdir.",
+      en: "Our 4oz (120ml) Mevlana-themed paper cups reflect cultural elegance in a minimal design. Ideal for hot beverages."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
+  },
+  {
+    id: 11,
+    slug: {
+      raw: "4oz-turuncu-karton-bardak",
+      tr: "4oz-turuncu-karton-bardak",
+      en: "4oz-orange-paper-cup"
+    },
+    name: {
+      tr: "4oz Turuncu Karton Bardak",
+      en: "4oz Orange Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-turuncu-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) turuncu karton bardaklarımız canlı rengiyle öne çıkar, sıcak içecekler için ideal bir tercihtir.",
+      en: "Our 4oz (120ml) orange paper cups stand out with their vibrant color, making them an ideal choice for hot beverages."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: false,
+    type: "4oz"
+  },
+  {
+    id: 12,
+    slug: {
+      raw: "4oz-beyaz-yaprak-karton-bardak",
+      tr: "4oz-beyaz-yaprak-karton-bardak",
+      en: "4oz-white-leaf-paper-cup"
+    },
+    name: {
+      tr: "4oz Beyaz Yaprak Desenli Karton Bardak",
+      en: "4oz White Leaf Pattern Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-beyaz-yaprak-desen-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) beyaz yaprak desenli bardaklarımız doğaya duyarlı markalar için mükemmel bir tercihtir.",
+      en: "Our 4oz (120ml) white cups with leaf patterns are a perfect choice for nature-conscious brands."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
+  },
+  {
+    id: 13,
+    slug: {
+      raw: "4oz-beyaz-karton-bardak",
+      tr: "4oz-beyaz-karton-bardak",
+      en: "4oz-white-paper-cup"
+    },
+    name: {
+      tr: "4oz Beyaz Karton Bardak",
+      en: "4oz White Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-beyaz-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) düz beyaz karton bardaklarımız, özelleştirmeye açık sade tasarımıyla öne çıkar.",
+      en: "Our 4oz (120ml) plain white paper cups are ideal for custom branding and minimalist presentation."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
   }
-
 ]

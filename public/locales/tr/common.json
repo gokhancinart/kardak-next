@@ -5,7 +5,8 @@
     "products": "Ürünlerimiz",
     "contact": "İletişim",
     "paper-cups-slug": "karton-bardaklarimiz",
-    "custom-paper-cups-slug": "ozel-baskili-karton-bardaklarimiz"
+    "custom-paper-cups-slug": "ozel-baskili-karton-bardaklarimiz",
+    "paper-cups-4oz-slug": "4-oz-karton-bardaklarimiz"
   },
   "home": {
     "seo": {
@@ -54,6 +55,7 @@
     },
     "title_papercup": "Karton Bardaklarımız",
     "title_custom_papercup": "Özel Baskılı Karton Bardaklarımız",
+    "title_papercups_4oz": "4 oz Karton Bardaklarımız",
     "title_print_cut": "Baskı ve Kesim Hizmetlerimiz",
     "description_papercup": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
   },

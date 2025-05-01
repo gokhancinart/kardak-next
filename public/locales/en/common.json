@@ -5,7 +5,8 @@
     "products": "Our Products",
     "contact": "Contact",
     "paper-cups-slug": "our-paper-cups",
-    "custom-paper-cups-slug": "our-custom-printed-paper-cups"
+    "custom-paper-cups-slug": "our-custom-printed-paper-cups",
+    "paper-cups-4oz-slug": "our-4-oz-paper-cups"
   },
   "home": {
     "seo": {
@@ -54,6 +55,7 @@
     },
     "title_papercup": "Our Paper Cups",
     "title_custom_papercup": "Our Custom Printed Paper Cups",
+    "title_papercups_4oz": "Our 4 oz Paper Cups",
     "title_print_cut": "Our Printing & Cutting Services",
     "description_papercup": "We offer everything you need for paper cup manufacturing, including high-quality paper supply, professional printing, and finished cup production. Contact us for more details."
   },
