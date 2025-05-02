@@ -71,7 +71,7 @@ export default function Contact() {
                   <span>
                     <div>
                       <strong>{t('contact.contact-text.phone-text')}:</strong>{' '}
-                      <a href={`tel:+9${process.env.NEXT_PUBLIC_PHONE_NUMBER}`} className="text-kardak hover:underline">
+                      <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`} className="text-kardak hover:underline">
                         {process.env.NEXT_PUBLIC_PHONE_NUMBER}
                       </a>
                     </div>

@@ -121,6 +121,15 @@ export default function ProductsPage() {
             locale={currentLocale}
           />
         </div>
+        <div id={t('navbar.paper-cups-8oz-slug')} className="relative scroll-mt-[110px]">
+          <ProductList
+            title={t('products.title_papercups_8oz')}
+            products={products
+              .filter(product => product.type === "8oz" && product.featured === true)
+            }
+            locale={currentLocale}
+          />
+        </div>
       </div>
     </>
   );

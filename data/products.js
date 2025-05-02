@@ -1,4 +1,5 @@
 export const products = [
+  // 7oz Paper Cups
   {
     id: 1,
     slug: {
@@ -231,6 +232,7 @@ export const products = [
     featured: true,
     type: "base"
   },
+  // 4oz Paper Cups
   {
     id: 9,
     slug: {
@@ -375,5 +377,123 @@ export const products = [
     },
     featured: true,
     type: "4oz"
+  },
+  // 8oz Paper Cups
+  // 8oz Paper Cups
+  {
+    id: 14,
+    slug: {
+      raw: "8oz-beyaz-karton-bardak",
+      tr: "8oz-beyaz-karton-bardak",
+      en: "8oz-white-paper-cup"
+    },
+    name: {
+      tr: "8oz Beyaz Karton Bardak",
+      en: "8oz White Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/8oz/8oz-beyaz-karton-bardak.webp",
+    description: {
+      tr: "8oz (240ml) düz beyaz karton bardaklarımız, minimalist ve sade sunum isteyen markalar için mükemmel bir tercihtir.",
+      en: "Our 8oz (240ml) plain white paper cups are a perfect choice for brands seeking minimalist and clean presentation."
+    },
+    size: {
+      tr: "8oz (240ml)",
+      en: "8oz (240ml)"
+    },
+    technicalDetails: {
+      capacity: "8oz (240ml)",
+      rimDiameter: "80mm",
+      height: "90mm",
+      baseDiameter: "52mm"
+    },
+    featured: true,
+    type: "8oz"
+  },
+  {
+    id: 15,
+    slug: {
+      raw: "8oz-coffee-karton-bardak",
+      tr: "8oz-coffee-karton-bardak",
+      en: "8oz-coffee-paper-cup"
+    },
+    name: {
+      tr: "8oz Coffee Desenli Karton Bardak",
+      en: "8oz Coffee Patterned Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/8oz/8oz-coffee-karton-bardak.webp",
+    description: {
+      tr: "8oz (240ml) kahve temalı desenli karton bardaklarımız, cafeler ve sıcak içecek sunumu yapan mekanlar için şık bir tercihtir.",
+      en: "Our 8oz (240ml) coffee-themed paper cups are an elegant choice for cafes and hot beverage services."
+    },
+    size: {
+      tr: "8oz (240ml)",
+      en: "8oz (240ml)"
+    },
+    technicalDetails: {
+      capacity: "8oz (240ml)",
+      rimDiameter: "80mm",
+      height: "90mm",
+      baseDiameter: "52mm"
+    },
+    featured: true,
+    type: "8oz"
+  },
+  {
+    id: 16,
+    slug: {
+      raw: "8oz-coffee-togo-karton-bardak",
+      tr: "8oz-coffee-togo-karton-bardak",
+      en: "8oz-coffee-togo-paper-cup"
+    },
+    name: {
+      tr: "8oz Coffee To Go Karton Bardak",
+      en: "8oz Coffee To Go Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/8oz/8oz-coffee-togo-karton-bardak.webp",
+    description: {
+      tr: "8oz (240ml) Coffee To Go tasarımı, şık iki renkli görünümü ve içecek menüsüyle dikkat çeken özel üretim bir bardaktır.",
+      en: "The 8oz (240ml) Coffee To Go design stands out with its elegant dual-color look and beverage menu print."
+    },
+    size: {
+      tr: "8oz (240ml)",
+      en: "8oz (240ml)"
+    },
+    technicalDetails: {
+      capacity: "8oz (240ml)",
+      rimDiameter: "80mm",
+      height: "90mm",
+      baseDiameter: "52mm"
+    },
+    featured: true,
+    type: "8oz"
+  },
+  {
+    id: 17,
+    slug: {
+      raw: "8oz-xox-karton-bardak",
+      tr: "8oz-xox-karton-bardak",
+      en: "8oz-tic-tac-toe-paper-cup"
+    },
+    name: {
+      tr: "8oz XOX Desenli Karton Bardak",
+      en: "8oz Tic Tac Toe Patterned Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/8oz/8oz-xox-karton-bardak.jpg",
+    description: {
+      tr: "8oz (240ml) XOX desenli karton bardaklarımız, eğlenceli ve dikkat çekici bir tasarım arayanlar için idealdir.",
+      en: "Our 8oz (240ml) Tic tac toe patterned paper cups are ideal for those seeking a fun and eye-catching design."
+    },
+    size: {
+      tr: "8oz (240ml)",
+      en: "8oz (240ml)"
+    },
+    technicalDetails: {
+      capacity: "8oz (240ml)",
+      rimDiameter: "80mm",
+      height: "90mm",
+      baseDiameter: "52mm"
+    },
+    featured: true,
+    type: "8oz"
   }
 ]
