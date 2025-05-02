@@ -5,6 +5,8 @@ import { useRouter } from 'next/router';
 import Promo from 'components/Promo';
 import HomeAbout from 'components/HomeAbout';
 import Head from 'next/head';
+import Link from 'next/link';
+import { HiOutlineCursorClick } from "react-icons/hi";
 
 import { products } from 'data/products';
 
@@ -55,16 +57,20 @@ export default function Home() {
         <HomeAbout />
 
         <ProductList 
-          title={t('products.title_papercup')} 
-          products={products.filter(product => product.type === "base")} 
+          title={t('products.title_papercups_7oz')} 
+          products={products.filter(product => product.type === "7oz")} 
           locale={router.locale} 
         />
 
-        <ProductList 
-          title={t('products.title_custom_papercup')} 
-          products={products.filter(product => product.type === "special")} 
-          locale={router.locale} 
-        />
+        <div className="flex justify-center mt-4 mb-16">
+          <Link
+            href="/products"
+            className="relative inline-flex rounded-md border border-transparent bg-kardak shadow-md px-8 py-3 text-center font-bold text-white bg-kardak-hover"
+          >
+            <HiOutlineCursorClick className="h-5 w-5 text-white mr-2" />
+            {t('products.all_products')}
+          </Link>
+        </div>
       </div>
     </>
   );

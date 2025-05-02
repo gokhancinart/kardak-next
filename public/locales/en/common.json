@@ -42,6 +42,7 @@
   },
   "products": {
     "select_section": "Select Product",
+    "all_products": "Click for all products",
     "seo": {
       "title": "Paper Cup Products | Custom Printed Cups & Paper Supply - Kardak",
       "description": "We offer a full range of paper cup manufacturing, custom printed cup solutions, and high-quality paper supply services. Discover the perfect cups for your needs."
@@ -53,12 +54,11 @@
       "height": "Height",
       "baseDiameter": "Base Diameter"
     },
-    "title_papercup": "Our Paper Cups",
     "title_custom_papercup": "Our Custom Printed Paper Cups",
     "title_papercups_4oz": "Our 4 oz Paper Cups",
+    "title_papercups_7oz": "Our 7 oz Paper Cups",
     "title_papercups_8oz": "Our 8 oz Paper Cups",
     "title_papercups_12oz": "Our 12 oz Paper Cups",
-    "title_print_cut": "Our Printing & Cutting Services",
     "description_papercup": "We offer everything you need for paper cup manufacturing, including high-quality paper supply, professional printing, and finished cup production. Contact us for more details."
   },
   "about": {

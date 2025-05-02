@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 import { products } from '../../../data/products';
-import { IoIosArrowBack } from "react-icons/io";
+import { HiOutlineCursorClick } from "react-icons/hi";
 import { LiaWhatsapp } from "react-icons/lia";
 
 export default function ProductDetail() {
@@ -67,16 +67,18 @@ export default function ProductDetail() {
       </Head>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="mb-4">
-          <Link href="/products">
+        {/* <div className="mb-4">
+          <Link 
+            >
             <button
+              onClick={() => router.back()}
               className="bg-gray-200 text-kardak px-6 py-2 rounded transition-colors cursor-pointer"
             >
               <IoIosArrowBack className="inline-block mr-2" />
               {t('navbar.products')}
             </button>
           </Link>
-        </div>
+        </div> */}
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
           {/* Sol kısım: Ürün fotoğrafı */}
           <div className="w-full md:w-1/2 flex justify-center">
@@ -119,14 +121,24 @@ export default function ProductDetail() {
                 </tbody>
               </table>
             </div>
-            <Link
-              href={whatsappLink}
-              target="_blank"
-              className="mt-12 relative inline-flex rounded-md border border-transparent bg-green-500 shadow-md px-8 py-3 text-center font-bold text-white hover:bg-green-600 hover:text-blue"
-            >
-              <LiaWhatsapp className="h-6 w-6 text-white mr-2" />
-              {t('home.promo.whatsapp')}
-            </Link>
+            <div className="mt-10 flex flex-col md:flex-row w-full gap-4">
+              <Link
+                href={whatsappLink}
+                target="_blank"
+                className="relative inline-flex items-center justify-center rounded-md border border-transparent bg-green-500 shadow-md px-8 py-3 text-center font-bold text-white hover:bg-green-600 hover:text-blue"
+              >
+                <LiaWhatsapp className="h-6 w-6 text-white mr-2" />
+                {t('home.promo.whatsapp')}
+              </Link>
+
+              <Link
+                href="/products"
+                className="relative inline-flex items-center justify-center rounded-md border border-transparent bg-kardak shadow-md px-8 py-3 text-center font-bold text-white hover:bg-kardak-hover"
+              >
+                <HiOutlineCursorClick className="h-5 w-5 text-white mr-2" />
+                {t('products.all_products')}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
