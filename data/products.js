@@ -27,7 +27,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "base"
+    type: "7oz"
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "base"
+    type: "7oz"
   },
   {
     id: 3,
@@ -85,7 +85,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "special"
+    type: "7oz"
   },
   {
     id: 4,
@@ -114,7 +114,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "special"
+    type: "7oz"
   },
   {
     id: 5,
@@ -143,7 +143,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "special"
+    type: "7oz"
   },
   {
     id: 6,
@@ -172,7 +172,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "special"
+    type: "7oz"
   },
   {
     id: 7,
@@ -201,7 +201,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "base"
+    type: "7oz"
   },
   {
     id: 8,
@@ -230,7 +230,7 @@ export const products = [
       "baseDiameter": "49mm",
     },
     featured: true,
-    type: "base"
+    type: "7oz"
   },
   // 4oz Paper Cups
   {
@@ -379,7 +379,6 @@ export const products = [
     type: "4oz"
   },
   // 8oz Paper Cups
-  // 8oz Paper Cups
   {
     id: 14,
     slug: {
@@ -495,5 +494,122 @@ export const products = [
     },
     featured: true,
     type: "8oz"
+  },
+  // 12oz Paper Cups
+  {
+    id: 18,
+    slug: {
+      raw: "12oz-craft-karton-bardak",
+      tr: "12oz-craft-karton-bardak",
+      en: "12oz-craft-paper-cup"
+    },
+    name: {
+      tr: "12oz Kraft Karton Bardak",
+      en: "12oz Craft Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/12oz/12oz-craft-karton-bardak.webp",
+    description: {
+      tr: "12oz (355ml) kraft görünümlü karton bardaklarımız, doğal ve sade tasarımıyla dikkat çeker. Isıya dayanıklıdır ve çevre dostudur.",
+      en: "Our 12oz (355ml) craft-style paper cups feature a natural, simple design. Heat resistant and eco-friendly."
+    },
+    size: {
+      tr: "12oz (355ml)",
+      en: "12oz (355ml)"
+    },
+    technicalDetails: {
+      capacity: "12oz (355ml)",
+      rimDiameter: "90mm",
+      height: "110mm",
+      baseDiameter: "58mm"
+    },
+    featured: true,
+    type: "12oz"
+  },
+  {
+    id: 19,
+    slug: {
+      raw: "12oz-green-karton-bardak",
+      tr: "12oz-green-karton-bardak",
+      en: "12oz-green-paper-cup"
+    },
+    name: {
+      tr: "12oz Yeşil Desenli Karton Bardak",
+      en: "12oz Green Patterned Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/12oz/12oz-green-karton-bardak.webp",
+    description: {
+      tr: "12oz (355ml) yeşil temalı tasarımı ile dikkat çeken karton bardaklarımız, çift duvarlı yapısı ile ekstra yalıtım sağlar.",
+      en: "Our 12oz (355ml) green-themed paper cups stand out with their double-wall insulation and vibrant design."
+    },
+    size: {
+      tr: "12oz (355ml)",
+      en: "12oz (355ml)"
+    },
+    technicalDetails: {
+      capacity: "12oz (355ml)",
+      rimDiameter: "90mm",
+      height: "110mm",
+      baseDiameter: "58mm"
+    },
+    featured: true,
+    type: "12oz"
+  },
+  {
+    id: 20,
+    slug: {
+      raw: "12oz-luxury-karton-bardak",
+      tr: "12oz-luxury-karton-bardak",
+      en: "12oz-luxury-paper-cup"
+    },
+    name: {
+      tr: "12oz Lüks Siyah Karton Bardak",
+      en: "12oz Luxury Black Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/12oz/12oz-luxury-karton-bardak.webp",
+    description: {
+      tr: "12oz (355ml) siyah üzerine kahve çekirdeği desenli karton bardaklarımız, premium sunumlar için idealdir.",
+      en: "Our 12oz (355ml) black paper cups with coffee bean prints are ideal for premium presentation."
+    },
+    size: {
+      tr: "12oz (355ml)",
+      en: "12oz (355ml)"
+    },
+    technicalDetails: {
+      capacity: "12oz (355ml)",
+      rimDiameter: "90mm",
+      height: "110mm",
+      baseDiameter: "58mm"
+    },
+    featured: true,
+    type: "12oz"
+  },
+  {
+    id: 21,
+    slug: {
+      raw: "12oz-minimal-karton-bardak",
+      tr: "12oz-minimal-karton-bardak",
+      en: "12oz-minimal-paper-cup"
+    },
+    name: {
+      tr: "12oz Minimal Desenli Karton Bardak",
+      en: "12oz Minimal Pattern Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/12oz/12oz-minimal-karton-bardak.webp",
+    description: {
+      tr: "12oz (355ml) beyaz ve lacivert tonlarında minimal desenli bardaklarımız, modern kafeler için mükemmel bir tercihtir.",
+      en: "Our 12oz (355ml) minimal design paper cups in white and navy tones are perfect for modern coffee shops."
+    },
+    size: {
+      tr: "12oz (355ml)",
+      en: "12oz (355ml)"
+    },
+    technicalDetails: {
+      capacity: "12oz (355ml)",
+      rimDiameter: "90mm",
+      height: "110mm",
+      baseDiameter: "58mm"
+    },
+    featured: true,
+    type: "12oz"
   }
 ]

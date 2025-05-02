@@ -45,7 +45,7 @@ export default function ProductsPage() {
       <div className="container">
 
         {/* Mobilde Select Menü */}
-        <div className="block md:hidden mb-4 px-4">
+        <div className="block md:hidden mb-4 px-4 shadow-2xl fixed z-50 left-0 bottom-2 w-full">
           <select
             className="w-full border rounded-lg py-2 px-3 pr-10 bg-white appearance-none"
             style={{
@@ -64,15 +64,20 @@ export default function ProductsPage() {
               }
             }}
           >
-            <option value="">{t('products.select_section')}</option>
-            <option value={t('navbar.paper-cups-slug')}>
-              {t('products.title_papercup')}
-            </option>
-            <option value={t('navbar.custom-paper-cups-slug')}>
-              {t('products.title_custom_papercup')}
+            <option value="">
+              {t('products.select_section')}
             </option>
             <option value={t('navbar.paper-cups-4oz-slug')}>
               {t('products.title_papercups_4oz')}
+            </option>
+            <option value={t('navbar.paper-cups-7oz-slug')}>
+              {t('products.title_papercups_7oz')}
+            </option>
+            <option value={t('navbar.paper-cups-8oz-slug')}>
+              {t('products.title_papercups_8oz')}
+            </option>
+            <option value={t('navbar.paper-cups-12oz-slug')}>
+              {t('products.title_papercups_12oz')}
             </option>
           </select>
         </div>
@@ -80,38 +85,34 @@ export default function ProductsPage() {
         {/* Masaüstünde Buton Menü */}
         <nav className="hidden md:block product-menu">
           <ul className="flex gap-4 mb-4 justify-center">
-            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
-              <a href={`#${t('navbar.paper-cups-slug')}`}>
-                {t('products.title_papercup')}
-              </a>
-            </li>
-            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+            {/* <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
               <a href={`#${t('navbar.custom-paper-cups-slug')}`}>
                 {t('products.title_custom_papercup')}
               </a>
-            </li>
+            </li> */}
             <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
               <a href={`#${t('navbar.paper-cups-4oz-slug')}`}>
                 {t('products.title_papercups_4oz')}
               </a>
             </li>
+            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+              <a href={`#${t('navbar.paper-cups-7oz-slug')}`}>
+                {t('products.title_papercups_7oz')}
+              </a>
+            </li>
+            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+              <a href={`#${t('navbar.paper-cups-8oz-slug')}`}>
+                {t('products.title_papercups_8oz')}
+              </a>
+            </li>
+            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+              <a href={`#${t('navbar.paper-cups-12oz-slug')}`}>
+                {t('products.title_papercups_12oz')}
+              </a>
+            </li>
           </ul>
         </nav>
-        <div id={t('navbar.paper-cups-slug')} className="relative scroll-mt-[110px]">
-          <ProductList
-            title={t('products.title_papercup')}
-            products={products.filter(product => product.type === "base" && product.featured === true)}
-            locale={currentLocale}
-          />
-        </div>
-        <div id={t('navbar.custom-paper-cups-slug')} className="relative scroll-mt-[110px]">
-          <ProductList
-            title={t('products.title_custom_papercup')}
-            products={products.filter(product => product.type === "special" && product.featured === true)}
-            locale={currentLocale}
-          />
-        </div>
-        <div id={t('navbar.paper-cups-4oz-slug')} className="relative scroll-mt-[110px]">
+        <div id={t('navbar.paper-cups-4oz-slug')} className="relative scroll-mt-[110px] pt-8">
           <ProductList
             title={t('products.title_papercups_4oz')}
             products={products
@@ -121,11 +122,34 @@ export default function ProductsPage() {
             locale={currentLocale}
           />
         </div>
+        <div id={t('navbar.paper-cups-7oz-slug')} className="relative scroll-mt-[110px]">
+          <ProductList
+            title={t('products.title_papercups_7oz')}
+            products={products.filter(product => product.type === "7oz" && product.featured === true)}
+            locale={currentLocale}
+          />
+        </div>
+        {/* <div id={t('navbar.custom-paper-cups-slug')} className="relative scroll-mt-[110px]">
+          <ProductList
+            title={t('products.title_custom_papercup')}
+            products={products.filter(product => product.type === "special" && product.featured === true)}
+            locale={currentLocale}
+          />
+        </div> */}
         <div id={t('navbar.paper-cups-8oz-slug')} className="relative scroll-mt-[110px]">
           <ProductList
             title={t('products.title_papercups_8oz')}
             products={products
               .filter(product => product.type === "8oz" && product.featured === true)
+            }
+            locale={currentLocale}
+          />
+        </div>
+        <div id={t('navbar.paper-cups-12oz-slug')} className="relative scroll-mt-[110px]">
+          <ProductList
+            title={t('products.title_papercups_12oz')}
+            products={products
+              .filter(product => product.type === "12oz" && product.featured === true)
             }
             locale={currentLocale}
           />
