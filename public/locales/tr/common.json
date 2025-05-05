@@ -6,7 +6,11 @@
     "contact": "İletişim",
     "paper-cups-slug": "karton-bardaklarimiz",
     "custom-paper-cups-slug": "ozel-baskili-karton-bardaklarimiz",
-    "paper-cups-4oz-slug": "4-oz-karton-bardaklarimiz"
+    "paper-cups-4oz-slug": "4-oz-karton-bardaklarimiz",
+    "paper-cups-7oz-slug": "7-oz-karton-bardaklarimiz",
+    "paper-cups-8oz-slug": "8-oz-karton-bardaklarimiz",
+    "paper-cups-12oz-slug": "12-oz-karton-bardaklarimiz",
+    "bolw-16oz-slug": "16-oz-karton-corba-kasesi"
   },
   "home": {
     "seo": {
@@ -59,6 +63,7 @@
     "title_papercups_7oz": "7 oz Karton Bardaklarımız",
     "title_papercups_8oz": "8 oz Karton Bardaklarımız",
     "title_papercups_12oz": "12 oz Karton Bardaklarımız",
+    "title_bowl": "Karton Çorba Kaselerimiz",
     "title_print_cut": "Baskı ve Kesim Hizmetlerimiz",
     "description_papercup": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
   },

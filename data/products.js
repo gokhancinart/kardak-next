@@ -1,4 +1,150 @@
 export const products = [
+  // 4oz Paper Cups
+  {
+    id: 9,
+    slug: {
+      raw: "4oz-turuncu-siyah-karton-bardak",
+      tr: "4oz-turuncu-siyah-karton-bardak",
+      en: "4oz-orange-black-paper-cup"
+    },
+    name: {
+      tr: "4oz Turuncu Siyah Karton Bardak",
+      en: "4oz Orange Black Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-turuncu-siyah-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) karton bardaklarımız, sıcak ve soğuk içecekler için estetik ve pratik bir çözümdür. Özgün iki renkli tasarımıyla dikkat çeker.",
+      en: "Our 4oz (120ml) paper cups offer an aesthetic and practical solution for hot and cold drinks with a distinctive two-tone design."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
+  },
+  {
+    id: 10,
+    slug: {
+      raw: "4oz-mevlana-karton-bardak",
+      tr: "4oz-mevlana-karton-bardak",
+      en: "4oz-mevlana-paper-cup"
+    },
+    name: {
+      tr: "4oz Mevlana Karton Bardak",
+      en: "4oz Mevlana Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-mevlana-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) Mevlana temalı karton bardaklarımız, kültürel zarafeti sade bir tasarımla sunar. Sıcak içecekler için idealdir.",
+      en: "Our 4oz (120ml) Mevlana-themed paper cups reflect cultural elegance in a minimal design. Ideal for hot beverages."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
+  },
+  {
+    id: 11,
+    slug: {
+      raw: "4oz-turuncu-karton-bardak",
+      tr: "4oz-turuncu-karton-bardak",
+      en: "4oz-orange-paper-cup"
+    },
+    name: {
+      tr: "4oz Turuncu Karton Bardak",
+      en: "4oz Orange Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-turuncu-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) turuncu karton bardaklarımız canlı rengiyle öne çıkar, sıcak içecekler için ideal bir tercihtir.",
+      en: "Our 4oz (120ml) orange paper cups stand out with their vibrant color, making them an ideal choice for hot beverages."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: false,
+    type: "4oz"
+  },
+  {
+    id: 12,
+    slug: {
+      raw: "4oz-beyaz-yaprak-karton-bardak",
+      tr: "4oz-beyaz-yaprak-karton-bardak",
+      en: "4oz-white-leaf-paper-cup"
+    },
+    name: {
+      tr: "4oz Beyaz Yaprak Desenli Karton Bardak",
+      en: "4oz White Leaf Pattern Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-beyaz-yaprak-desen-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) beyaz yaprak desenli bardaklarımız doğaya duyarlı markalar için mükemmel bir tercihtir.",
+      en: "Our 4oz (120ml) white cups with leaf patterns are a perfect choice for nature-conscious brands."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
+  },
+  {
+    id: 13,
+    slug: {
+      raw: "4oz-beyaz-karton-bardak",
+      tr: "4oz-beyaz-karton-bardak",
+      en: "4oz-white-paper-cup"
+    },
+    name: {
+      tr: "4oz Beyaz Karton Bardak",
+      en: "4oz White Paper Cup"
+    },
+    imageSrc: "/assets/images/cups/4oz/4oz-beyaz-karton-bardak.png",
+    description: {
+      tr: "4oz (120ml) düz beyaz karton bardaklarımız, özelleştirmeye açık sade tasarımıyla öne çıkar.",
+      en: "Our 4oz (120ml) plain white paper cups are ideal for custom branding and minimalist presentation."
+    },
+    size: {
+      tr: "4oz (120ml)",
+      en: "4oz (120ml)"
+    },
+    technicalDetails: {
+      capacity: "4oz (120ml)",
+      rimDiameter: "62mm",
+      height: "60mm",
+      baseDiameter: "45mm"
+    },
+    featured: true,
+    type: "4oz"
+  },
   // 7oz Paper Cups
   {
     id: 1,
@@ -231,152 +377,6 @@ export const products = [
     },
     featured: true,
     type: "7oz"
-  },
-  // 4oz Paper Cups
-  {
-    id: 9,
-    slug: {
-      raw: "4oz-turuncu-siyah-karton-bardak",
-      tr: "4oz-turuncu-siyah-karton-bardak",
-      en: "4oz-orange-black-paper-cup"
-    },
-    name: {
-      tr: "4oz Turuncu Siyah Karton Bardak",
-      en: "4oz Orange Black Paper Cup"
-    },
-    imageSrc: "/assets/images/cups/4oz/4oz-turuncu-siyah-karton-bardak.png",
-    description: {
-      tr: "4oz (120ml) karton bardaklarımız, sıcak ve soğuk içecekler için estetik ve pratik bir çözümdür. Özgün iki renkli tasarımıyla dikkat çeker.",
-      en: "Our 4oz (120ml) paper cups offer an aesthetic and practical solution for hot and cold drinks with a distinctive two-tone design."
-    },
-    size: {
-      tr: "4oz (120ml)",
-      en: "4oz (120ml)"
-    },
-    technicalDetails: {
-      capacity: "4oz (120ml)",
-      rimDiameter: "62mm",
-      height: "60mm",
-      baseDiameter: "45mm"
-    },
-    featured: true,
-    type: "4oz"
-  },
-  {
-    id: 10,
-    slug: {
-      raw: "4oz-mevlana-karton-bardak",
-      tr: "4oz-mevlana-karton-bardak",
-      en: "4oz-mevlana-paper-cup"
-    },
-    name: {
-      tr: "4oz Mevlana Karton Bardak",
-      en: "4oz Mevlana Paper Cup"
-    },
-    imageSrc: "/assets/images/cups/4oz/4oz-mevlana-karton-bardak.png",
-    description: {
-      tr: "4oz (120ml) Mevlana temalı karton bardaklarımız, kültürel zarafeti sade bir tasarımla sunar. Sıcak içecekler için idealdir.",
-      en: "Our 4oz (120ml) Mevlana-themed paper cups reflect cultural elegance in a minimal design. Ideal for hot beverages."
-    },
-    size: {
-      tr: "4oz (120ml)",
-      en: "4oz (120ml)"
-    },
-    technicalDetails: {
-      capacity: "4oz (120ml)",
-      rimDiameter: "62mm",
-      height: "60mm",
-      baseDiameter: "45mm"
-    },
-    featured: true,
-    type: "4oz"
-  },
-  {
-    id: 11,
-    slug: {
-      raw: "4oz-turuncu-karton-bardak",
-      tr: "4oz-turuncu-karton-bardak",
-      en: "4oz-orange-paper-cup"
-    },
-    name: {
-      tr: "4oz Turuncu Karton Bardak",
-      en: "4oz Orange Paper Cup"
-    },
-    imageSrc: "/assets/images/cups/4oz/4oz-turuncu-karton-bardak.png",
-    description: {
-      tr: "4oz (120ml) turuncu karton bardaklarımız canlı rengiyle öne çıkar, sıcak içecekler için ideal bir tercihtir.",
-      en: "Our 4oz (120ml) orange paper cups stand out with their vibrant color, making them an ideal choice for hot beverages."
-    },
-    size: {
-      tr: "4oz (120ml)",
-      en: "4oz (120ml)"
-    },
-    technicalDetails: {
-      capacity: "4oz (120ml)",
-      rimDiameter: "62mm",
-      height: "60mm",
-      baseDiameter: "45mm"
-    },
-    featured: false,
-    type: "4oz"
-  },
-  {
-    id: 12,
-    slug: {
-      raw: "4oz-beyaz-yaprak-karton-bardak",
-      tr: "4oz-beyaz-yaprak-karton-bardak",
-      en: "4oz-white-leaf-paper-cup"
-    },
-    name: {
-      tr: "4oz Beyaz Yaprak Desenli Karton Bardak",
-      en: "4oz White Leaf Pattern Paper Cup"
-    },
-    imageSrc: "/assets/images/cups/4oz/4oz-beyaz-yaprak-desen-karton-bardak.png",
-    description: {
-      tr: "4oz (120ml) beyaz yaprak desenli bardaklarımız doğaya duyarlı markalar için mükemmel bir tercihtir.",
-      en: "Our 4oz (120ml) white cups with leaf patterns are a perfect choice for nature-conscious brands."
-    },
-    size: {
-      tr: "4oz (120ml)",
-      en: "4oz (120ml)"
-    },
-    technicalDetails: {
-      capacity: "4oz (120ml)",
-      rimDiameter: "62mm",
-      height: "60mm",
-      baseDiameter: "45mm"
-    },
-    featured: true,
-    type: "4oz"
-  },
-  {
-    id: 13,
-    slug: {
-      raw: "4oz-beyaz-karton-bardak",
-      tr: "4oz-beyaz-karton-bardak",
-      en: "4oz-white-paper-cup"
-    },
-    name: {
-      tr: "4oz Beyaz Karton Bardak",
-      en: "4oz White Paper Cup"
-    },
-    imageSrc: "/assets/images/cups/4oz/4oz-beyaz-karton-bardak.png",
-    description: {
-      tr: "4oz (120ml) düz beyaz karton bardaklarımız, özelleştirmeye açık sade tasarımıyla öne çıkar.",
-      en: "Our 4oz (120ml) plain white paper cups are ideal for custom branding and minimalist presentation."
-    },
-    size: {
-      tr: "4oz (120ml)",
-      en: "4oz (120ml)"
-    },
-    technicalDetails: {
-      capacity: "4oz (120ml)",
-      rimDiameter: "62mm",
-      height: "60mm",
-      baseDiameter: "45mm"
-    },
-    featured: true,
-    type: "4oz"
   },
   // 8oz Paper Cups
   {
@@ -611,5 +611,125 @@ export const products = [
     },
     featured: true,
     type: "12oz"
-  }
+  },
+  // Soup Bowl 14 / 16  oz
+  {
+    id: "22",
+    slug: {
+      raw: "16oz-sade-karton-corba-kasesi",
+      tr: "16oz-sade-karton-corba-kasesi",
+      en: "16oz-plain-paper-soup-bowl",
+    },
+    name: {
+      tr: "16oz Sade Karton Çorba Kasesi",
+      en: "16oz Plain Paper Soup Bowl",
+    },
+    imageSrc: "/assets/images/bowls/16oz/16oz-sade-karton-corba-kasesi.webp",
+    description: {
+      tr: "16oz (470ml) sade beyaz karton çorba kasemiz, minimal tasarımıyla restoranlar ve paket servisler için idealdir.",
+      en: "Our 16oz (470ml) plain white paper soup bowl is ideal for restaurants and takeaway services with its minimal design.",
+    },
+    size: {
+      tr: "16oz (470ml)",
+      en: "16oz (470ml)",
+    },
+    technicalDetails: {
+      capacity: "16oz (470ml)",
+      rimDiameter: "115mm",
+      height: "70mm",
+      baseDiameter: "90mm",
+    },
+    featured: true,
+    type: "soup",
+  },
+  
+  {
+    id: "23",
+    slug: {
+      raw: "16oz-renkli-karton-corba-kasesi",
+      tr: "16oz-renkli-karton-corba-kasesi",
+      en: "16oz-colorful-paper-soup-bowl",
+    },
+    name: {
+      tr: "16oz Renkli Desenli Karton Çorba Kasesi",
+      en: "16oz Colorful Patterned Paper Soup Bowl",
+    },
+    imageSrc: "/assets/images/bowls/16oz/16oz-renkli-karton-corba-kasesi.webp",
+    description: {
+      tr: "16oz (470ml) renkli desenli çorba kasesi, sıcak gıda sunumlarında hem işlevselliği hem görselliği ön planda tutar.",
+      en: "The 16oz (470ml) colorful patterned soup bowl offers both functionality and visual appeal for serving hot foods.",
+    },
+    size: {
+      tr: "16oz (470ml)",
+      en: "16oz (470ml)",
+    },
+    technicalDetails: {
+      capacity: "16oz (470ml)",
+      rimDiameter: "115mm",
+      height: "70mm",
+      baseDiameter: "90mm",
+    },
+    featured: true,
+    type: "soup",
+  },
+  
+  {
+    id: "24",
+    slug: {
+      raw: "16oz-ottoman-desenli-karton-corba-kasesi",
+      tr: "16oz-ottoman-desenli-karton-corba-kasesi",
+      en: "16oz-ottoman-pattern-paper-soup-bowl",
+    },
+    name: {
+      tr: "16oz Osmanlı Desenli Karton Çorba Kasesi",
+      en: "16oz Ottoman Patterned Paper Soup Bowl",
+    },
+    imageSrc: "/assets/images/bowls/16oz/16oz-ottoman-karton-corba-kasesi.webp",
+    description: {
+      tr: "16oz (470ml) Osmanlı motifli karton çorba kasesi, kültürel dokunuş isteyen markalar için şık bir tercihtir.",
+      en: "The 16oz (470ml) Ottoman-style soup bowl is an elegant choice for brands seeking a cultural aesthetic.",
+    },
+    size: {
+      tr: "16oz (470ml)",
+      en: "16oz (470ml)",
+    },
+    technicalDetails: {
+      capacity: "16oz (470ml)",
+      rimDiameter: "115mm",
+      height: "70mm",
+      baseDiameter: "90mm",
+    },
+    featured: true,
+    type: "soup",
+  },
+  
+  {
+    id: "25",
+    slug: {
+      raw: "16oz-turuncu-desenli-karton-corba-kasesi",
+      tr: "16oz-turuncu-desenli-karton-corba-kasesi",
+      en: "16oz-orange-pattern-paper-soup-bowl",
+    },
+    name: {
+      tr: "16oz Turuncu Desenli Karton Çorba Kasesi",
+      en: "16oz Orange Patterned Paper Soup Bowl",
+    },
+    imageSrc: "/assets/images/bowls/16oz/16oz-turuncu-karton-corba-kasesi.webp",
+    description: {
+      tr: "16oz (470ml) turuncu temalı çorba kasemiz, enerjik ve dikkat çekici sunumlar için idealdir.",
+      en: "Our 16oz (470ml) orange-themed soup bowl is ideal for vibrant and attention-grabbing presentations.",
+    },
+    size: {
+      tr: "16oz (470ml)",
+      en: "16oz (470ml)",
+    },
+    technicalDetails: {
+      capacity: "16oz (470ml)",
+      rimDiameter: "115mm",
+      height: "70mm",
+      baseDiameter: "90mm",
+    },
+    featured: true,
+    type: "soup",
+  },  
 ]

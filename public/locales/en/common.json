@@ -6,7 +6,11 @@
     "contact": "Contact",
     "paper-cups-slug": "our-paper-cups",
     "custom-paper-cups-slug": "our-custom-printed-paper-cups",
-    "paper-cups-4oz-slug": "our-4-oz-paper-cups"
+    "paper-cups-4oz-slug": "our-4-oz-paper-cups",
+    "paper-cups-7oz-slug": "our-7-oz-paper-cups",
+    "paper-cups-8oz-slug": "our-8-oz-paper-cups",
+    "paper-cups-12oz-slug": "our-12-oz-paper-cups",
+    "bolw-16oz-slug": "our-16-oz-paper-soup-bowls"
   },
   "home": {
     "seo": {
@@ -59,6 +63,7 @@
     "title_papercups_7oz": "Our 7 oz Paper Cups",
     "title_papercups_8oz": "Our 8 oz Paper Cups",
     "title_papercups_12oz": "Our 12 oz Paper Cups",
+    "title_bowl": "Our Paper Soup Bowls",
     "description_papercup": "We offer everything you need for paper cup manufacturing, including high-quality paper supply, professional printing, and finished cup production. Contact us for more details."
   },
   "about": {

@@ -79,17 +79,15 @@ export default function ProductsPage() {
             <option value={t('navbar.paper-cups-12oz-slug')}>
               {t('products.title_papercups_12oz')}
             </option>
+            <option value={t('navbar.bolw-16oz-slug')}>
+              {t('products.title_bowl')}
+            </option>
           </select>
         </div>
 
         {/* Masaüstünde Buton Menü */}
         <nav className="hidden md:block product-menu">
           <ul className="flex gap-4 mb-4 justify-center">
-            {/* <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
-              <a href={`#${t('navbar.custom-paper-cups-slug')}`}>
-                {t('products.title_custom_papercup')}
-              </a>
-            </li> */}
             <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
               <a href={`#${t('navbar.paper-cups-4oz-slug')}`}>
                 {t('products.title_papercups_4oz')}
@@ -108,6 +106,11 @@ export default function ProductsPage() {
             <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
               <a href={`#${t('navbar.paper-cups-12oz-slug')}`}>
                 {t('products.title_papercups_12oz')}
+              </a>
+            </li>
+            <li className="text-kardak bg-gray-100 hover:bg-gray-200 rounded-lg py-2 px-4">
+              <a href={`#${t('navbar.bolw-16oz-slug')}`}>
+                {t('products.title_bowl')}
               </a>
             </li>
           </ul>
@@ -129,13 +132,6 @@ export default function ProductsPage() {
             locale={currentLocale}
           />
         </div>
-        {/* <div id={t('navbar.custom-paper-cups-slug')} className="relative scroll-mt-[110px]">
-          <ProductList
-            title={t('products.title_custom_papercup')}
-            products={products.filter(product => product.type === "special" && product.featured === true)}
-            locale={currentLocale}
-          />
-        </div> */}
         <div id={t('navbar.paper-cups-8oz-slug')} className="relative scroll-mt-[110px]">
           <ProductList
             title={t('products.title_papercups_8oz')}
@@ -150,6 +146,15 @@ export default function ProductsPage() {
             title={t('products.title_papercups_12oz')}
             products={products
               .filter(product => product.type === "12oz" && product.featured === true)
+            }
+            locale={currentLocale}
+          />
+        </div>
+        <div id={t('navbar.bolw-16oz-slug')} className="relative scroll-mt-[110px]">
+          <ProductList
+            title={t('products.title_bowl')}
+            products={products
+              .filter(product => product.type === "soup" && product.featured === true)
             }
             locale={currentLocale}
           />
