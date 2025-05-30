@@ -27,7 +27,7 @@ export default function BlogPage({ posts }) {
 
       <div className="container py-10">
         <h1 className="text-kardak text-3xl font-bold mb-6 text-center">{t('blog.title')}</h1>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {posts.map((post) => (
             <div key={post.id}>
               <Image

@@ -79,7 +79,7 @@ export default function Home({ blogPosts }) {
       {/* Blog Bölümü */}
       <div className="container mb-10">
         <h2 className="text-kardak text-2xl font-bold mb-6">{t('blog.title')}</h2>
-        <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {blogPosts.map(post => (
             <div key={post.slug.tr}>
               <Link href={`/blog/${post.slug[router.locale]}`}>
@@ -96,9 +96,6 @@ export default function Home({ blogPosts }) {
                 <p className="text-gray-600 text-sm">{post.date}</p>
                 <p className="mt-2 text-gray-800">{post.excerpt[router.locale]}</p>
               </Link>
-              {/* <Link href={`/blog/${post.slug[router.locale]}`} className="text-kardak font-medium mt-2 inline-block hover:underline">
-                {t('home.read_more') || "Devamını oku →"}
-              </Link> */}
             </div>
           ))}
         </div>
