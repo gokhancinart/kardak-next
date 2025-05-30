@@ -3,6 +3,7 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "products": "Ürünlerimiz",
+    "blog": "Blog",
     "contact": "İletişim",
     "paper-cups-slug": "karton-bardaklarimiz",
     "custom-paper-cups-slug": "ozel-baskili-karton-bardaklarimiz",
@@ -98,6 +99,16 @@
       "address": "İkitelli Osb Mah. Dersan A Blok Sk. A Blok No: 1 İç Kapı No: 014 BAŞAKŞEHİR/İSTANBUL",
       "working": "08:00 - 19:00"
     }
+  },
+  "blog": {
+    "seo": {
+      "title": "Kardak Blog | Karton Bardak ve Kağıt Üretimi Hakkında Bilgiler",
+      "description": "Karton bardak kullanımı, üretim süreçleri ve kağıt tedariki hakkında en güncel bilgileri blogumuzda keşfedin. Sektördeki yenilikleri takip edin."
+    },
+    "title": "Blog",
+    "description": "Karton bardak kullanımı, üretim süreçleri ve kağıt tedariki hakkında en güncel bilgileri blogumuzda keşfedin. Sektördeki yenilikleri takip edin.",
+    "read_more": "Devamını Oku",
+    "all_blogs": "Tüm blog yazıları için tıklayın"
   },
   "footer": {
     "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",

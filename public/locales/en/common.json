@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About Us",
     "products": "Our Products",
+    "blog": "Blog",
     "contact": "Contact",
     "paper-cups-slug": "our-paper-cups",
     "custom-paper-cups-slug": "our-custom-printed-paper-cups",
@@ -97,6 +98,16 @@
       "address": "İkitelli OSB Mah., Dersan A Block Street, A Block No: 1, Interior Door No: 014, Başakşehir/ISTANBUL",
       "working": "08:00 - 19:00"
     }
+  },
+  "blog": {
+    "seo": {
+      "title": "Kardak Blog | Paper Cup Insights, Tips & Industry News",
+      "description": "Explore our blog for insights on paper cups, industry trends, and tips for your business. Stay updated with Kardak."
+    },
+    "title": "Blog",
+    "description": "Discover the latest insights, tips, and industry news about paper cups and related topics. Kardak's blog is your go-to resource for staying informed.",
+    "read_more": "Read More",
+    "all_blogs": "Click for all blog posts"
   },
   "footer": {
     "description": "Our paper cups are designed to showcase your beverages in the best way.",
