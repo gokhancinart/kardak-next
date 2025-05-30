@@ -94,6 +94,7 @@ export default function Layout({ children }) {
             <NavLink href="/">{t('navbar.home')}</NavLink>
             <NavLink href="/about">{t('navbar.about')}</NavLink>
             <NavLink href="/products">{t('navbar.products')}</NavLink>
+            <NavLink href="/blog">{t('navbar.blog')}</NavLink>
             <NavLink href="/contact">{t('navbar.contact')}</NavLink>
           </div>
           {/* Alt Kısım - İletişim Bilgileri ve Dil Seçimi */}
