@@ -10,19 +10,27 @@ export default function BlogPage({ posts }) {
   const { t, i18n } = useTranslation('common');
   const currentLocale = i18n.language;
   const router = useRouter();
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const canonicalUrl = `${siteUrl}/${router.locale}/blog`;
 
   return (
     <>
       <Head>
         <title>{t('blog.seo.title')}</title>
         <meta name="description" content={t('blog.seo.description')} />
-        <link rel="canonical" href={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}/blog`} />
-        <link rel="icon" href={`${process.env.NEXT_PUBLIC_SITE_URL}/favicon.ico`} />
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}/blog`} />
+        <link rel="canonical" href={canonicalUrl} />
+        <link rel="icon" href={`${siteUrl}/favicon.ico`} />
+        <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+        <meta property="og:locale" content={router.locale === 'tr' ? 'tr_TR' : 'en_US'} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={t('blog.seo.title')} />
         <meta property="og:description" content={t('blog.seo.description')} />
-        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/images/logo.png`} />
+        <meta property="og:image" content={`${siteUrl}/assets/images/logo.png`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('blog.seo.title')} />
+        <meta name="twitter:description" content={t('blog.seo.description')} />
+        <meta name="twitter:image" content={`${siteUrl}/assets/images/logo.png`} />
       </Head>
 
       <div className="container py-10">
@@ -30,20 +38,20 @@ export default function BlogPage({ posts }) {
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {posts.map((post) => (
             <div key={post.id}>
-              <Image
-                src={post.image}
-                alt={post.title[currentLocale]}
-                width={600}
-                height={400}
-                className="w-full h-auto mb-4 rounded-lg"/>
-              <h2 className="text-kardak text-xl font-semibold mb-2">{post.title[currentLocale]}</h2>
-              <p className="text-gray-600 text-sm mb-2">{post.date}</p>
-              <p className="text-gray-800">{post.excerpt[currentLocale]}</p>
               <Link
                 href={`/blog/${post.slug[currentLocale]}`}
-                className="text-kardak font-medium mt-4 inline-block hover:underline"
+                className="text-kardak font-medium mt-4 inline-block"
               >
-                {t('blog.read_more')}
+                <Image
+                  src={post.image}
+                  alt={post.title[currentLocale]}
+                  width={600}
+                  height={400}
+                  className="w-full h-auto mb-4 rounded-lg"/>
+                <h2 className="text-kardak text-xl font-semibold mb-2">{post.title[currentLocale]}</h2>
+                <p className="text-gray-600 text-sm mb-2">{post.date}</p>
+                <p className="text-gray-800">{post.excerpt[currentLocale]}</p>
+                  {t('blog.read_more')}
               </Link>
             </div>
           ))}
@@ -54,7 +62,7 @@ export default function BlogPage({ posts }) {
 }
 
 export async function getStaticProps({ locale }) {
-  const allPosts = await import('data/posts.json').then(mod => mod.default);
+  const allPosts = getAllPosts();
   return {
     props: {
       ...(await serverSideTranslations(locale, ['common'])),

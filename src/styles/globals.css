@@ -46,3 +46,56 @@
     color: var(--kardak-hover);
   }
 }
+
+.blog-content h2,
+.blog-content h3 {
+  color: var(--kardak);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.blog-content h2 {
+  font-size: 1.65rem;
+}
+
+.blog-content h3 {
+  font-size: 1.35rem;
+}
+
+.blog-content p,
+.blog-content ul,
+.blog-content ol {
+  margin-bottom: 1rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.25rem;
+}
+
+.blog-content ul {
+  list-style: disc;
+}
+
+.blog-content ol {
+  list-style: decimal;
+}
+
+.blog-content strong {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.blog-content a {
+  color: var(--kardak);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.blog-content img {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
