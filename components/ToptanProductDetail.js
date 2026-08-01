@@ -6,6 +6,7 @@ import { LiaWhatsapp } from 'react-icons/lia';
 
 import { categories } from '../data/categories.mjs';
 import { getCategoryUrl } from '../lib/productHelpers';
+import { getProductMetaDescription, getProductSeoContent } from '../lib/productSeoContent';
 import { getPageUrl } from '../lib/routes';
 import {
   buildJsonLdGraph,
@@ -14,6 +15,7 @@ import {
   getPageAbsoluteUrl,
   getToptanVariantPathname,
 } from '../lib/seo';
+import ProductDetailSeoBody, { getProductFaqSchema } from './ProductDetailSeoBody';
 import SeoHead from './SeoHead';
 
 export default function ToptanProductDetail({ categoryKey, product }) {
@@ -28,14 +30,17 @@ export default function ToptanProductDetail({ categoryKey, product }) {
   const query = { variant: product.variantSlug[locale] };
   const pageUrl = getPageAbsoluteUrl(pathname, query, locale);
 
+  const seoContent = getProductSeoContent(product.id, locale);
+  const metaDescription = getProductMetaDescription(product.id, locale, description);
+
   const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}?text=${encodeURIComponent(
     `${t('whatsapp_message')}:\n\n*${title}*\n${pageUrl}`
   )}`;
 
-  const jsonLd = buildJsonLdGraph(
+  const schemas = [
     buildProductSchema({
       name: product.name[locale],
-      description: product.description[locale],
+      description: metaDescription,
       imageSrc: product.imageSrc,
       pageUrl,
       categoryName: category.title[locale],
@@ -48,7 +53,19 @@ export default function ToptanProductDetail({ categoryKey, product }) {
       categoryPath,
       productName: product.name[locale],
       productUrl: pageUrl,
-    })
+    }),
+  ];
+
+  const faqSchema = getProductFaqSchema(seoContent);
+  if (faqSchema) schemas.push(faqSchema);
+
+  const jsonLd = buildJsonLdGraph(...schemas);
+
+  const technicalLabels = Object.fromEntries(
+    Object.keys(product.technicalDetails || {}).map((key) => [
+      key,
+      t(`products.technicalDetails.${key}`),
+    ])
   );
 
   return (
@@ -58,7 +75,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
         query={query}
         locale={locale}
         title={`${title} | Kardak`}
-        description={description}
+        description={metaDescription}
         ogImage={product.imageSrc}
         jsonLd={jsonLd}
       />
@@ -83,13 +100,14 @@ export default function ToptanProductDetail({ categoryKey, product }) {
               alt={product.name[locale]}
               width={400}
               height={400}
+              priority
               className="rounded-lg shadow-md w-full"
             />
           </div>
 
           <div className="w-full md:w-1/2">
             <h1 className="text-4xl font-bold mb-4 text-kardak">{title}</h1>
-            <p className="text-md mb-6">{description}</p>
+            <p className="text-md mb-6 text-gray-700">{description}</p>
 
             {product.technicalDetails && (
               <div className="mt-12">
@@ -104,7 +122,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
                         className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
                       >
                         <td className="py-3 px-4 font-semibold text-gray-700">
-                          {t(`products.technicalDetails.${key}`)}
+                          {technicalLabels[key]}
                         </td>
                         <td className="py-3 px-4 text-gray-600">{value}</td>
                       </tr>
@@ -134,6 +152,15 @@ export default function ToptanProductDetail({ categoryKey, product }) {
             </div>
           </div>
         </div>
+
+        {seoContent && (
+          <ProductDetailSeoBody
+            seoContent={seoContent}
+            technicalDetails={product.technicalDetails}
+            technicalLabels={technicalLabels}
+            hideTechnical
+          />
+        )}
       </div>
     </>
   );
