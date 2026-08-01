@@ -3,14 +3,19 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "products": "Ürünlerimiz",
+    "all_products": "Tüm Ürünler",
+    "menu_4oz": "4 oz Karton Bardak",
+    "menu_7oz": "7 oz Karton Bardak",
+    "menu_custom_print": "Özel Baskılı Karton Bardak",
+    "menu_8oz": "8 oz Karton Bardak",
+    "menu_bowl": "Karton Çorba Kasesi",
     "blog": "Blog",
     "contact": "İletişim",
-    "paper-cups-slug": "karton-bardaklarimiz",
-    "custom-paper-cups-slug": "ozel-baskili-karton-bardaklarimiz",
-    "paper-cups-4oz-slug": "4-oz-karton-bardaklarimiz",
-    "paper-cups-7oz-slug": "7-oz-karton-bardaklarimiz",
-    "paper-cups-8oz-slug": "8-oz-karton-bardaklarimiz",
-    "paper-cups-12oz-slug": "12-oz-karton-bardaklarimiz",
+    "paper-cups-slug": "karton-bardak",
+    "custom-paper-cups-slug": "ozel-baskili-karton-bardak",
+    "paper-cups-4oz-slug": "4-oz-karton-bardak",
+    "paper-cups-7oz-slug": "7-oz-karton-bardak",
+    "paper-cups-8oz-slug": "8-oz-karton-bardak",
     "bolw-16oz-slug": "16-oz-karton-corba-kasesi"
   },
   "home": {
@@ -59,14 +64,71 @@
       "height": "Yükseklik",
       "baseDiameter": "Taban Çapı"
     },
-    "title_custom_papercup": "Özel Baskılı Karton Bardaklarımız",
-    "title_papercups_4oz": "4 oz Karton Bardaklarımız",
-    "title_papercups_7oz": "7 oz Karton Bardaklarımız",
-    "title_papercups_8oz": "8 oz Karton Bardaklarımız",
-    "title_papercups_12oz": "12 oz Karton Bardaklarımız",
-    "title_bowl": "Karton Çorba Kaselerimiz",
+    "title_custom_papercup": "Özel Baskılı Karton Bardak",
+    "title_papercups_4oz": "4 oz Karton Bardak",
+    "title_papercups_7oz": "7 oz Karton Bardak",
+    "title_papercups_8oz": "8 oz Karton Bardak",
+    "title_bowl": "Karton Çorba Kasesi",
+    "custom_print_cta": "Markanıza özel baskı için teklif alın",
     "title_print_cut": "Baskı ve Kesim Hizmetlerimiz",
     "description_papercup": "Karton bardak üretiminde ihtiyacınız olan her şeyi sunuyoruz. Yüksek kaliteli kağıt tedarik, profesyonel baskı hizmetleri ve bitmiş bardak üretimi için bize ulaşın."
+  },
+  "custom_print": {
+    "title": "Özel Baskılı Karton Bardak",
+    "seo": {
+      "title": "Özel Baskılı Karton Bardak (4–7–8 oz) | Toptan Logo Baskı | Kardak",
+      "description": "4 oz, 7 oz ve 8 oz özel baskılı karton bardak üretimi. Markanıza özel logo baskı, dijital prova ve toptan teslimat. Teklif için hemen iletişime geçin."
+    },
+    "hero_title": "Özel Baskılı Karton Bardak",
+    "hero_badge": "4 oz · 7 oz · 8 oz",
+    "hero_highlight": "Logo baskı · Dijital prova · Toptan üretim",
+    "hero_description": "4 oz, 7 oz ve 8 oz boyutlarında markanıza özel logo ve tasarımla baskılı karton bardak üretiyoruz. Kahve dükkanları, pastaneler ve kurumsal markalar için toptan çözümler.",
+    "cta_quote": "Teklif Al",
+    "cta_sizes": "Boyutları İncele",
+    "ideal_for": "İdeal kullanım",
+    "sizes_title": "Hangi Boy Sizin İçin?",
+    "sizes_subtitle": "4 oz, 7 oz ve 8 oz boyutlarında markanıza özel baskılı karton bardak üretiyoruz. İhtiyacınıza en uygun boyutu seçin.",
+    "size_4oz_title": "4 oz Karton Bardak",
+    "size_4oz_volume": "120 ml",
+    "size_4oz_use": "Espresso, Türk kahvesi, otel servisi",
+    "size_4oz_desc": "Küçük porsiyonlar ve premium espresso sunumları için kompakt boyut.",
+    "size_7oz_title": "7 oz Karton Bardak",
+    "size_7oz_volume": "180 ml",
+    "size_7oz_use": "Kafe, pastane, simitçi, paket servis",
+    "size_7oz_desc": "En çok tercih edilen boyut; filtre kahve ve çay servisi için ideal.",
+    "size_8oz_title": "8 oz Karton Bardak",
+    "size_8oz_volume": "240 ml",
+    "size_8oz_use": "Latte, cappuccino, orta boy içecekler",
+    "size_8oz_desc": "Orta boy içecek servisi ve takeaway için geniş hacim.",
+    "process_title": "Nasıl Çalışıyoruz?",
+    "process_steps": [
+      { "title": "Tasarım Gönderimi", "description": "Logonuzu veya tasarım dosyanızı bize iletin (AI, PDF, PNG)." },
+      { "title": "Dijital Prova", "description": "Baskı öncesi dijital prova ile onayınızı alıyoruz." },
+      { "title": "Toptan Üretim", "description": "Onay sonrası seçtiğiniz boyutta seri üretime geçiyoruz." },
+      { "title": "Teslimat", "description": "Siparişinizi zamanında ve güvenle adresinize ulaştırıyoruz." }
+    ],
+    "industries_title": "Kimler İçin?",
+    "industries": [
+      { "title": "Kahve Dükkanları", "description": "Markanızı her bardakta görünür kılın." },
+      { "title": "Pastaneler & Simitçiler", "description": "Paket serviste profesyonel sunum." },
+      { "title": "Oteller & Catering", "description": "Kurumsal kimliğe uygun bardak çözümleri." },
+      { "title": "Kurumsal Etkinlikler", "description": "Fuar, lansman ve organizasyonlar için özel baskı." },
+      { "title": "Zincir Markalar", "description": "Toptan siparişlerde tutarlı kalite ve tasarım." },
+      { "title": "Yeni Girişimler", "description": "Markanızı güçlendiren uygun maliyetli bardaklar." }
+    ],
+    "portfolio_title": "Daha Önce Ürettiğimiz Özel Baskılı Bardaklar",
+    "portfolio_description": "Farklı sektörlerden markalar için ürettiğimiz özel baskılı 7 oz karton bardak örnekleri.",
+    "faq_title": "Sık Sorulan Sorular",
+    "faq_items": [
+      { "question": "Hangi boyutlarda özel baskılı bardak üretiyorsunuz?", "answer": "4 oz (120 ml), 7 oz (180 ml) ve 8 oz (240 ml) boyutlarında özel baskılı karton bardak üretimi yapıyoruz." },
+      { "question": "Minimum sipariş adedi nedir?", "answer": "Minimum sipariş miktarı boyuta ve tasarıma göre değişir. Güncel teklif için WhatsApp veya iletişim formu üzerinden bize ulaşın." },
+      { "question": "Hangi dosya formatlarını kabul ediyorsunuz?", "answer": "AI, PDF, PNG ve yüksek çözünürlüklü JPG formatlarını kabul ediyoruz. Vektörel dosyalar baskı kalitesi için tercih edilir." },
+      { "question": "Baskı süresi ne kadar?", "answer": "Onay sonrası üretim süresi sipariş hacmine göre değişir. Detaylı teslimat süresi teklif aşamasında paylaşılır." },
+      { "question": "Sadece beyaz bardak mı, kraft da yapılıyor mu?", "answer": "Beyaz ve kraft seçenekleri mevcuttur. Boyuta göre farklı zemin seçenekleri için bizimle iletişime geçebilirsiniz." }
+    ],
+    "cta_bottom_title": "Markanıza Özel Bardaklar İçin Teklif Alın",
+    "cta_bottom_description": "4 oz, 7 oz veya 8 oz — hangi boy olursa olsun, markanıza özel baskılı karton bardak üretimi için ekibimiz size yardımcı olmaya hazır.",
+    "whatsapp_prefill": "Özel baskılı karton bardak teklifi almak istiyorum"
   },
   "about": {
     "seo": {
@@ -111,7 +173,7 @@
     "all_blogs": "Tüm blog yazıları için tıklayın"
   },
   "footer": {
-    "description": "Karton bardaklarımız içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
+    "description": "Karton bardak içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",
     "reserved": "Kardak © 2025. Tüm hakları saklıdır.",
     "menu_title": {
       "menu": "Menu",

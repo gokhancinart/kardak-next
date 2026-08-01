@@ -4,13 +4,14 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import Promo from 'components/Promo';
 import HomeAbout from 'components/HomeAbout';
-import Head from 'next/head';
+import SeoHead from 'components/SeoHead';
 import Link from 'next/link';
 import Image from 'next/image';
 import { HiOutlineCursorClick } from "react-icons/hi";
 
 // products
-import { products } from 'data/products';
+import { products } from 'data/products.mjs';
+import { getProductsListingUrl, getPageUrl } from '../../lib/routes';
 // blog
 import { getAllPosts } from '../lib/posts';
 
@@ -20,39 +21,19 @@ export default function Home({ blogPosts }) {
 
   return (
     <>
-      <Head>
-        <title>{t('home.seo.title')}</title>
-        <meta name="description" content={t('home.seo.description')} />
-
-        {/* Canonical URL (Dinamik ve Dil Desteğiyle) */}
-        <link
-          rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`}
-        />
-
-        {/* Favicon (Absolute Path ile) */}
-        <link
-          rel="icon"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/favicon.ico`}
-        />
-
-        {/* Open Graph Etiketleri */}
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={t('home.seo.title')} />
-        <meta property="og:description" content={t('home.seo.description')} />
-        <meta
-          property="og:image"
-          content={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/images/logo.png`}
-        />
-      </Head>
+      <SeoHead
+        pathname="/"
+        locale={router.locale}
+        title={t('home.seo.title')}
+        description={t('home.seo.description')}
+      />
 
 
       <Promo
         title={t('home.promo.title')}
         description={t('home.promo.description')}
         button={t('home.promo.button')}
-        buttonLink="/products"
+        buttonLink={getProductsListingUrl(router.locale)}
         whatsapp={t('home.promo.whatsapp')}
         whatsappUrl={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
       />
@@ -62,13 +43,15 @@ export default function Home({ blogPosts }) {
 
         <ProductList 
           title={t('products.title_papercups_7oz')} 
-          products={products.filter(product => product.type === "7oz")} 
+          products={products.filter(
+            product => product.type === "7oz" && !product.brandedCustomPrint
+          )}
           locale={router.locale} 
         />
 
         <div className="flex justify-center mt-4 mb-16">
           <Link
-            href="/products"
+            href={getProductsListingUrl(router.locale)}
             className="relative inline-flex rounded-md border border-transparent bg-kardak shadow-md px-8 py-3 text-center font-bold text-white bg-kardak-hover"
           >
             <HiOutlineCursorClick className="h-5 w-5 text-white mr-2" />
@@ -101,7 +84,7 @@ export default function Home({ blogPosts }) {
         </div>
         <div className="flex justify-center mt-4 mb-16">
           <Link
-            href="/blog"
+            href={getPageUrl('blog', router.locale)}
             className="relative inline-flex rounded-md border border-transparent bg-kardak shadow-md px-8 py-3 text-center font-bold text-white bg-kardak-hover"
           >
             <HiOutlineCursorClick className="h-5 w-5 text-white mr-2" />

@@ -1,37 +1,24 @@
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllPosts } from '../../lib/posts';
+import SeoHead from 'components/SeoHead';
 
 export default function BlogPage({ posts }) {
   const { t, i18n } = useTranslation('common');
   const currentLocale = i18n.language;
   const router = useRouter();
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  const canonicalUrl = `${siteUrl}/${router.locale}/blog`;
 
   return (
     <>
-      <Head>
-        <title>{t('blog.seo.title')}</title>
-        <meta name="description" content={t('blog.seo.description')} />
-        <link rel="canonical" href={canonicalUrl} />
-        <link rel="icon" href={`${siteUrl}/favicon.ico`} />
-        <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-        <meta property="og:locale" content={router.locale === 'tr' ? 'tr_TR' : 'en_US'} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={t('blog.seo.title')} />
-        <meta property="og:description" content={t('blog.seo.description')} />
-        <meta property="og:image" content={`${siteUrl}/assets/images/logo.png`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('blog.seo.title')} />
-        <meta name="twitter:description" content={t('blog.seo.description')} />
-        <meta name="twitter:image" content={`${siteUrl}/assets/images/logo.png`} />
-      </Head>
+      <SeoHead
+        pathname="/blog"
+        locale={router.locale}
+        title={t('blog.seo.title')}
+        description={t('blog.seo.description')}
+      />
 
       <div className="container py-10">
         <h1 className="text-kardak text-3xl font-bold mb-6 text-center">{t('blog.title')}</h1>

@@ -4,12 +4,19 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
-import { products } from '../data/products';
+import { getCategoryUrl } from '../lib/productHelpers';
+import { getPageUrl, getProductsListingUrl } from '../lib/routes';
 import LogoNegative from '../public/assets/images/logo-negative.svg'
 
-// icons
-
 import { FaFacebookSquare, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+
+const FOOTER_PRODUCTS = [
+  { href: (locale) => getCategoryUrl('4oz', locale), labelKey: 'navbar.menu_4oz' },
+  { href: (locale) => getCategoryUrl('7oz', locale), labelKey: 'navbar.menu_7oz' },
+  { href: (locale) => getCategoryUrl('8oz', locale), labelKey: 'navbar.menu_8oz' },
+  { href: (locale) => getPageUrl('customPrint', locale), labelKey: 'navbar.menu_custom_print' },
+  { href: (locale) => getCategoryUrl('soup', locale), labelKey: 'navbar.menu_bowl' },
+];
 
 export default function Footer() {
 
@@ -17,9 +24,6 @@ export default function Footer() {
 
   const router = useRouter();
   const currentLocale = router.locale || 'tr';
-
-  // Products içerisinde featured değeri true olan ilk 4 ürünü al
-  const featuredProducts = products.filter(product => product.featured).slice(0, 4);
 
   return (
     <div>
@@ -39,10 +43,10 @@ export default function Footer() {
             <div>
               <h3 className="text-white font-semibold mb-4">{t('footer.menu_title.menu')}</h3>
               <ul className="space-y-2">
-                <li><Link href="/" className="text-gray-400 hover:text-gray-500">{t('navbar.home')}</Link></li>
-                <li><Link href="/about" className="text-gray-400 hover:text-gray-500">{t('navbar.about')}</Link></li>
-                <li><Link href="/products" className="text-gray-400 hover:text-gray-500">{t('navbar.products')}</Link></li>
-                <li><Link href="/contact" className="text-gray-400 hover:text-gray-500">{t('navbar.contact')}</Link></li>
+                <li><Link href={getPageUrl('home', currentLocale)} className="text-gray-400 hover:text-gray-500">{t('navbar.home')}</Link></li>
+                <li><Link href={getPageUrl('about', currentLocale)} className="text-gray-400 hover:text-gray-500">{t('navbar.about')}</Link></li>
+                <li><Link href={getProductsListingUrl(currentLocale)} className="text-gray-400 hover:text-gray-500">{t('navbar.products')}</Link></li>
+                <li><Link href={getPageUrl('contact', currentLocale)} className="text-gray-400 hover:text-gray-500">{t('navbar.contact')}</Link></li>
               </ul>
             </div>
 
@@ -60,14 +64,14 @@ export default function Footer() {
             <div>
               <h3 className="text-white font-semibold mb-4">{t('footer.menu_title.our_products')}</h3>
               <ul className="space-y-2">
-                {featuredProducts.map((product) => (
-                  <li key={product.id}>
+                {FOOTER_PRODUCTS.map(({ href, labelKey }) => (
+                  <li key={labelKey}>
                     <Link
-                      href={`/products/${product.slug[currentLocale]}`}
+                      href={href(currentLocale)}
                       locale={currentLocale}
                       className="text-gray-400 hover:text-gray-500"
                     >
-                      {product.name[currentLocale]}
+                      {t(labelKey)}
                     </Link>
                   </li>
                 ))}

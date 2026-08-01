@@ -1,7 +1,7 @@
-// components/ProductList.js
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getProductUrl } from '../lib/productHelpers'
 
 export default function ProductList({ title, products, locale }) {
   return (
@@ -13,7 +13,7 @@ export default function ProductList({ title, products, locale }) {
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products?.map((product) => (
             <div key={product.id} className="group relative">
-              <Link href={`/products/${product?.slug[locale]}`}>
+              <Link href={getProductUrl(product, locale)}>
                 <Image
                   alt={product?.name[locale]}
                   src={product?.imageSrc}
@@ -24,7 +24,7 @@ export default function ProductList({ title, products, locale }) {
               </Link>
               <div className="mt-4">
                 <h3 className="text-sm text-gray-700">
-                  <Link href={`/products/${product?.slug[locale]}`}>
+                  <Link href={getProductUrl(product, locale)}>
                     <b>{product?.name[locale]}</b>
                   </Link>
                 </h3>

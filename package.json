@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "node scripts/generate-redirects.mjs && node scripts/generate-sitemap.mjs && next build",
+    "generate-redirects": "node scripts/generate-redirects.mjs",
+    "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "start": "next start",
     "lint": "next lint"
   },

@@ -8,6 +8,8 @@ import Footer from './Footer';
 import Logo from '../public/assets/images/logo.svg';
 import LogoNegative from '../public/assets/images/logo-negative.svg';
 import NavLink from './NavLink';
+import ProductsNavDropdown from './ProductsNavDropdown';
+import LocaleSwitcher from './LocaleSwitcher';
 import { Nunito } from 'next/font/google';
 
 
@@ -51,20 +53,16 @@ export default function Layout({ children }) {
             </Link>
           </div>
           {/* Menü */}
-          <div className="hidden text-lg md:flex space-x-8 font-bold [&>a]:py-2 [&>a]:mx-4 [&>a:hover]:text-blue [&>a:hover]:border-blue [&>a]:transition-all [&>a]:duration-300">
-            <NavLink href="/">{t('navbar.home')}</NavLink>
-            <NavLink href="/about">{t('navbar.about')}</NavLink>
-            <NavLink href="/products">{t('navbar.products')}</NavLink>
-            <NavLink href="/blog">{t('navbar.blog')}</NavLink>
-            <NavLink href="/contact">{t('navbar.contact')}</NavLink>
+          <div className="hidden text-lg md:flex space-x-8 font-bold [&>a]:py-2 [&>a]:mx-4 [&>a:hover]:text-blue [&>a:hover]:border-blue [&>a]:transition-all [&>a]:duration-300 items-center">
+            <NavLink page="home">{t('navbar.home')}</NavLink>
+            <NavLink page="about">{t('navbar.about')}</NavLink>
+            <ProductsNavDropdown />
+            <NavLink page="blog">{t('navbar.blog')}</NavLink>
+            <NavLink page="contact">{t('navbar.contact')}</NavLink>
           </div>
           {/* Sağ Kısım */}
           <div className="flex items-center">
-            <div className="md:flex mr-3 font-bold [&>a]:mx-2">
-              <Link href="/" locale="tr">TR</Link>
-              <span>|</span>
-              <Link href="/" locale="en">EN</Link>
-            </div>
+            <LocaleSwitcher className="md:flex mr-3" />
             <div className="md:hidden flex">
               <button onClick={toggleMenu} className="text-black">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -91,11 +89,11 @@ export default function Layout({ children }) {
             </Link>
           </div>
           <div className="flex flex-col space-y-4 p-6 text-white">
-            <NavLink href="/">{t('navbar.home')}</NavLink>
-            <NavLink href="/about">{t('navbar.about')}</NavLink>
-            <NavLink href="/products">{t('navbar.products')}</NavLink>
-            <NavLink href="/blog">{t('navbar.blog')}</NavLink>
-            <NavLink href="/contact">{t('navbar.contact')}</NavLink>
+            <NavLink page="home">{t('navbar.home')}</NavLink>
+            <NavLink page="about">{t('navbar.about')}</NavLink>
+            <ProductsNavDropdown mobile onNavigate={() => setIsMenuOpen(false)} />
+            <NavLink page="blog">{t('navbar.blog')}</NavLink>
+            <NavLink page="contact">{t('navbar.contact')}</NavLink>
           </div>
           {/* Alt Kısım - İletişim Bilgileri ve Dil Seçimi */}
           <div className="absolute bottom-4 left-4 text-left space-y-2">

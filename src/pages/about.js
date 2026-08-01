@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Head from 'next/head';
+import SeoHead from 'components/SeoHead';
 import Link from 'next/link';
 import { useRef } from 'react';
 
@@ -38,32 +38,12 @@ export default function About() {
 
   return (
     <>
-      <Head>
-        <title>{t('about.seo.title')}</title>
-        <meta name="description" content={t('about.seo.description')} />
-
-        {/* Canonical URL (Dinamik ve Dil Desteğiyle) */}
-        <link
-          rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}${router.asPath}`.replace(/([^:]\/)\/+/g, "$1")}
-        />
-
-        {/* Favicon (Absolute Path ile) */}
-        <link
-          rel="icon"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/favicon.ico`}
-        />
-
-        {/* Open Graph Etiketleri */}
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}${router.asPath}`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={t('about.seo.title')} />
-        <meta property="og:description" content={t('about.seo.description')} />
-        <meta
-          property="og:image"
-          content={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/images/logo.png`}
-        />
-      </Head>
+      <SeoHead
+        pathname="/about"
+        locale={router.locale}
+        title={t('about.seo.title')}
+        description={t('about.seo.description')}
+      />
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">

@@ -1,86 +1,70 @@
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import Link from 'next/link';
-import Head from 'next/head';
 
-import { products } from '../../../data/products';
+import { products } from '../../../data/products.mjs';
+import { getProductsListingUrl } from '../../../lib/routes';
+import {
+  buildJsonLdGraph,
+  buildLegacyProductBreadcrumbs,
+  buildProductSchema,
+  getPageAbsoluteUrl,
+} from '../../../lib/seo';
+import SeoHead from 'components/SeoHead';
 import { HiOutlineCursorClick } from "react-icons/hi";
 import { LiaWhatsapp } from "react-icons/lia";
 
-export default function ProductDetail() {
+export default function ProductDetail({ product: initialProduct }) {
   const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-  const { slug } = router.query;
   const currentLocale = i18n.language;
-
-  const product = products.find(p =>
-    p.slug[currentLocale] === slug // Dil bağımsız slug'a göre ürünü bul (Örn: papercup)
-  );
-
-  useEffect(() => {
-    if (!product && router.isReady) { 
-      router.replace(`/${currentLocale}/404`, undefined, { shallow: true });
-    }
-  }, [product, router, currentLocale]);
+  const product = initialProduct;
 
   if (!product) {
-    return <div className="text-center py-8">Loading...</div>; // Veya null
+    return <div className="text-center py-8">Loading...</div>;
   }
 
-  const productPath = `/${currentLocale}/products/${product.slug[currentLocale]}`;
-  const productUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${productPath}`;
+  const productUrl = getPageAbsoluteUrl(
+    '/products/[slug]',
+    { slug: product.slug[currentLocale] },
+    currentLocale
+  );
 
   const whatsappLink = `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}?text=${encodeURIComponent(
     `${t('whatsapp_message')}:\n\n*${product.name[currentLocale]}*\n${productUrl}`
   )}`;
 
+  const jsonLd = buildJsonLdGraph(
+    buildProductSchema({
+      name: product.name[currentLocale],
+      description: product.description[currentLocale],
+      imageSrc: product.imageSrc,
+      pageUrl: productUrl,
+      categoryName: product.size[currentLocale],
+    }),
+    buildLegacyProductBreadcrumbs({
+      locale: currentLocale,
+      homeLabel: t('navbar.home'),
+      productsLabel: t('navbar.products'),
+      productName: product.name[currentLocale],
+      productUrl,
+    })
+  );
+
   return (
     <>
-      <Head>
-        <title>{product.name[currentLocale]}</title>
-        <meta name="description" content={product.description[currentLocale]} />
-
-        {/* Canonical URL (Dinamik ve Dil Desteğiyle) */}
-        <link
-          rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`}
-        />
-
-        {/* Favicon (Absolute Path ile) */}
-        <link
-          rel="icon"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/favicon.ico`}
-        />
-
-        {/* Open Graph Etiketleri */}
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={product.name[currentLocale]} />
-        <meta property="og:description" content={product.description[currentLocale]} />
-        <meta
-          property="og:image"
-          content={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/images/logo.png`}
-        />
-      </Head>
+      <SeoHead
+        pathname="/products/[slug]"
+        query={{ slug: product.slug[currentLocale] }}
+        locale={currentLocale}
+        title={`${product.name[currentLocale]} | Kardak`}
+        description={product.description[currentLocale]}
+        ogImage={product.imageSrc}
+        jsonLd={jsonLd}
+      />
 
       <div className="container mx-auto px-4 py-8">
-        {/* <div className="mb-4">
-          <Link 
-            >
-            <button
-              onClick={() => router.back()}
-              className="bg-gray-200 text-kardak px-6 py-2 rounded transition-colors cursor-pointer"
-            >
-              <IoIosArrowBack className="inline-block mr-2" />
-              {t('navbar.products')}
-            </button>
-          </Link>
-        </div> */}
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
-          {/* Sol kısım: Ürün fotoğrafı */}
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
               src={product.imageSrc}
@@ -90,7 +74,6 @@ export default function ProductDetail() {
               className="rounded-lg shadow-md w-full"
             />
           </div>
-          {/* Sağ kısım: Ürün başlığı, açıklaması ve geri butonu */}
           <div className="w-full md:w-1/2">
             <h1 className="text-4xl font-bold mb-4 text-kardak">
               {product.name[currentLocale]}
@@ -99,10 +82,9 @@ export default function ProductDetail() {
               {product.description[currentLocale]}
             </p>
             <div className="mt-12 ">
-              {/* Teknik Detaylar */}
-              <h3 className="text-xl font-bold mb-4 text-kardak">
+              <h2 className="text-xl font-bold mb-4 text-kardak">
                 {t('products.technical_specs')}
-              </h3>
+              </h2>
               <table className="w-full border-collapse">
                 <tbody>
                   {product.technicalDetails && Object.entries(product.technicalDetails).map(([key, value]) => (
@@ -132,7 +114,7 @@ export default function ProductDetail() {
               </Link>
 
               <Link
-                href="/products"
+                href={getProductsListingUrl(currentLocale)}
                 className="relative inline-flex items-center justify-center rounded-md border border-transparent bg-kardak shadow-md px-8 py-3 text-center font-bold text-white hover:bg-kardak-hover"
               >
                 <HiOutlineCursorClick className="h-5 w-5 text-white mr-2" />
@@ -147,16 +129,10 @@ export default function ProductDetail() {
 }
 
 export async function getStaticProps({ locale, params }) {
-  // Slug'a göre ürünü bul
-  const product = products.find(p =>
-    p.slug[locale] === params.slug
-  );
+  const product = products.find(p => p.slug[locale] === params.slug);
 
-  // Ürün yoksa 404 döndür
   if (!product) {
-    return {
-      notFound: true,
-    };
+    return { notFound: true };
   }
 
   return {
@@ -168,13 +144,15 @@ export async function getStaticProps({ locale, params }) {
 }
 
 export async function getStaticPaths() {
-  const paths = products.flatMap(product => [
-    { params: { slug: product.slug.tr }, locale: 'tr' },
-    { params: { slug: product.slug.en }, locale: 'en' }
-  ]);
+  const paths = products
+    .filter((product) => !product.variantSlug)
+    .flatMap((product) => [
+      { params: { slug: product.slug.tr }, locale: 'tr' },
+      { params: { slug: product.slug.en }, locale: 'en' },
+    ]);
 
   return {
     paths,
-    fallback: 'blocking', // blocking kullanımı önemli
+    fallback: false,
   };
 }

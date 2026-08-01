@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Head from 'next/head';
+import SeoHead from 'components/SeoHead';
 import { useRouter } from 'next/router';
 
 import { FaPhoneSquareAlt } from "react-icons/fa";
@@ -16,32 +16,12 @@ export default function Contact() {
 
   return (
     <>
-      <Head>
-        <title>{t('contact.seo.title')}</title>
-        <meta name="description" content={t('contact.seo.description')} />
-
-        {/* Canonical URL (Dinamik ve Dil Desteğiyle) */}
-        <link
-          rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`}
-        />
-
-        {/* Favicon (Absolute Path ile) */}
-        <link
-          rel="icon"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/favicon.ico`}
-        />
-
-        {/* Open Graph Etiketleri */}
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/${router.locale}`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={t('contact.seo.title')} />
-        <meta property="og:description" content={t('contact.seo.description')} />
-        <meta
-          property="og:image"
-          content={`${process.env.NEXT_PUBLIC_SITE_URL}/assets/images/logo.png`}
-        />
-      </Head>
+      <SeoHead
+        pathname="/contact"
+        locale={router.locale}
+        title={t('contact.seo.title')}
+        description={t('contact.seo.description')}
+      />
 
       <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

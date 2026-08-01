@@ -2,9 +2,12 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { getPageUrl } from '../../lib/routes';
 
 export default function Custom404() {
   const { t } = useTranslation('common');
+  const router = useRouter();
 
   return (
     <>
@@ -14,7 +17,7 @@ export default function Custom404() {
       <div className="container mx-auto text-center py-20">
         <h1 className="text-4xl font-bold mb-4">{t('404.title')}</h1>
         <p className="text-xl mb-8">{t('404.description')}</p>
-        <Link href="/" className="text-kardak hover:underline">
+        <Link href={getPageUrl('home', router.locale || 'tr')} className="text-kardak hover:underline">
           {t('404.backToHome')}
         </Link>
       </div>

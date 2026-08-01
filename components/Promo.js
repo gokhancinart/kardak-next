@@ -42,8 +42,8 @@ export default function Promo({ title, description, button, buttonLink, whatsapp
                         <Image
                           width={176}
                           height={256}
-                          alt="coffee-yazili-karton-bardak"
-                          src="/assets/images/cups/coffee-yazili-karton-bardak.webp"
+                          alt="7oz-coffee-karton-bardak"
+                          src="/assets/images/cups/7oz/7oz-coffee-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
@@ -51,37 +51,8 @@ export default function Promo({ title, description, button, buttonLink, whatsapp
                         <Image
                           width={176}
                           height={256}
-                          alt="yildiz-desen-karton-bardak"
-                          src="/assets/images/cups/yildiz-desen-karton-bardak.webp"
-                          className="size-full object-cover"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={176}
-                          height={256}
-                          alt="simitci-dunyasi-karton-bardak"
-                          src="/assets/images/cups/simitci-dunyasi-karton-bardak.webp"
-                          className="size-full object-cover"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={176}
-                          height={256}
-                          alt="kirmizi-siyah-karton-bardak"
-                          src="/assets/images/cups/togo-kirmizi-siyah-karton-bardak.webp"
-                          className="size-full object-cover"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <Image
-                          width={176}
-                          height={256}
-                          alt="sehir-hatlari-karton-bardak"
-                          src="/assets/images/cups/sehir-hatlari-karton-bardak.webp"
+                          alt="7oz-yildiz-karton-bardak"
+                          src="/assets/images/cups/7oz/7oz-yildiz-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
@@ -91,8 +62,8 @@ export default function Promo({ title, description, button, buttonLink, whatsapp
                         <Image
                           width={176}
                           height={256}
-                          alt="lavazza-karton-bardak"
-                          src="/assets/images/cups/lavazza-karton-bardak.webp"
+                          alt="7oz-cizgi-karton-bardak"
+                          src="/assets/images/cups/7oz/7oz-cizgi-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
@@ -100,8 +71,37 @@ export default function Promo({ title, description, button, buttonLink, whatsapp
                         <Image
                           width={176}
                           height={256}
-                          alt="kraft-karton-bardak"
-                          src="/assets/images/cups/kraft-karton-bardak.webp"
+                          alt="7oz-togo-karton-bardak"
+                          src="/assets/images/cups/7oz/7oz-togo-karton-bardak.webp"
+                          className="size-full object-cover"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          width={176}
+                          height={256}
+                          alt="7oz-petek-karton-bardak"
+                          src="/assets/images/cups/7oz/7oz-petek-karton-bardak.webp"
+                          className="size-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          width={176}
+                          height={256}
+                          alt="7oz-coffee-renkli-karton-bardak"
+                          src="/assets/images/cups/7oz/7oz-coffee-renkli-karton-bardak.webp"
+                          className="size-full object-cover"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <Image
+                          width={176}
+                          height={256}
+                          alt="7oz-kraft-karton-bardak"
+                          src="/assets/images/cups/7oz/7oz-kraft-karton-bardak.webp"
                           className="size-full object-cover"
                         />
                       </div>
