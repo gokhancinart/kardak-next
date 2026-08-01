@@ -6,6 +6,7 @@ import { LiaWhatsapp } from 'react-icons/lia';
 
 import { categories, customPrintLanding } from '../data/categories.mjs';
 import { getCategoryUrl, getProductUrl } from '../lib/productHelpers';
+import { getLocalized, getProductName, getProductSize } from '../lib/localizedContent';
 import { getPageUrl } from '../lib/routes';
 import {
   buildBreadcrumbSchema,
@@ -223,7 +224,7 @@ export default function CustomPrintLanding({ portfolioProducts }) {
                       href={getCategoryUrl(sizeKey, locale)}
                       className="text-center rounded-xl border border-kardak/20 bg-kardak/5 px-4 py-2.5 text-sm font-semibold text-kardak hover:bg-kardak/10 transition-colors"
                     >
-                      {categories[sizeKey].title[locale]}
+                      {getLocalized(categories[sizeKey].title, locale)}
                     </Link>
                   </div>
                 </div>
@@ -264,7 +265,7 @@ export default function CustomPrintLanding({ portfolioProducts }) {
                 <div key={product.id} className="group relative">
                   <Link href={getProductUrl(product, locale)}>
                     <Image
-                      alt={product.name[locale]}
+                      alt={getProductName(product, locale)}
                       src={product.imageSrc}
                       width={300}
                       height={300}
@@ -274,10 +275,10 @@ export default function CustomPrintLanding({ portfolioProducts }) {
                   <div className="mt-4">
                     <h3 className="text-sm text-gray-700">
                       <Link href={getProductUrl(product, locale)}>
-                        <b>{product.name[locale]}</b>
+                        <b>{getProductName(product, locale)}</b>
                       </Link>
                     </h3>
-                    <p className="mt-1 text-xs text-gray-500">{product.size[locale]}</p>
+                    <p className="mt-1 text-xs text-gray-500">{getProductSize(product, locale)}</p>
                   </div>
                 </div>
               ))}

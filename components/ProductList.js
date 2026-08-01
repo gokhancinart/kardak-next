@@ -2,20 +2,24 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getProductUrl } from '../lib/productHelpers'
+import { getProductName, getProductSize } from '../lib/localizedContent'
+import { localizeForLocale } from '../lib/productMeasurements'
 
 export default function ProductList({ title, products, locale }) {
+  const displayTitle = localizeForLocale(title, locale)
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl pb-16 sm:pb-24 lg:max-w-7xl">
         <h2 className="text-2xl font-bold tracking-tight text-kardak">
-          {title}
+          {displayTitle}
         </h2>
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products?.map((product) => (
             <div key={product.id} className="group relative">
               <Link href={getProductUrl(product, locale)}>
                 <Image
-                  alt={product?.name[locale]}
+                  alt={getProductName(product, locale)}
                   src={product?.imageSrc}
                   width={300}
                   height={300}
@@ -25,11 +29,11 @@ export default function ProductList({ title, products, locale }) {
               <div className="mt-4">
                 <h3 className="text-sm text-gray-700">
                   <Link href={getProductUrl(product, locale)}>
-                    <b>{product?.name[locale]}</b>
+                    <b>{getProductName(product, locale)}</b>
                   </Link>
                 </h3>
                 <p className="mt-1 text-xs text-gray-500">
-                  {product?.size[locale]}
+                  {getProductSize(product, locale)}
                 </p>
               </div>
             </div>

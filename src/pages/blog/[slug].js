@@ -81,9 +81,11 @@ export async function getStaticPaths({ locales }) {
 
   for (const locale of locales) {
     for (const post of posts) {
+      const slug = post.slug[locale];
+      if (!slug) continue;
       paths.push({
-        params: { slug: post.slug[locale] },
-        locale
+        params: { slug },
+        locale,
       });
     }
   }

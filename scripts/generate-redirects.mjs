@@ -4,6 +4,8 @@ import { fileURLToPath } from 'url';
 import { products } from '../data/products.mjs';
 import { getCategoryByType } from '../data/categories.mjs';
 
+import { SUPPORTED_LOCALES, LOCALE_PREFIX_LOCALES } from '../lib/locales.mjs';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function buildProductRedirects() {
@@ -13,18 +15,15 @@ function buildProductRedirects() {
     const category = getCategoryByType(product.type);
     if (!category || !product.variantSlug) continue;
 
-    for (const locale of ['tr', 'en']) {
-      const oldPath = locale === 'tr'
-        ? `/products/${product.slug[locale]}`
-        : `/en/products/${product.slug[locale]}`;
-
-      const newPath = locale === 'tr'
-        ? `/${category.slug[locale]}/${product.variantSlug[locale]}`
-        : `/en/${category.slug[locale]}/${product.variantSlug[locale]}`;
+    for (const locale of SUPPORTED_LOCALES) {
+      const prefix = LOCALE_PREFIX_LOCALES.includes(locale) ? `/${locale}` : '';
+      const slug = product.slug[locale] ?? product.slug.en;
+      const categorySlug = category.slug[locale] ?? category.slug.en;
+      const variant = product.variantSlug[locale] ?? product.variantSlug.en;
 
       redirects.push({
-        source: oldPath,
-        destination: newPath,
+        source: `${prefix}/products/${slug}`,
+        destination: `${prefix}/${categorySlug}/${variant}`,
         permanent: true,
       });
     }

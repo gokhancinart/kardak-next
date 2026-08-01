@@ -1,12 +1,16 @@
 export const staticPages = {
-  home: { pathname: '/', slug: { tr: '/', en: '/' } },
-  about: { pathname: '/about', slug: { tr: '/hakkimizda', en: '/about' } },
-  contact: { pathname: '/contact', slug: { tr: '/iletisim', en: '/contact' } },
-  blog: { pathname: '/blog', slug: { tr: '/blog', en: '/blog' } },
-  products: { pathname: '/products', slug: { tr: '/urunlerimiz', en: '/products' } },
+  home: { pathname: '/', slug: { tr: '/', en: '/', ar: '/' } },
+  about: { pathname: '/about', slug: { tr: '/hakkimizda', en: '/about', ar: '/about' } },
+  contact: { pathname: '/contact', slug: { tr: '/iletisim', en: '/contact', ar: '/contact' } },
+  blog: { pathname: '/blog', slug: { tr: '/blog', en: '/blog', ar: '/blog' } },
+  products: { pathname: '/products', slug: { tr: '/urunlerimiz', en: '/products', ar: '/products' } },
   customPrint: {
     pathname: '/custom-printed-paper-cups',
-    slug: { tr: '/ozel-baskili-karton-bardak', en: '/custom-printed-paper-cups' },
+    slug: {
+      tr: '/ozel-baskili-karton-bardak',
+      en: '/custom-printed-paper-cups',
+      ar: '/custom-printed-paper-cups',
+    },
   },
 };
 

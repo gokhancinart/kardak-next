@@ -5,14 +5,17 @@ export const categories = {
     slug: {
       tr: 'toptan-4-oz-karton-bardak',
       en: 'wholesale-4oz-paper-cups',
+      ar: 'wholesale-4oz-paper-cups',
     },
     title: {
       tr: 'Toptan 4 oz Karton Bardak',
       en: 'Wholesale 4 oz Paper Cups',
+      ar: 'أكواب ورقية ٤ أونصة بالجملة',
     },
     description: {
       tr: '4 oz (120ml) toptan karton bardak modellerimiz. Espresso, kahve ve sıcak içecek servisi için ideal boyut. Beyaz, Mevlana ve desenli seçenekler.',
       en: 'Our wholesale 4 oz (120ml) paper cups. Ideal size for espresso and hot beverages. White, Mevlana and patterned options available.',
+      ar: 'أكواب ورقية ٤ أونصة (١٢٠ مل) بالجملة. الحجم المثالي للإسpresso والمشروبات الساخنة. خيارات بيضاء ومولانا ومنقوشة.',
     },
     customOrder: [13, 10, 12, 9, 11],
     hasCustomPrint: true,
@@ -23,14 +26,17 @@ export const categories = {
     slug: {
       tr: 'toptan-7-oz-karton-bardak',
       en: 'wholesale-7oz-paper-cups',
+      ar: 'wholesale-7oz-paper-cups',
     },
     title: {
       tr: 'Toptan 7 oz Karton Bardak',
       en: 'Wholesale 7 oz Paper Cups',
+      ar: 'أكواب ورقية ٧ أونصة بالجملة',
     },
     description: {
       tr: '7 oz (180ml) toptan karton bardak modellerimiz. Kahve dükkanları, pastaneler ve paket servis için en çok tercih edilen boyut. Kraft, beyaz ve desenli seçenekler.',
       en: 'Our wholesale 7 oz (180ml) paper cups. The most popular size for coffee shops and takeaway. Kraft, white and patterned options.',
+      ar: 'أكواب ورقية ٧ أونصة (١٨٠ مل) بالجملة. الحجم الأكثر طلباً للمقاهي والمخابز والتيك أواي. خيارات Kraft وبيضاء ومنقوشة.',
     },
     hasCustomPrint: true,
     customOrder: [1, 7, 26, 3, 28, 29, 2, 30, 8, 32, 33, 27],
@@ -42,14 +48,17 @@ export const categories = {
     slug: {
       tr: 'toptan-8-oz-karton-bardak',
       en: 'wholesale-8oz-paper-cups',
+      ar: 'wholesale-8oz-paper-cups',
     },
     title: {
       tr: 'Toptan 8 oz Karton Bardak',
       en: 'Wholesale 8 oz Paper Cups',
+      ar: 'أكواب ورقية ٨ أونصة بالجملة',
     },
     description: {
       tr: '8 oz (240ml) toptan karton bardak modellerimiz. Orta boy içecek servisi için ideal. Beyaz, coffee desenli ve özel tasarım seçenekler.',
       en: 'Our wholesale 8 oz (240ml) paper cups. Ideal for medium-size beverage service. White, coffee pattern and custom design options.',
+      ar: 'أكواب ورقية ٨ أونصة (٢٤٠ مل) بالجملة. مثالية للمشروبات متوسطة الحجم. خيارات بيضاء وCoffee وطباعة مخصصة.',
     },
     hasCustomPrint: true,
   },
@@ -59,28 +68,33 @@ export const categories = {
     slug: {
       tr: 'toptan-16-oz-karton-corba-kasesi',
       en: 'wholesale-16oz-paper-soup-bowls',
+      ar: 'wholesale-16oz-paper-soup-bowls',
     },
     title: {
       tr: 'Toptan 16 oz Karton Çorba Kasesi',
       en: 'Wholesale 16 oz Paper Soup Bowls',
+      ar: 'أوعية شوربة ورقية ١٦ أونصة بالجملة',
     },
     description: {
       tr: '16 oz (470ml) toptan karton çorba kaselerimiz. Restoran, paket servis ve sıcak gıda sunumu için dayanıklı ve hijyenik çözümler.',
       en: 'Our wholesale 16 oz (470ml) paper soup bowls. Durable and hygienic solutions for restaurants and hot food service.',
+      ar: 'أوعية شوربة ورقية ١٦ أونصة (٤٧٠ مل) بالجملة. حلول متينة وصحية للمطاعم وتقديم الطعام الساخن والتيك أواي.',
     },
     hasCustomPrint: false,
   },
 };
 
 export const customPrintLanding = {
-  slug: { tr: 'ozel-baskili', en: 'custom-printed' },
+  slug: { tr: 'ozel-baskili', en: 'custom-printed', ar: 'custom-printed' },
   title: {
     tr: 'Özel Baskılı Karton Bardak',
     en: 'Custom Printed Paper Cup',
+    ar: 'أكواب ورقية مطبوعة حسب الطلب',
   },
   description: {
     tr: 'Markanıza özel logo ve tasarımla baskılı karton bardak üretimi. Minimum sipariş miktarı ve fiyat teklifi için bizimle iletişime geçin.',
     en: 'Custom printed paper cups with your brand logo and design. Contact us for minimum order quantity and pricing.',
+    ar: 'أكواب ورقية مطبوعة بشعار وتصميم علامتكم. تواصلوا معنا لمعرفة الحد الأدنى للطلب والأسعار.',
   },
   imageSrc: '/assets/images/cups/ozel-baskili-karton-bardak.webp',
 };

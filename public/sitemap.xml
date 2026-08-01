@@ -9,6 +9,7 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/"/>
   </url>
 
@@ -19,6 +20,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/hakkimizda/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/about/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/hakkimizda/"/>
   </url>
 
@@ -29,6 +31,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/iletisim/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/iletisim/"/>
   </url>
 
@@ -39,6 +42,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/blog/"/>
   </url>
 
@@ -49,6 +53,7 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/urunlerimiz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/products/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/products/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/urunlerimiz/"/>
   </url>
 
@@ -59,6 +64,7 @@
     <priority>0.88</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/ozel-baskili-karton-bardak/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/custom-printed-paper-cups/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/custom-printed-paper-cups/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/ozel-baskili-karton-bardak/"/>
   </url>
 
@@ -69,6 +75,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-4oz-paper-cups/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-4oz-paper-cups/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/"/>
   </url>
 
@@ -79,6 +86,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/turuncu-siyah/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-4oz-paper-cups/orange-black/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-4oz-paper-cups/orange-black/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/turuncu-siyah/"/>
   </url>
 
@@ -89,6 +97,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/mevlana/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-4oz-paper-cups/mevlana/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-4oz-paper-cups/mevlana/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/mevlana/"/>
   </url>
 
@@ -99,6 +108,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/turuncu/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-4oz-paper-cups/orange/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-4oz-paper-cups/orange/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/turuncu/"/>
   </url>
 
@@ -109,6 +119,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/beyaz-yaprak/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-4oz-paper-cups/white-leaf/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-4oz-paper-cups/white-leaf/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/beyaz-yaprak/"/>
   </url>
 
@@ -119,6 +130,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/beyaz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-4oz-paper-cups/white/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-4oz-paper-cups/white/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-4-oz-karton-bardak/beyaz/"/>
   </url>
 
@@ -129,6 +141,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/"/>
   </url>
 
@@ -139,6 +152,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/yildiz-desenli/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/star-pattern/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/star-pattern/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/yildiz-desenli/"/>
   </url>
 
@@ -149,6 +163,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/togo/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/togo/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/togo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/togo/"/>
   </url>
 
@@ -159,6 +174,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/coffee/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/coffee/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/coffee/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/coffee/"/>
   </url>
 
@@ -169,6 +185,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/simitci-dunyasi/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/simitci-dunyasi/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/simitci-dunyasi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/simitci-dunyasi/"/>
   </url>
 
@@ -179,6 +196,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/sehir-hatlari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/sehir-hatlari/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/sehir-hatlari/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/sehir-hatlari/"/>
   </url>
 
@@ -189,6 +207,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/lavazza/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/lavazza/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/lavazza/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/lavazza/"/>
   </url>
 
@@ -199,6 +218,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/coffee-yazili/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/coffee-lettered/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/coffee-lettered/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/coffee-yazili/"/>
   </url>
 
@@ -209,6 +229,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/kraft/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/kraft/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/kraft/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/kraft/"/>
   </url>
 
@@ -219,6 +240,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/petek-desenli/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/honeycomb-pattern/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/honeycomb-pattern/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/petek-desenli/"/>
   </url>
 
@@ -229,6 +251,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/beyaz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/white/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/white/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/beyaz/"/>
   </url>
 
@@ -239,6 +262,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/cizgi-desenli/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/line-pattern/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/line-pattern/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/cizgi-desenli/"/>
   </url>
 
@@ -249,6 +273,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/coffee-renkli/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/coffee-colorful/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/coffee-colorful/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/coffee-renkli/"/>
   </url>
 
@@ -259,6 +284,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/espresso/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/espresso/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/espresso/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/espresso/"/>
   </url>
 
@@ -269,6 +295,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/kraft-yildiz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/kraft-star/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/kraft-star/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/kraft-yildiz/"/>
   </url>
 
@@ -279,6 +306,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/retro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/retro/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/retro/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/retro/"/>
   </url>
 
@@ -289,6 +317,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/xox/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-7oz-paper-cups/tic-tac-toe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-7oz-paper-cups/tic-tac-toe/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-7-oz-karton-bardak/xox/"/>
   </url>
 
@@ -299,6 +328,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-8oz-paper-cups/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-8oz-paper-cups/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/"/>
   </url>
 
@@ -309,6 +339,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/beyaz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-8oz-paper-cups/white/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-8oz-paper-cups/white/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/beyaz/"/>
   </url>
 
@@ -319,6 +350,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/coffee/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-8oz-paper-cups/coffee/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-8oz-paper-cups/coffee/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/coffee/"/>
   </url>
 
@@ -329,6 +361,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/coffee-togo/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-8oz-paper-cups/coffee-togo/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-8oz-paper-cups/coffee-togo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/coffee-togo/"/>
   </url>
 
@@ -339,6 +372,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/xox/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-8oz-paper-cups/tic-tac-toe/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-8oz-paper-cups/tic-tac-toe/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-8-oz-karton-bardak/xox/"/>
   </url>
 
@@ -349,6 +383,7 @@
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-16oz-paper-soup-bowls/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-16oz-paper-soup-bowls/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/"/>
   </url>
 
@@ -359,6 +394,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/sade/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-16oz-paper-soup-bowls/plain/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-16oz-paper-soup-bowls/plain/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/sade/"/>
   </url>
 
@@ -369,6 +405,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/renkli-desenli/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-16oz-paper-soup-bowls/colorful-pattern/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-16oz-paper-soup-bowls/colorful-pattern/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/renkli-desenli/"/>
   </url>
 
@@ -379,6 +416,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/osmanli-desenli/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-16oz-paper-soup-bowls/ottoman-pattern/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-16oz-paper-soup-bowls/ottoman-pattern/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/osmanli-desenli/"/>
   </url>
 
@@ -389,6 +427,7 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/turuncu-desenli/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/wholesale-16oz-paper-soup-bowls/orange-pattern/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/wholesale-16oz-paper-soup-bowls/orange-pattern/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/toptan-16-oz-karton-corba-kasesi/turuncu-desenli/"/>
   </url>
 
@@ -399,6 +438,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/blog/"/>
   </url>
 
@@ -409,6 +449,7 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/blog/karton-bardak-faydalari/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/blog/paper-cup-benefits/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/blog/paper-cup-benefits/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/blog/karton-bardak-faydalari/"/>
   </url>
 
@@ -419,6 +460,7 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/blog/baskili-karton-bardaklar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/blog/custom-printed-paper-cups/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/blog/custom-printed-paper-cups/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/blog/baskili-karton-bardaklar/"/>
   </url>
 
@@ -429,6 +471,7 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.kardakcup.com/blog/karton-bardak-siparisi/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kardakcup.com/en/blog/paper-cup-order-tips/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.kardakcup.com/ar/blog/paper-cup-order-tips/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kardakcup.com/blog/karton-bardak-siparisi/"/>
   </url>
 </urlset>

@@ -5,7 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
 const BLOG_ROOT = path.join(process.cwd(), 'data', 'blog');
-const SUPPORTED_LOCALES = ['tr', 'en'];
+const BLOG_LOCALES = ['tr', 'en'];
 
 function sortByDateDesc(a, b) {
   return new Date(b.date).getTime() - new Date(a.date).getTime();
@@ -13,6 +13,7 @@ function sortByDateDesc(a, b) {
 
 function getLocalePostFiles(locale) {
   const localeDir = path.join(BLOG_ROOT, locale);
+  if (!fs.existsSync(localeDir)) return [];
   return fs.readdirSync(localeDir).filter((fileName) => fileName.endsWith('.md'));
 }
 
@@ -31,7 +32,7 @@ function parsePostFile(locale, fileName) {
 export function getAllPosts() {
   const postMap = new Map();
 
-  for (const locale of SUPPORTED_LOCALES) {
+  for (const locale of BLOG_LOCALES) {
     const files = getLocalePostFiles(locale);
 
     for (const fileName of files) {
@@ -64,13 +65,20 @@ export function getAllPosts() {
 }
 
 export async function getPostByLocalizedSlug(slug, locale) {
-  const post = getAllPosts().find((item) => item.slug[locale] === slug);
+  let post = getAllPosts().find((item) => item.slug[locale] === slug);
+  let contentLocale = locale;
 
   if (!post) {
+    post = getAllPosts().find((item) => item.slug.tr === slug || item.slug.en === slug);
+    if (post?.slug.tr === slug) contentLocale = 'tr';
+    else if (post?.slug.en === slug) contentLocale = 'en';
+  }
+
+  if (!post || !post.contentPath[contentLocale]) {
     return null;
   }
 
-  const fileContents = fs.readFileSync(post.contentPath[locale], 'utf8');
+  const fileContents = fs.readFileSync(post.contentPath[contentLocale], 'utf8');
   const { content } = matter(fileContents);
   const processedContent = await remark().use(gfm).use(html).process(content);
 

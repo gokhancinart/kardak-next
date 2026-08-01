@@ -6,6 +6,7 @@ import { products } from '../data/products.mjs';
 import { categories } from '../data/categories.mjs';
 import { staticPages } from '../data/pageRoutes.mjs';
 import { blogPosts } from '../data/blogRoutes.mjs';
+import { SUPPORTED_LOCALES } from '../lib/locales.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.kardakcup.com').replace(
@@ -13,10 +14,11 @@ const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.kardakcup.com
   ''
 );
 
-function buildLocalizedUrls(trPath, enPath) {
+function buildLocalizedUrls(trPath, enPath, arPath = enPath) {
   const trUrl = trPath === '/' ? `${SITE_URL}/` : `${SITE_URL}${trPath}/`;
   const enUrl = enPath === '/' ? `${SITE_URL}/en/` : `${SITE_URL}/en${enPath}/`;
-  return { tr: trUrl, en: enUrl };
+  const arUrl = arPath === '/' ? `${SITE_URL}/ar/` : `${SITE_URL}/ar${arPath}/`;
+  return { tr: trUrl, en: enUrl, ar: arUrl };
 }
 
 function escapeXml(value) {
@@ -28,8 +30,12 @@ function escapeXml(value) {
     .replace(/'/g, '&apos;');
 }
 
-function createEntry({ tr, en, priority = '0.7', changefreq = 'weekly' }) {
+function createEntry({ tr, en, ar, priority = '0.7', changefreq = 'weekly' }) {
   const lastmod = new Date().toISOString().split('T')[0];
+  const hreflangLinks = SUPPORTED_LOCALES.map(
+    (locale) =>
+      `<xhtml:link rel="alternate" hreflang="${locale}" href="${escapeXml({ tr, en, ar }[locale])}"/>`
+  ).join('\n    ');
 
   return `
   <url>
@@ -37,8 +43,7 @@ function createEntry({ tr, en, priority = '0.7', changefreq = 'weekly' }) {
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="${escapeXml(tr)}"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(en)}"/>
+    ${hreflangLinks}
     <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(tr)}"/>
   </url>`;
 }
@@ -46,7 +51,7 @@ function createEntry({ tr, en, priority = '0.7', changefreq = 'weekly' }) {
 const entries = [];
 
 for (const [key, page] of Object.entries(staticPages)) {
-  const urls = buildLocalizedUrls(page.slug.tr, page.slug.en);
+  const urls = buildLocalizedUrls(page.slug.tr, page.slug.en, page.slug.ar);
   entries.push(
     createEntry({
       ...urls,
@@ -57,7 +62,11 @@ for (const [key, page] of Object.entries(staticPages)) {
 }
 
 for (const category of Object.values(categories)) {
-  const urls = buildLocalizedUrls(`/${category.slug.tr}`, `/${category.slug.en}`);
+  const urls = buildLocalizedUrls(
+    `/${category.slug.tr}`,
+    `/${category.slug.en}`,
+    `/${category.slug.ar ?? category.slug.en}`
+  );
   entries.push(createEntry({ ...urls, priority: '0.85' }));
 
   const categoryProducts = products.filter((product) => product.type === category.type);
@@ -65,9 +74,11 @@ for (const category of Object.values(categories)) {
   for (const product of categoryProducts) {
     if (!product.variantSlug) continue;
 
+    const arVariant = product.variantSlug.ar ?? product.variantSlug.en;
     const productUrls = buildLocalizedUrls(
       `/${category.slug.tr}/${product.variantSlug.tr}`,
-      `/${category.slug.en}/${product.variantSlug.en}`
+      `/${category.slug.en}/${product.variantSlug.en}`,
+      `/${category.slug.ar ?? category.slug.en}/${arVariant}`
     );
     entries.push(createEntry({ ...productUrls, priority: '0.75' }));
   }
@@ -76,16 +87,17 @@ for (const category of Object.values(categories)) {
 for (const product of products.filter((item) => !item.variantSlug)) {
   const urls = buildLocalizedUrls(
     `/urunlerimiz/${product.slug.tr}`,
-    `/products/${product.slug.en}`
+    `/products/${product.slug.en}`,
+    `/products/${product.slug.ar ?? product.slug.en}`
   );
   entries.push(createEntry({ ...urls, priority: '0.75' }));
 }
 
-const blogUrls = buildLocalizedUrls('/blog', '/blog');
+const blogUrls = buildLocalizedUrls('/blog', '/blog', '/blog');
 entries.push(createEntry({ ...blogUrls, priority: '0.8' }));
 
 for (const post of blogPosts) {
-  const urls = buildLocalizedUrls(`/blog/${post.slug.tr}`, `/blog/${post.slug.en}`);
+  const urls = buildLocalizedUrls(`/blog/${post.slug.tr}`, `/blog/${post.slug.en}`, `/blog/${post.slug.en}`);
   entries.push(createEntry({ ...urls, priority: '0.7', changefreq: 'monthly' }));
 }
 

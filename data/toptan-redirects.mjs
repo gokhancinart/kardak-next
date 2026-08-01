@@ -11,6 +11,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/4oz-orange-black-paper-cup",
+    "destination": "/ar/wholesale-4oz-paper-cups/orange-black",
+    "permanent": true
+  },
+  {
     "source": "/products/4oz-mevlana-karton-bardak",
     "destination": "/toptan-4-oz-karton-bardak/mevlana",
     "permanent": true
@@ -18,6 +23,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/4oz-mevlana-paper-cup",
     "destination": "/en/wholesale-4oz-paper-cups/mevlana",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/4oz-mevlana-paper-cup",
+    "destination": "/ar/wholesale-4oz-paper-cups/mevlana",
     "permanent": true
   },
   {
@@ -31,6 +41,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/4oz-orange-paper-cup",
+    "destination": "/ar/wholesale-4oz-paper-cups/orange",
+    "permanent": true
+  },
+  {
     "source": "/products/4oz-beyaz-yaprak-karton-bardak",
     "destination": "/toptan-4-oz-karton-bardak/beyaz-yaprak",
     "permanent": true
@@ -38,6 +53,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/4oz-white-leaf-paper-cup",
     "destination": "/en/wholesale-4oz-paper-cups/white-leaf",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/4oz-white-leaf-paper-cup",
+    "destination": "/ar/wholesale-4oz-paper-cups/white-leaf",
     "permanent": true
   },
   {
@@ -51,6 +71,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/4oz-white-paper-cup",
+    "destination": "/ar/wholesale-4oz-paper-cups/white",
+    "permanent": true
+  },
+  {
     "source": "/products/yildiz-desen-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/yildiz-desenli",
     "permanent": true
@@ -58,6 +83,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/star-pattern-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/star-pattern",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/star-pattern-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/star-pattern",
     "permanent": true
   },
   {
@@ -71,6 +101,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/togo-red-black-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/togo",
+    "permanent": true
+  },
+  {
     "source": "/products/coffee-baskili-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/coffee",
     "permanent": true
@@ -78,6 +113,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/coffee-printed-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/coffee",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/coffee-printed-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/coffee",
     "permanent": true
   },
   {
@@ -91,6 +131,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/simitci-dunyasi-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/simitci-dunyasi",
+    "permanent": true
+  },
+  {
     "source": "/products/sehir-hatlari-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/sehir-hatlari",
     "permanent": true
@@ -98,6 +143,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/sehir-hatlari-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/sehir-hatlari",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/sehir-hatlari-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/sehir-hatlari",
     "permanent": true
   },
   {
@@ -111,6 +161,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/lavazza-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/lavazza",
+    "permanent": true
+  },
+  {
     "source": "/products/coffee-yazili-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/coffee-yazili",
     "permanent": true
@@ -118,6 +173,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/coffee-lettered-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/coffee-lettered",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/coffee-lettered-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/coffee-lettered",
     "permanent": true
   },
   {
@@ -131,6 +191,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/kraft-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/kraft",
+    "permanent": true
+  },
+  {
     "source": "/products/7oz-petek-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/petek-desenli",
     "permanent": true
@@ -138,6 +203,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/7oz-honeycomb-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/honeycomb-pattern",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/7oz-honeycomb-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/honeycomb-pattern",
     "permanent": true
   },
   {
@@ -151,6 +221,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/7oz-plain-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/white",
+    "permanent": true
+  },
+  {
     "source": "/products/7oz-cizgi-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/cizgi-desenli",
     "permanent": true
@@ -158,6 +233,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/7oz-line-pattern-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/line-pattern",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/7oz-line-pattern-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/line-pattern",
     "permanent": true
   },
   {
@@ -171,6 +251,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/7oz-coffee-colorful-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/coffee-colorful",
+    "permanent": true
+  },
+  {
     "source": "/products/7oz-espresso-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/espresso",
     "permanent": true
@@ -178,6 +263,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/7oz-espresso-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/espresso",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/7oz-espresso-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/espresso",
     "permanent": true
   },
   {
@@ -191,6 +281,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/7oz-kraft-star-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/kraft-star",
+    "permanent": true
+  },
+  {
     "source": "/products/7oz-retro-karton-bardak",
     "destination": "/toptan-7-oz-karton-bardak/retro",
     "permanent": true
@@ -198,6 +293,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/7oz-retro-paper-cup",
     "destination": "/en/wholesale-7oz-paper-cups/retro",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/7oz-retro-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/retro",
     "permanent": true
   },
   {
@@ -211,6 +311,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/7oz-tic-tac-toe-paper-cup",
+    "destination": "/ar/wholesale-7oz-paper-cups/tic-tac-toe",
+    "permanent": true
+  },
+  {
     "source": "/products/8oz-beyaz-karton-bardak",
     "destination": "/toptan-8-oz-karton-bardak/beyaz",
     "permanent": true
@@ -218,6 +323,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/8oz-white-paper-cup",
     "destination": "/en/wholesale-8oz-paper-cups/white",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/8oz-white-paper-cup",
+    "destination": "/ar/wholesale-8oz-paper-cups/white",
     "permanent": true
   },
   {
@@ -231,6 +341,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/8oz-coffee-paper-cup",
+    "destination": "/ar/wholesale-8oz-paper-cups/coffee",
+    "permanent": true
+  },
+  {
     "source": "/products/8oz-coffee-togo-karton-bardak",
     "destination": "/toptan-8-oz-karton-bardak/coffee-togo",
     "permanent": true
@@ -238,6 +353,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/8oz-coffee-togo-paper-cup",
     "destination": "/en/wholesale-8oz-paper-cups/coffee-togo",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/8oz-coffee-togo-paper-cup",
+    "destination": "/ar/wholesale-8oz-paper-cups/coffee-togo",
     "permanent": true
   },
   {
@@ -251,6 +371,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/8oz-tic-tac-toe-paper-cup",
+    "destination": "/ar/wholesale-8oz-paper-cups/tic-tac-toe",
+    "permanent": true
+  },
+  {
     "source": "/products/16oz-sade-karton-corba-kasesi",
     "destination": "/toptan-16-oz-karton-corba-kasesi/sade",
     "permanent": true
@@ -258,6 +383,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/16oz-plain-paper-soup-bowl",
     "destination": "/en/wholesale-16oz-paper-soup-bowls/plain",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/16oz-plain-paper-soup-bowl",
+    "destination": "/ar/wholesale-16oz-paper-soup-bowls/plain",
     "permanent": true
   },
   {
@@ -271,6 +401,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/16oz-colorful-paper-soup-bowl",
+    "destination": "/ar/wholesale-16oz-paper-soup-bowls/colorful-pattern",
+    "permanent": true
+  },
+  {
     "source": "/products/16oz-ottoman-desenli-karton-corba-kasesi",
     "destination": "/toptan-16-oz-karton-corba-kasesi/osmanli-desenli",
     "permanent": true
@@ -281,6 +416,11 @@ export const toptanRedirects = [
     "permanent": true
   },
   {
+    "source": "/ar/products/16oz-ottoman-pattern-paper-soup-bowl",
+    "destination": "/ar/wholesale-16oz-paper-soup-bowls/ottoman-pattern",
+    "permanent": true
+  },
+  {
     "source": "/products/16oz-turuncu-desenli-karton-corba-kasesi",
     "destination": "/toptan-16-oz-karton-corba-kasesi/turuncu-desenli",
     "permanent": true
@@ -288,6 +428,11 @@ export const toptanRedirects = [
   {
     "source": "/en/products/16oz-orange-pattern-paper-soup-bowl",
     "destination": "/en/wholesale-16oz-paper-soup-bowls/orange-pattern",
+    "permanent": true
+  },
+  {
+    "source": "/ar/products/16oz-orange-pattern-paper-soup-bowl",
+    "destination": "/ar/wholesale-16oz-paper-soup-bowls/orange-pattern",
     "permanent": true
   },
   {

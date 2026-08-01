@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllPosts } from '../../lib/posts';
+import { getPostLocalized, getPostSlug } from '../../../lib/localizedContent';
 import SeoHead from 'components/SeoHead';
 
 export default function BlogPage({ posts }) {
@@ -23,25 +24,29 @@ export default function BlogPage({ posts }) {
       <div className="container py-10">
         <h1 className="text-kardak text-3xl font-bold mb-6 text-center">{t('blog.title')}</h1>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {posts.map((post) => (
-            <div key={post.id}>
+          {posts.map((post) => {
+            const slug = getPostSlug(post, currentLocale);
+            if (!slug) return null;
+            return (
+            <div key={post.id ?? post.slug.tr}>
               <Link
-                href={`/blog/${post.slug[currentLocale]}`}
+                href={`/blog/${slug}`}
                 className="text-kardak font-medium mt-4 inline-block"
               >
                 <Image
                   src={post.image}
-                  alt={post.title[currentLocale]}
+                  alt={getPostLocalized(post, 'title', currentLocale)}
                   width={600}
                   height={400}
                   className="w-full h-auto mb-4 rounded-lg"/>
-                <h2 className="text-kardak text-xl font-semibold mb-2">{post.title[currentLocale]}</h2>
+                <h2 className="text-kardak text-xl font-semibold mb-2">{getPostLocalized(post, 'title', currentLocale)}</h2>
                 <p className="text-gray-600 text-sm mb-2">{post.date}</p>
-                <p className="text-gray-800">{post.excerpt[currentLocale]}</p>
+                <p className="text-gray-800">{getPostLocalized(post, 'excerpt', currentLocale)}</p>
                   {t('blog.read_more')}
               </Link>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </>

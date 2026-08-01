@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { getHreflangAlternates, getPageAbsoluteUrl, getSiteUrl } from '../lib/seo';
+import { getHreflangAlternates, getOgLocale, getPageAbsoluteUrl, getSiteUrl } from '../lib/seo';
 
 const DEFAULT_ROBOTS =
   'index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1';
@@ -41,7 +41,7 @@ export default function SeoHead({
       ))}
       <link rel="alternate" hrefLang="x-default" href={xDefault} />
       <link rel="icon" href={`${siteUrl}/favicon.ico`} />
-      <meta property="og:locale" content={locale === 'tr' ? 'tr_TR' : 'en_US'} />
+      <meta property="og:locale" content={getOgLocale(locale)} />
       <meta property="og:url" content={canonical} />
       <meta property="og:type" content={ogType} />
       <meta property="og:title" content={title} />

@@ -5,6 +5,7 @@ import { HiOutlineCursorClick } from 'react-icons/hi';
 
 import { categories, customPrintLanding } from '../data/categories.mjs';
 import { getProductUrl, getCustomPrintLandingUrl } from '../lib/productHelpers';
+import { getLocalized, getProductName, getProductSize } from '../lib/localizedContent';
 import { getProductsListingUrl, getPageUrl } from '../lib/routes';
 import {
   buildCategoryBreadcrumbs,
@@ -21,12 +22,15 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
   const pathname = getToptanCategoryPathname(categoryKey);
   const pageUrl = getPageAbsoluteUrl(pathname, {}, locale);
 
+  const categoryTitle = getLocalized(category.title, locale);
+  const categoryDescription = getLocalized(category.description, locale);
+
   const jsonLd = buildJsonLdGraph(
     buildCategoryBreadcrumbs({
       locale,
       homeLabel: t('navbar.home'),
       productsLabel: t('navbar.products'),
-      categoryTitle: category.title[locale],
+      categoryTitle,
       categoryUrl: pageUrl,
     })
   );
@@ -36,8 +40,8 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
       <SeoHead
         pathname={pathname}
         locale={locale}
-        title={`${category.title[locale]} | Kardak`}
-        description={category.description[locale]}
+        title={`${categoryTitle} | Kardak`}
+        description={categoryDescription}
         jsonLd={jsonLd}
       />
 
@@ -51,18 +55,18 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
             {t('navbar.products')}
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-kardak">{category.title[locale]}</span>
+          <span className="text-kardak">{categoryTitle}</span>
         </nav>
 
-        <h1 className="text-3xl md:text-4xl font-bold text-kardak mb-4">{category.title[locale]}</h1>
-        <p className="text-gray-600 mb-10 max-w-3xl">{category.description[locale]}</p>
+        <h1 className="text-3xl md:text-4xl font-bold text-kardak mb-4">{categoryTitle}</h1>
+        <p className="text-gray-600 mb-10 max-w-3xl">{categoryDescription}</p>
 
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {categoryProducts.map((product) => (
             <div key={product.id} className="group relative">
               <Link href={getProductUrl(product, locale)}>
                 <Image
-                  alt={product.name[locale]}
+                  alt={getProductName(product, locale)}
                   src={product.imageSrc}
                   width={300}
                   height={300}
@@ -72,10 +76,10 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
               <div className="mt-4">
                 <h2 className="text-sm text-gray-700">
                   <Link href={getProductUrl(product, locale)}>
-                    <b>{product.name[locale]}</b>
+                    <b>{getProductName(product, locale)}</b>
                   </Link>
                 </h2>
-                <p className="mt-1 text-xs text-gray-500">{product.size[locale]}</p>
+                <p className="mt-1 text-xs text-gray-500">{getProductSize(product, locale)}</p>
               </div>
             </div>
           ))}
@@ -84,7 +88,7 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
             <div className="group relative">
               <Link href={getCustomPrintLandingUrl(locale)}>
                 <Image
-                  alt={customPrintLanding.title[locale]}
+                  alt={getLocalized(customPrintLanding.title, locale)}
                   src={customPrintLanding.imageSrc}
                   width={300}
                   height={300}
@@ -94,7 +98,7 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
               <div className="mt-4">
                 <h2 className="text-sm text-gray-700">
                   <Link href={getCustomPrintLandingUrl(locale)}>
-                    <b>{customPrintLanding.title[locale]}</b>
+                    <b>{getLocalized(customPrintLanding.title, locale)}</b>
                   </Link>
                 </h2>
                 <p className="mt-1 text-xs text-gray-500">{t('products.custom_print_cta')}</p>

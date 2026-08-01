@@ -6,6 +6,13 @@ import { LiaWhatsapp } from 'react-icons/lia';
 
 import { categories } from '../data/categories.mjs';
 import { getCategoryUrl } from '../lib/productHelpers';
+import {
+  getLocalized,
+  getProductDescription,
+  getProductName,
+  getProductTechnicalDetails,
+  getVariantSlug,
+} from '../lib/localizedContent';
 import { getProductMetaDescription, getProductSeoContent } from '../lib/productSeoContent';
 import { getPageUrl } from '../lib/routes';
 import {
@@ -23,11 +30,11 @@ export default function ToptanProductDetail({ categoryKey, product }) {
   const locale = i18n.language;
   const category = categories[categoryKey];
 
-  const title = product.name[locale];
-  const description = product.description[locale];
+  const title = getProductName(product, locale);
+  const description = getProductDescription(product, locale);
   const categoryPath = getCategoryUrl(categoryKey, locale);
   const pathname = getToptanVariantPathname(categoryKey);
-  const query = { variant: product.variantSlug[locale] };
+  const query = { variant: getVariantSlug(product, locale) };
   const pageUrl = getPageAbsoluteUrl(pathname, query, locale);
 
   const seoContent = getProductSeoContent(product.id, locale);
@@ -39,19 +46,19 @@ export default function ToptanProductDetail({ categoryKey, product }) {
 
   const schemas = [
     buildProductSchema({
-      name: product.name[locale],
+      name: title,
       description: metaDescription,
       imageSrc: product.imageSrc,
       pageUrl,
-      categoryName: category.title[locale],
+      categoryName: getLocalized(category.title, locale),
     }),
     buildProductBreadcrumbs({
       locale,
       homeLabel: t('navbar.home'),
       productsLabel: t('navbar.products'),
-      categoryTitle: category.title[locale],
+      categoryTitle: getLocalized(category.title, locale),
       categoryPath,
-      productName: product.name[locale],
+      productName: title,
       productUrl: pageUrl,
     }),
   ];
@@ -61,8 +68,9 @@ export default function ToptanProductDetail({ categoryKey, product }) {
 
   const jsonLd = buildJsonLdGraph(...schemas);
 
+  const technicalDetails = getProductTechnicalDetails(product, locale);
   const technicalLabels = Object.fromEntries(
-    Object.keys(product.technicalDetails || {}).map((key) => [
+    Object.keys(technicalDetails || {}).map((key) => [
       key,
       t(`products.technicalDetails.${key}`),
     ])
@@ -87,17 +95,17 @@ export default function ToptanProductDetail({ categoryKey, product }) {
           </Link>
           <span className="mx-2">/</span>
           <Link href={categoryPath} className="hover:text-kardak">
-            {category.title[locale]}
+            {getLocalized(category.title, locale)}
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-kardak">{product.name[locale]}</span>
+          <span className="text-kardak">{title}</span>
         </nav>
 
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
               src={product.imageSrc}
-              alt={product.name[locale]}
+              alt={title}
               width={400}
               height={400}
               priority
@@ -109,14 +117,14 @@ export default function ToptanProductDetail({ categoryKey, product }) {
             <h1 className="text-4xl font-bold mb-4 text-kardak">{title}</h1>
             <p className="text-md mb-6 text-gray-700">{description}</p>
 
-            {product.technicalDetails && (
+            {technicalDetails && (
               <div className="mt-12">
                 <h2 className="text-xl font-bold mb-4 text-kardak">
                   {t('products.technical_specs')}
                 </h2>
                 <table className="w-full border-collapse">
                   <tbody>
-                    {Object.entries(product.technicalDetails).map(([key, value]) => (
+                    {Object.entries(technicalDetails).map(([key, value]) => (
                       <tr
                         key={key}
                         className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
@@ -147,7 +155,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
                 className="relative inline-flex items-center justify-center rounded-md border border-transparent bg-kardak shadow-md px-8 py-3 text-center font-bold text-white hover:bg-kardak-hover"
               >
                 <HiOutlineCursorClick className="h-5 w-5 text-white mr-2" />
-                {category.title[locale]}
+                {getLocalized(category.title, locale)}
               </Link>
             </div>
           </div>
@@ -156,7 +164,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
         {seoContent && (
           <ProductDetailSeoBody
             seoContent={seoContent}
-            technicalDetails={product.technicalDetails}
+            technicalDetails={technicalDetails}
             technicalLabels={technicalLabels}
             hideTechnical
           />

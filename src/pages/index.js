@@ -14,6 +14,7 @@ import { products } from 'data/products.mjs';
 import { getProductsListingUrl, getPageUrl } from '../../lib/routes';
 // blog
 import { getAllPosts } from '../lib/posts';
+import { getPostLocalized, getPostSlug } from '../../lib/localizedContent';
 
 export default function Home({ blogPosts }) {
   const router = useRouter();
@@ -63,24 +64,29 @@ export default function Home({ blogPosts }) {
       <div className="container mb-10">
         <h2 className="text-kardak text-2xl font-bold mb-6">{t('blog.title')}</h2>
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {blogPosts.map(post => (
-            <div key={post.slug.tr}>
-              <Link href={`/blog/${post.slug[router.locale]}`}>
+          {blogPosts.map((post) => {
+            const locale = router.locale;
+            const slug = getPostSlug(post, locale);
+            if (!slug) return null;
+            return (
+            <div key={post.id ?? post.slug.tr}>
+              <Link href={`/blog/${slug}`}>
                 <Image
                   src={post.image}
-                  alt={post.title[router.locale]}
+                  alt={getPostLocalized(post, 'title', locale)}
                   width={400}
                   height={250}
                   className="w-full h-auto rounded-lg mb-4"
                 />
                 <h3 className="text-kardak text-md font-semibold hover:underline">
-                  {post.title[router.locale]}
+                  {getPostLocalized(post, 'title', locale)}
                 </h3>
                 <p className="text-gray-600 text-sm">{post.date}</p>
-                <p className="mt-2 text-gray-800">{post.excerpt[router.locale]}</p>
+                <p className="mt-2 text-gray-800">{getPostLocalized(post, 'excerpt', locale)}</p>
               </Link>
             </div>
-          ))}
+            );
+          })}
         </div>
         <div className="flex justify-center mt-4 mb-16">
           <Link
