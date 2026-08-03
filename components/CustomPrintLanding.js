@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,7 +7,7 @@ import { LiaWhatsapp } from 'react-icons/lia';
 
 import { categories, customPrintLanding } from '../data/categories.mjs';
 import { getCategoryUrl, getProductUrl } from '../lib/productHelpers';
-import { getLocalized, getProductName, getProductSize } from '../lib/localizedContent';
+import { getLocalizedText, getProductName, getProductSize } from '../lib/localizedContent';
 import { getPageUrl } from '../lib/routes';
 import {
   buildBreadcrumbSchema,
@@ -38,8 +39,8 @@ function buildFaqSchema(faqItems) {
 }
 
 export default function CustomPrintLanding({ portfolioProducts }) {
-  const { t, i18n } = useTranslation('common');
-  const locale = i18n.language;
+  const { t } = useTranslation('common');
+  const { locale } = useRouter();
   const pathname = '/custom-printed-paper-cups';
   const pageUrl = getPageAbsoluteUrl(pathname, {}, locale);
 
@@ -224,7 +225,7 @@ export default function CustomPrintLanding({ portfolioProducts }) {
                       href={getCategoryUrl(sizeKey, locale)}
                       className="text-center rounded-xl border border-kardak/20 bg-kardak/5 px-4 py-2.5 text-sm font-semibold text-kardak hover:bg-kardak/10 transition-colors"
                     >
-                      {getLocalized(categories[sizeKey].title, locale)}
+                      {getLocalizedText(categories[sizeKey].title, locale)}
                     </Link>
                   </div>
                 </div>

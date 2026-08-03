@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,13 +7,7 @@ import { LiaWhatsapp } from 'react-icons/lia';
 
 import { categories } from '../data/categories.mjs';
 import { getCategoryUrl } from '../lib/productHelpers';
-import {
-  getLocalized,
-  getProductDescription,
-  getProductName,
-  getProductTechnicalDetails,
-  getVariantSlug,
-} from '../lib/localizedContent';
+import { getLocalizedText, getProductDescription, getProductName, getProductTechnicalDetails, getVariantSlug } from '../lib/localizedContent';
 import { getProductMetaDescription, getProductSeoContent } from '../lib/productSeoContent';
 import { getPageUrl } from '../lib/routes';
 import {
@@ -26,8 +21,8 @@ import ProductDetailSeoBody, { getProductFaqSchema } from './ProductDetailSeoBod
 import SeoHead from './SeoHead';
 
 export default function ToptanProductDetail({ categoryKey, product }) {
-  const { t, i18n } = useTranslation('common');
-  const locale = i18n.language;
+  const { t } = useTranslation('common');
+  const { locale } = useRouter();
   const category = categories[categoryKey];
 
   const title = getProductName(product, locale);
@@ -50,13 +45,13 @@ export default function ToptanProductDetail({ categoryKey, product }) {
       description: metaDescription,
       imageSrc: product.imageSrc,
       pageUrl,
-      categoryName: getLocalized(category.title, locale),
+      categoryName: getLocalizedText(category.title, locale),
     }),
     buildProductBreadcrumbs({
       locale,
       homeLabel: t('navbar.home'),
       productsLabel: t('navbar.products'),
-      categoryTitle: getLocalized(category.title, locale),
+      categoryTitle: getLocalizedText(category.title, locale),
       categoryPath,
       productName: title,
       productUrl: pageUrl,
@@ -95,7 +90,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
           </Link>
           <span className="mx-2">/</span>
           <Link href={categoryPath} className="hover:text-kardak">
-            {getLocalized(category.title, locale)}
+            {getLocalizedText(category.title, locale)}
           </Link>
           <span className="mx-2">/</span>
           <span className="text-kardak">{title}</span>
@@ -155,7 +150,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
                 className="relative inline-flex items-center justify-center rounded-md border border-transparent bg-kardak shadow-md px-8 py-3 text-center font-bold text-white hover:bg-kardak-hover"
               >
                 <HiOutlineCursorClick className="h-5 w-5 text-white mr-2" />
-                {getLocalized(category.title, locale)}
+                {getLocalizedText(category.title, locale)}
               </Link>
             </div>
           </div>

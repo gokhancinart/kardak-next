@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { products } from '../../../data/products.mjs';
@@ -5,8 +6,8 @@ import ProductList from 'components/ProductList';
 import SeoHead from 'components/SeoHead';
 
 export default function ProductsPage() {
-  const { t, i18n } = useTranslation('common');
-  const currentLocale = i18n.language;
+  const { t } = useTranslation('common');
+  const { locale: currentLocale } = useRouter();
 
   const customOrder4oz = [13, 10, 12, 9];
 

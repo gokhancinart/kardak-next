@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,7 +6,7 @@ import { HiOutlineCursorClick } from 'react-icons/hi';
 
 import { categories, customPrintLanding } from '../data/categories.mjs';
 import { getProductUrl, getCustomPrintLandingUrl } from '../lib/productHelpers';
-import { getLocalized, getProductName, getProductSize } from '../lib/localizedContent';
+import { getLocalizedText, getProductName, getProductSize } from '../lib/localizedContent';
 import { getProductsListingUrl, getPageUrl } from '../lib/routes';
 import {
   buildCategoryBreadcrumbs,
@@ -16,14 +17,14 @@ import {
 import SeoHead from './SeoHead';
 
 export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
-  const { t, i18n } = useTranslation('common');
-  const locale = i18n.language;
+  const { t } = useTranslation('common');
+  const { locale } = useRouter();
   const category = categories[categoryKey];
   const pathname = getToptanCategoryPathname(categoryKey);
   const pageUrl = getPageAbsoluteUrl(pathname, {}, locale);
 
-  const categoryTitle = getLocalized(category.title, locale);
-  const categoryDescription = getLocalized(category.description, locale);
+  const categoryTitle = getLocalizedText(category.title, locale);
+  const categoryDescription = getLocalizedText(category.description, locale);
 
   const jsonLd = buildJsonLdGraph(
     buildCategoryBreadcrumbs({
@@ -88,7 +89,7 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
             <div className="group relative">
               <Link href={getCustomPrintLandingUrl(locale)}>
                 <Image
-                  alt={getLocalized(customPrintLanding.title, locale)}
+                  alt={getLocalizedText(customPrintLanding.title, locale)}
                   src={customPrintLanding.imageSrc}
                   width={300}
                   height={300}
@@ -98,7 +99,7 @@ export default function ToptanCategoryHub({ categoryKey, categoryProducts }) {
               <div className="mt-4">
                 <h2 className="text-sm text-gray-700">
                   <Link href={getCustomPrintLandingUrl(locale)}>
-                    <b>{getLocalized(customPrintLanding.title, locale)}</b>
+                    <b>{getLocalizedText(customPrintLanding.title, locale)}</b>
                   </Link>
                 </h2>
                 <p className="mt-1 text-xs text-gray-500">{t('products.custom_print_cta')}</p>
