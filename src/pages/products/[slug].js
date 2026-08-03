@@ -11,7 +11,6 @@ import { getProductMetaDescription, getProductSeoContent } from '../../../lib/pr
 import {
   buildJsonLdGraph,
   buildLegacyProductBreadcrumbs,
-  buildProductSchema,
   getPageAbsoluteUrl,
 } from '../../../lib/seo';
 import ProductDetailSeoBody, { getProductFaqSchema } from 'components/ProductDetailSeoBody';
@@ -44,14 +43,6 @@ export default function ProductDetail({ product: initialProduct }) {
   )}`;
 
   const schemas = [
-    buildProductSchema({
-      name: product.name[currentLocale],
-      description: metaDescription,
-      imageSrc: product.imageSrc,
-      pageUrl: productUrl,
-      categoryName: product.size[currentLocale],
-      sku: product.id,
-    }),
     buildLegacyProductBreadcrumbs({
       locale: currentLocale,
       homeLabel: t('navbar.home'),
@@ -82,7 +73,6 @@ export default function ProductDetail({ product: initialProduct }) {
         title={`${product.name[currentLocale]} | Kardak`}
         description={metaDescription}
         ogImage={product.imageSrc}
-        ogType="product"
         jsonLd={jsonLd}
       />
 

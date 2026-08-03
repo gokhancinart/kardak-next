@@ -13,7 +13,6 @@ import { getPageUrl } from '../lib/routes';
 import {
   buildJsonLdGraph,
   buildProductBreadcrumbs,
-  buildProductSchema,
   getPageAbsoluteUrl,
   getToptanVariantPathname,
 } from '../lib/seo';
@@ -40,14 +39,6 @@ export default function ToptanProductDetail({ categoryKey, product }) {
   )}`;
 
   const schemas = [
-    buildProductSchema({
-      name: title,
-      description: metaDescription,
-      imageSrc: product.imageSrc,
-      pageUrl,
-      categoryName: getLocalizedText(category.title, locale),
-      sku: product.id,
-    }),
     buildProductBreadcrumbs({
       locale,
       homeLabel: t('navbar.home'),
@@ -81,7 +72,6 @@ export default function ToptanProductDetail({ categoryKey, product }) {
         title={`${title} | Kardak`}
         description={metaDescription}
         ogImage={product.imageSrc}
-        ogType="product"
         jsonLd={jsonLd}
       />
 
