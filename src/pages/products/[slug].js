@@ -50,6 +50,7 @@ export default function ProductDetail({ product: initialProduct }) {
       imageSrc: product.imageSrc,
       pageUrl: productUrl,
       categoryName: product.size[currentLocale],
+      sku: product.id,
     }),
     buildLegacyProductBreadcrumbs({
       locale: currentLocale,
@@ -81,6 +82,7 @@ export default function ProductDetail({ product: initialProduct }) {
         title={`${product.name[currentLocale]} | Kardak`}
         description={metaDescription}
         ogImage={product.imageSrc}
+        ogType="product"
         jsonLd={jsonLd}
       />
 

@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import Promo from 'components/Promo';
 import HomeAbout from 'components/HomeAbout';
 import SeoHead from 'components/SeoHead';
+import { buildJsonLdGraph, buildOrganizationSchema, buildWebSiteSchema } from '../../lib/seo';
 import Link from 'next/link';
 import Image from 'next/image';
 import { HiOutlineCursorClick } from "react-icons/hi";
@@ -20,6 +21,11 @@ export default function Home({ blogPosts }) {
   const router = useRouter();
   const { t } = useTranslation('common');
 
+  const jsonLd = buildJsonLdGraph(
+    buildOrganizationSchema(router.locale),
+    buildWebSiteSchema(router.locale)
+  );
+
   return (
     <>
       <SeoHead
@@ -27,6 +33,7 @@ export default function Home({ blogPosts }) {
         locale={router.locale}
         title={t('home.seo.title')}
         description={t('home.seo.description')}
+        jsonLd={jsonLd}
       />
 
 

@@ -46,6 +46,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
       imageSrc: product.imageSrc,
       pageUrl,
       categoryName: getLocalizedText(category.title, locale),
+      sku: product.id,
     }),
     buildProductBreadcrumbs({
       locale,
@@ -80,6 +81,7 @@ export default function ToptanProductDetail({ categoryKey, product }) {
         title={`${title} | Kardak`}
         description={metaDescription}
         ogImage={product.imageSrc}
+        ogType="product"
         jsonLd={jsonLd}
       />
 
