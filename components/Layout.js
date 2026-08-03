@@ -30,6 +30,7 @@ export default function Layout({ children }) {
   const locale = router.locale || 'tr';
   const rtl = isRtlLocale(locale);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuTransitionEnabled, setMenuTransitionEnabled] = useState(true);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -39,6 +40,13 @@ export default function Layout({ children }) {
     document.documentElement.lang = locale;
     document.documentElement.dir = rtl ? 'rtl' : 'ltr';
   }, [locale, rtl]);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setMenuTransitionEnabled(false);
+    const timer = window.setTimeout(() => setMenuTransitionEnabled(true), 20);
+    return () => window.clearTimeout(timer);
+  }, [locale]);
 
   useEffect(() => {
     const handleRouteChange = () => {
@@ -86,9 +94,10 @@ export default function Layout({ children }) {
           <div className="fixed inset-0 bg-kardak opacity-15 z-40" onClick={toggleMenu}></div>
         )}
         <div
+          key={locale}
           className={`fixed top-0 start-0 h-full w-64 bg-kardak text-white shadow-lg z-50 transform ${
             isMenuOpen ? 'translate-x-0' : rtl ? 'translate-x-full' : '-translate-x-full'
-          } transition-transform duration-300 ease-in-out`}
+          } ${menuTransitionEnabled ? 'transition-transform duration-300 ease-in-out' : ''}`}
         >
           <button
             onClick={toggleMenu}

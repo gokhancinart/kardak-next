@@ -17,7 +17,7 @@ export default function ProductList({ title, products, locale }) {
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products?.map((product) => (
             <div key={product.id} className="group relative">
-              <Link href={getProductUrl(product, locale)}>
+              <Link href={getProductUrl(product, locale)} locale={locale}>
                 <Image
                   alt={getProductName(product, locale)}
                   src={product?.imageSrc}
@@ -28,7 +28,7 @@ export default function ProductList({ title, products, locale }) {
               </Link>
               <div className="mt-4">
                 <h3 className="text-sm text-gray-700">
-                  <Link href={getProductUrl(product, locale)}>
+                  <Link href={getProductUrl(product, locale)} locale={locale}>
                     <b>{getProductName(product, locale)}</b>
                   </Link>
                 </h3>

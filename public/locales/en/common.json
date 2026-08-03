@@ -169,7 +169,8 @@
     "title": "Blog",
     "description": "Discover the latest insights, tips, and industry news about paper cups and related topics. Kardak's blog is your go-to resource for staying informed.",
     "read_more": "Read More",
-    "all_blogs": "Click for all blog posts"
+    "all_blogs": "Click for all blog posts",
+    "back_to_blog": "← Back to Blog"
   },
   "footer": {
     "description": "Our paper cups are designed to showcase your beverages in the best way.",

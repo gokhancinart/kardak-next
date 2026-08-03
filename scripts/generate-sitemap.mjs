@@ -97,7 +97,11 @@ const blogUrls = buildLocalizedUrls('/blog', '/blog', '/blog');
 entries.push(createEntry({ ...blogUrls, priority: '0.8' }));
 
 for (const post of blogPosts) {
-  const urls = buildLocalizedUrls(`/blog/${post.slug.tr}`, `/blog/${post.slug.en}`, `/blog/${post.slug.en}`);
+  const urls = buildLocalizedUrls(
+    `/blog/${post.slug.tr}`,
+    `/blog/${post.slug.en}`,
+    `/blog/${post.slug.ar ?? post.slug.en}`
+  );
   entries.push(createEntry({ ...urls, priority: '0.7', changefreq: 'monthly' }));
 }
 

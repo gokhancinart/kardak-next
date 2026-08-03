@@ -170,7 +170,8 @@
     "title": "Blog",
     "description": "Karton bardak kullanımı, üretim süreçleri ve kağıt tedariki hakkında en güncel bilgileri blogumuzda keşfedin. Sektördeki yenilikleri takip edin.",
     "read_more": "Devamını Oku",
-    "all_blogs": "Tüm blog yazıları için tıklayın"
+    "all_blogs": "Tüm blog yazıları için tıklayın",
+    "back_to_blog": "← Bloga Dön"
   },
   "footer": {
     "description": "Karton bardak içeceklerinizi en iyi şekilde sunmak için tasarlanmıştır.",

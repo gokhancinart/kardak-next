@@ -8,9 +8,9 @@ import { getPostLocalized, getPostSlug } from '../../../lib/localizedContent';
 import SeoHead from 'components/SeoHead';
 
 export default function BlogPage({ posts }) {
-  const { t, i18n } = useTranslation('common');
-  const currentLocale = i18n.language;
+  const { t } = useTranslation('common');
   const router = useRouter();
+  const currentLocale = router.locale;
 
   return (
     <>
@@ -31,6 +31,7 @@ export default function BlogPage({ posts }) {
             <div key={post.id ?? post.slug.tr}>
               <Link
                 href={`/blog/${slug}`}
+                locale={currentLocale}
                 className="text-kardak font-medium mt-4 inline-block"
               >
                 <Image

@@ -1,26 +1,30 @@
 import { getAllPosts, getPostByLocalizedSlug } from '../../lib/posts';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getPostLocalized, getPostSlug } from '../../../lib/localizedContent';
 import { getPageUrl } from '../../../lib/routes';
 import { buildJsonLdGraph, getPageAbsoluteUrl } from '../../../lib/seo';
 import SeoHead from 'components/SeoHead';
 
 export default function Post({ post }) {
   const router = useRouter();
+  const { t } = useTranslation('common');
   const locale = router.locale;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  const postUrl = getPageAbsoluteUrl(
-    '/blog/[slug]',
-    { slug: post.slug[locale] },
-    locale
-  );
+  const slug = getPostSlug(post, locale);
+  const title = getPostLocalized(post, 'title', locale);
+  const excerpt = getPostLocalized(post, 'excerpt', locale);
+  const seoDescription = getPostLocalized(post, 'seoDescription', locale) || excerpt;
+  const keywords = post.keywords?.[locale] ?? post.keywords?.ar ?? post.keywords?.en ?? post.keywords?.tr ?? [];
+  const postUrl = getPageAbsoluteUrl('/blog/[slug]', { slug }, locale);
 
   const jsonLd = buildJsonLdGraph({
     '@type': 'BlogPosting',
-    headline: post.title[locale],
-    description: post.seoDescription[locale] || post.excerpt[locale],
+    headline: title,
+    description: seoDescription,
     image: [`${siteUrl}${post.image}`],
     datePublished: post.date,
     dateModified: post.date,
@@ -44,28 +48,28 @@ export default function Post({ post }) {
     <div className="p-6">
       <SeoHead
         pathname="/blog/[slug]"
-        query={{ slug: post.slug[locale] }}
+        query={{ slug }}
         locale={locale}
-        title={`${post.title[locale]} | Kardak`}
-        description={post.seoDescription[locale] || post.excerpt[locale]}
+        title={`${title} | Kardak`}
+        description={seoDescription}
         ogImage={post.image}
         ogType="article"
-        keywords={post.keywords[locale]?.join(', ')}
+        keywords={keywords.join(', ')}
         jsonLd={jsonLd}
       />
       <div className="container mx-auto max-w-4xl">
         <Link href={getPageUrl('blog', locale)} className="inline-flex mb-4 text-kardak font-semibold hover:underline">
-          {locale === 'tr' ? '← Bloga Dön' : '← Back to Blog'}
+          {t('blog.back_to_blog')}
         </Link>
         <Image
           src={post.image}
-          alt={post.title[locale]}
+          alt={title}
           width={800}
           height={400}
           className="w-full h-auto mb-4 rounded-lg contain object-cover max-h-[400px]"
           priority
         />
-        <h1 className="text-kardak text-3xl font-bold mb-2">{post.title[locale]}</h1>
+        <h1 className="text-kardak text-3xl font-bold mb-2">{title}</h1>
         <p className="text-gray-500 text-sm mb-8">{post.date}</p>
         <div className="blog-content text-base leading-8 text-gray-800">
           <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
@@ -81,7 +85,7 @@ export async function getStaticPaths({ locales }) {
 
   for (const locale of locales) {
     for (const post of posts) {
-      const slug = post.slug[locale];
+      const slug = getPostSlug(post, locale);
       if (!slug) continue;
       paths.push({
         params: { slug },
@@ -92,17 +96,21 @@ export async function getStaticPaths({ locales }) {
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 
 export async function getStaticProps({ params, locale }) {
   const post = await getPostByLocalizedSlug(params.slug, locale);
 
+  if (!post) {
+    return { notFound: true };
+  }
+
   return {
     props: {
       ...(await serverSideTranslations(locale, ['common'])),
-      post
-    }
+      post,
+    },
   };
 }

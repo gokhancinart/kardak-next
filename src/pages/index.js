@@ -77,7 +77,7 @@ export default function Home({ blogPosts }) {
             if (!slug) return null;
             return (
             <div key={post.id ?? post.slug.tr}>
-              <Link href={`/blog/${slug}`}>
+              <Link href={`/blog/${slug}`} locale={locale}>
                 <Image
                   src={post.image}
                   alt={getPostLocalized(post, 'title', locale)}

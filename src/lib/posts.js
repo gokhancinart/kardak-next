@@ -5,7 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
 const BLOG_ROOT = path.join(process.cwd(), 'data', 'blog');
-const BLOG_LOCALES = ['tr', 'en'];
+const BLOG_LOCALES = ['tr', 'en', 'ar'];
 
 function sortByDateDesc(a, b) {
   return new Date(b.date).getTime() - new Date(a.date).getTime();
@@ -65,16 +65,23 @@ export function getAllPosts() {
 }
 
 export async function getPostByLocalizedSlug(slug, locale) {
-  let post = getAllPosts().find((item) => item.slug[locale] === slug);
-  let contentLocale = locale;
+  const posts = getAllPosts();
+  const post = posts.find(
+    (item) =>
+      item.slug.tr === slug || item.slug.en === slug || item.slug.ar === slug
+  );
 
-  if (!post) {
-    post = getAllPosts().find((item) => item.slug.tr === slug || item.slug.en === slug);
-    if (post?.slug.tr === slug) contentLocale = 'tr';
-    else if (post?.slug.en === slug) contentLocale = 'en';
-  }
+  if (!post) return null;
 
-  if (!post || !post.contentPath[contentLocale]) {
+  const contentLocale = post.contentPath[locale]
+    ? locale
+    : locale === 'ar' && post.contentPath.en
+      ? 'en'
+      : post.contentPath.tr
+        ? 'tr'
+        : null;
+
+  if (!contentLocale || !post.contentPath[contentLocale]) {
     return null;
   }
 
@@ -85,5 +92,6 @@ export async function getPostByLocalizedSlug(slug, locale) {
   return {
     ...post,
     contentHtml: processedContent.toString(),
+    contentLocale,
   };
 }
